@@ -1,0 +1,998 @@
+# mapping_set_id: https://w3id.org/monarch/kev-mapping-experiment/kev-4b-snomed-full@ll
+# mapping_set_title: SNOMED CT -> Mondo candidate mappings decided by kev-4b-snomed-full@ll
+# mapping_date: '2026-09-25'
+# mapping_tool: kev-4b-snomed-full@ll
+# mapping_tool_version: ../runs/kev-4b-snomed-full on Qwen/Qwen3.5-4B-Base (torch, bfloat16)
+# license: https://creativecommons.org/licenses/by/4.0/
+# comment: 'subject_label withheld: SNOMED CT labels are licensed content (SNOMED International
+#   Affiliate License); SCTIDs only, as in Mondo''s own SCTID mappings.'
+# subject_source: SNOMED CT US Edition 2026-03-01
+# object_source: obo:mondo/releases/2026-05-05
+# curie_map:
+#   SCTID: http://snomed.info/id/
+#   MONDO: http://purl.obolibrary.org/obo/MONDO_
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   semapv: https://w3id.org/semapv/vocab/
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	confidence	mapping_tool	comment
+SCTID:238898001		skos:exactMatch	MONDO:0019556	pressure-induced localized lipoatrophy	semapv:CompositeMatching	0.9842	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:191201002		skos:exactMatch	MONDO:0020989	hereditary persistence of fetal hemoglobin	semapv:CompositeMatching	0.9761	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:722006004		skos:exactMatch	MONDO:0009473	isotretinoin-like syndrome	semapv:CompositeMatching	0.9827	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:76642003		skos:exactMatch	MONDO:0002247	factor X deficiency	semapv:CompositeMatching	0.8108	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:403980002		skos:exactMatch	MONDO:0021121	hemangioendothelioma	semapv:CompositeMatching	0.9909	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:718610008		skos:exactMatch	MONDO:0016396	pontocerebellar hypoplasia type 1	semapv:CompositeMatching	0.9768	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:80281008		skos:exactMatch	MONDO:0004747	cleft lip	semapv:CompositeMatching	0.9908	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:42601008		skos:exactMatch	MONDO:0003689	familial hemolytic anemia	semapv:CompositeMatching	0.9812	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:124138004		skos:exactMatch	MONDO:0000193	cortisone reductase deficiency	semapv:CompositeMatching	0.9792	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:373168002		skos:exactMatch	MONDO:0009975	reticulum cell sarcoma	semapv:CompositeMatching	0.9786	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:609221008		skos:exactMatch	MONDO:0044202	episodic kinesigenic dyskinesia	semapv:CompositeMatching	0.9699	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:702377007		skos:exactMatch	MONDO:0013208	cirrhosis - dystonia - polycythemia - hypermanganesemia syndrome	semapv:CompositeMatching	0.7433	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:721845005		skos:exactMatch	MONDO:0009425	hypomandibular faciocranial dysostosis	semapv:CompositeMatching	0.9874	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:128105004		skos:exactMatch	MONDO:0024574	von Willebrand disease (hereditary or acquired)	semapv:CompositeMatching	0.9623	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:231472009		skos:exactMatch	MONDO:0002347	barbiturate dependence	semapv:CompositeMatching	0.9948	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254918001		skos:exactMatch	MONDO:0002930	kidney sarcoma	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:128200000		skos:exactMatch	MONDO:0019369	complex regional pain syndrome	semapv:CompositeMatching	0.9182	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:761958009		skos:exactMatch	MONDO:0016751	malignant perineurioma	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:127004000		skos:exactMatch	MONDO:0021222	lacrimal gland neoplasm	semapv:CompositeMatching	0.9964	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:253000007		skos:exactMatch	MONDO:0002120	neuroendocrine carcinoma	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:403986008		skos:exactMatch	MONDO:0006282	lymphangiosarcoma	semapv:CompositeMatching	0.9910	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1177179002		skos:exactMatch	MONDO:0054770	orofaciodigital syndrome 18	semapv:CompositeMatching	0.9739	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:1222677008		skos:exactMatch	MONDO:0018603	SFTPC-related interstitial lung disease	semapv:CompositeMatching	0.5801	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:95268002		skos:exactMatch	MONDO:0020436	atrial septal defect, sinus venosus type	semapv:CompositeMatching	0.9724	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1306747001		skos:exactMatch	MONDO:0012648	isobutyryl-CoA dehydrogenase deficiency	semapv:CompositeMatching	0.9743	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:702359002		skos:exactMatch	MONDO:0012401	congenital stromal corneal dystrophy	semapv:CompositeMatching	0.9861	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715817007		skos:exactMatch	MONDO:0019450	lissencephaly with cerebellar hypoplasia	semapv:CompositeMatching	0.9927	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237249000		skos:exactMatch	MONDO:0016785	complete hydatidiform mole	semapv:CompositeMatching	0.9812	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:21848000		skos:exactMatch	MONDO:0003713	angiokeratoma circumscriptum	semapv:CompositeMatching	0.9875	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:73856006		skos:exactMatch	MONDO:0018163	autosomal recessive cutis laxa type 2A	semapv:CompositeMatching	0.9246	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=0.996
+SCTID:724015007		skos:exactMatch	MONDO:0011462	pyogenic arthritis-pyoderma gangrenosum-acne syndrome	semapv:CompositeMatching	0.9734	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:733598001		skos:exactMatch	MONDO:0018433	acute myeloid leukemia with t(6;9)(p23;q34)	semapv:CompositeMatching	0.8126	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:449730005		skos:exactMatch	MONDO:0016423	autoimmune polyendocrinopathy type 4	semapv:CompositeMatching	0.9931	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:88037009		skos:exactMatch	MONDO:0042452	tertiary lesion of yaws	semapv:CompositeMatching	0.9130	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:87074006		skos:exactMatch	MONDO:0011449	Salla disease	semapv:CompositeMatching	0.9821	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:277571004		skos:exactMatch	MONDO:0004947	B-cell acute lymphoblastic leukemia	semapv:CompositeMatching	0.9218	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:239144007		skos:exactMatch	MONDO:0016986	congenital smooth muscle hamartoma	semapv:CompositeMatching	0.8612	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:10301003		skos:exactMatch	MONDO:0001621	tick-borne relapsing fever	semapv:CompositeMatching	0.9956	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:406506008		skos:exactMatch	MONDO:0007743	attention deficit-hyperactivity disorder	semapv:CompositeMatching	0.9127	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:238772004		skos:exactMatch	MONDO:0044037	livedo reticularis	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:241774007		skos:exactMatch	MONDO:0043230	ciguatera fish poisoning	semapv:CompositeMatching	0.9913	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:60750009		skos:exactMatch	MONDO:0003546	third cranial nerve disorder	semapv:CompositeMatching	0.9898	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254693008		skos:exactMatch	MONDO:0006907	pilar sheath acanthoma	semapv:CompositeMatching	0.9942	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:699256006		skos:exactMatch	MONDO:0035678	Timothy syndrome type 1	semapv:CompositeMatching	0.4355	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:448372003		skos:exactMatch	MONDO:0020644	lung non-Hodgkin lymphoma	semapv:CompositeMatching	0.9843	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:733096007		skos:exactMatch	MONDO:0010128	thyrocerebrorenal syndrome	semapv:CompositeMatching	0.9898	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254099008		skos:exactMatch	MONDO:0015426	Desbuquois dysplasia	semapv:CompositeMatching	0.9820	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763375003		skos:exactMatch	MONDO:0011785	hereditary spastic paraplegia 19	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238049009		skos:exactMatch	MONDO:0015286	congenital disorder of glycosylation	semapv:CompositeMatching	0.9803	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:439143004		skos:exactMatch	MONDO:0010731	Simpson-Golabi-Behmel syndrome	semapv:CompositeMatching	0.9728	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722004001		skos:exactMatch	MONDO:0020048	internal carotid agenesis	semapv:CompositeMatching	0.9770	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:765190005		skos:exactMatch	MONDO:0017802	ovarian fibrothecoma	semapv:CompositeMatching	0.9656	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:34000006		skos:exactMatch	MONDO:0005011	Crohn disease	semapv:CompositeMatching	0.9903	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:28783002		skos:exactMatch	MONDO:0001786	uterine inflammatory disease	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:711482008		skos:exactMatch	MONDO:0012815	Coats plus syndrome	semapv:CompositeMatching	0.9810	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92021007		skos:exactMatch	MONDO:0021525	benign neoplasm of corpus uteri	semapv:CompositeMatching	0.9671	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720830009		skos:exactMatch	MONDO:0979371	congenital neuronal ceroid lipofuscinosis 10	semapv:CompositeMatching	0.9438	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:203468000		skos:exactMatch	MONDO:0018815	aneurysmal bone cyst	semapv:CompositeMatching	0.9920	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:95656000		skos:exactMatch	MONDO:0000700	familial hemiplegic migraine	semapv:CompositeMatching	0.9640	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:723610009		skos:exactMatch	MONDO:0010069	spondylocostal dysostosis-anal and genitourinary malformations syndrome	semapv:CompositeMatching	0.9465	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:707427000		skos:exactMatch	MONDO:0002766	larynx verrucous carcinoma	semapv:CompositeMatching	0.9915	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:41720003		skos:exactMatch	MONDO:0004863	purulent endophthalmitis	semapv:CompositeMatching	0.9855	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:58258004		skos:exactMatch	MONDO:0019261	infantile neuronal ceroid lipofuscinosis	semapv:CompositeMatching	0.9844	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720987001		skos:exactMatch	MONDO:0015198	aniridia-ptosis-intellectual disability-familial obesity syndrome	semapv:CompositeMatching	0.9680	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:23414001		skos:exactMatch	MONDO:0003334	demyelinating polyneuropathy	semapv:CompositeMatching	0.9541	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:12546009		skos:exactMatch	MONDO:0006784	hemorrhagic disease of newborn	semapv:CompositeMatching	0.9031	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:77252004		skos:exactMatch	MONDO:0006601	pityriasis rosea	semapv:CompositeMatching	0.9945	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254146000		skos:exactMatch	MONDO:0016824	infantile myofibromatosis	semapv:CompositeMatching	0.7583	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:193683001		skos:exactMatch	MONDO:0001703	color vision disorder	semapv:CompositeMatching	0.9755	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:733521003		skos:exactMatch	MONDO:0013267	distal 16p11.2 microdeletion syndrome	semapv:CompositeMatching	0.9822	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:723444009		skos:exactMatch	MONDO:0011899	Noonan syndrome-like disorder with loose anagen hair	semapv:CompositeMatching	0.9645	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715727009		skos:exactMatch	MONDO:0019828	pituitary stalk interruption syndrome	semapv:CompositeMatching	0.9864	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:724349009		skos:exactMatch	MONDO:0019195	hereditary inclusion body myopathy-joint contractures-ophthalmoplegia syndrome	semapv:CompositeMatching	0.9392	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:770728003		skos:exactMatch	MONDO:0011106	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	semapv:CompositeMatching	0.9809	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:43647007		skos:exactMatch	MONDO:0008193	paralysis agitans, juvenile, of Hunt	semapv:CompositeMatching	0.9467	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763867001		skos:exactMatch	MONDO:0015293	segmental outgrowth-lipomatosis-arteriovenous malformation-epidermal nevus syndrome	semapv:CompositeMatching	0.9498	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:93255008		skos:exactMatch	MONDO:0016032	femoral agenesis/hypoplasia	semapv:CompositeMatching	0.9894	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:186807008		skos:exactMatch	MONDO:0005446	cutaneous leishmaniasis	semapv:CompositeMatching	0.9897	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:56625005		skos:exactMatch	MONDO:0005670	blackwater fever	semapv:CompositeMatching	0.9734	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254124008		skos:exactMatch	MONDO:0007396	dysostosis, Stanescu type	semapv:CompositeMatching	0.9344	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719455002		skos:exactMatch	MONDO:0012475	cone dystrophy with supernormal rod response	semapv:CompositeMatching	0.9698	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:37373007		skos:exactMatch	MONDO:0007955	Meckel diverticulum	semapv:CompositeMatching	0.9956	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92464009		skos:exactMatch	MONDO:0001398	ureter benign neoplasm	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:712750007		skos:exactMatch	MONDO:0021323	malignant neoplasm of chest wall	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:719972004		skos:exactMatch	MONDO:0020493	Haddad syndrome	semapv:CompositeMatching	0.9884	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:239065004		skos:exactMatch	MONDO:0019347	peeling skin syndrome	semapv:CompositeMatching	0.8440	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.994
+SCTID:720816004		skos:exactMatch	MONDO:0012035	craniosynostosis-intracranial calcifications syndrome	semapv:CompositeMatching	0.9425	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:111323005		skos:exactMatch	MONDO:0007130	congenital total pulmonary venous return anomaly	semapv:CompositeMatching	0.9775	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363428005		skos:exactMatch	MONDO:0001994	sphenoidal sinus cancer	semapv:CompositeMatching	0.9898	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:733599009		skos:exactMatch	MONDO:0014899	progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal recessive 4	semapv:CompositeMatching	0.9524	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:126865007		skos:exactMatch	MONDO:0006901	peritoneal neoplasm	semapv:CompositeMatching	0.9959	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:50749006		skos:exactMatch	MONDO:0019339	47,XYY syndrome	semapv:CompositeMatching	0.9881	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:13468005		skos:exactMatch	MONDO:0004059	dentin sensitivity	semapv:CompositeMatching	0.9691	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1269177007		skos:exactMatch	MONDO:0018547	acute tricyclic antidepressant poisoning	semapv:CompositeMatching	0.9934	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:715735007		skos:exactMatch	MONDO:0019917	maternal uniparental disomy of chromosome 20	semapv:CompositeMatching	0.9856	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720812002		skos:exactMatch	MONDO:0011287	craniosynostosis-anal anomalies-porokeratosis syndrome	semapv:CompositeMatching	0.9690	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:38528001		skos:exactMatch	MONDO:0007074	ainhum	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237941007		skos:exactMatch	MONDO:0013166	GABA aminotransaminase deficiency	semapv:CompositeMatching	0.9849	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:15084002		skos:exactMatch	MONDO:0019561	lupus erythematosus panniculitis	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:6118003		skos:exactMatch	MONDO:0020800	demyelinating disease of central nervous system	semapv:CompositeMatching	0.9879	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:231996009		skos:exactMatch	MONDO:0008982	central areolar choroidal dystrophy	semapv:CompositeMatching	0.9824	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:255037004		skos:exactMatch	MONDO:0012004	parathyroid gland carcinoma	semapv:CompositeMatching	0.9907	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:42399005		skos:exactMatch	MONDO:0001106	kidney failure	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:404014008		skos:exactMatch	MONDO:0002141	cutaneous undifferentiated pleomorphic sarcoma	semapv:CompositeMatching	0.8112	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.986
+SCTID:83586000		skos:exactMatch	MONDO:0009158	Ehlers-Danlos syndrome, fibronectinemic type	semapv:CompositeMatching	0.9438	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:78494001		skos:exactMatch	MONDO:0019507	amelogenesis imperfecta	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716648006		skos:exactMatch	MONDO:0015795	undifferentiated embryonal sarcoma of the liver	semapv:CompositeMatching	0.9695	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:111806005		skos:exactMatch	MONDO:0001838	acute gonococcal prostatitis	semapv:CompositeMatching	0.9913	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:441574008		skos:exactMatch	MONDO:0005311	atherosclerosis	semapv:CompositeMatching	0.9971	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:371486001		skos:exactMatch	MONDO:0021220	eye neoplasm	semapv:CompositeMatching	0.9317	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:192976002		skos:exactMatch	MONDO:0019037	progressive supranuclear palsy	semapv:CompositeMatching	0.8764	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1167373005		skos:exactMatch	MONDO:0044701	childhood-onset motor and cognitive regression syndrome with extrapyramidal movement disorder	semapv:CompositeMatching	0.9677	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:371965009		skos:exactMatch	MONDO:0003606	adrenal medulla cancer	semapv:CompositeMatching	0.9571	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:269469005		skos:exactMatch	MONDO:0024637	malignant soft tissue neoplasm	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:126881002		skos:exactMatch	MONDO:0003719	renal pelvis neoplasm	semapv:CompositeMatching	0.9634	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363385007		skos:exactMatch	MONDO:0021320	malignant tumor of floor of mouth	semapv:CompositeMatching	0.9120	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:89142007		skos:exactMatch	MONDO:0016820	Moyamoya disease	semapv:CompositeMatching	0.9836	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1157157006		skos:exactMatch	MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	semapv:CompositeMatching	0.9642	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:95797003		skos:exactMatch	MONDO:0040699	necrotizing scleritis	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:449790007		skos:exactMatch	MONDO:0000358	orofacial cleft	semapv:CompositeMatching	0.9946	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:45170000		skos:exactMatch	MONDO:0019956	encephalitis	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:60555002		skos:exactMatch	MONDO:0006794	hypersensitivity vasculitis	semapv:CompositeMatching	0.9829	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:26029002		skos:exactMatch	MONDO:0015721	mild hemophilia A	semapv:CompositeMatching	0.9666	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:44729001		skos:exactMatch	MONDO:0001849	chronic orbital inflammation	semapv:CompositeMatching	0.9884	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:109492001		skos:exactMatch	MONDO:0015613	dentin dysplasia	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:66071002		skos:exactMatch	MONDO:0005344	hepatitis B virus infection	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:5602001		skos:exactMatch	MONDO:0001225	opioid abuse	semapv:CompositeMatching	0.9750	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720603002		skos:exactMatch	MONDO:0008899	camptodactyly syndrome, Guadalajara type 2	semapv:CompositeMatching	0.9810	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:68272006		skos:exactMatch	MONDO:0002186	acute maxillary sinusitis	semapv:CompositeMatching	0.9945	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:766992008		skos:exactMatch	MONDO:0008152	multicentric carpo-tarsal osteolysis with or without nephropathy	semapv:CompositeMatching	0.8915	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:118601006		skos:exactMatch	MONDO:0018908	non-Hodgkin lymphoma	semapv:CompositeMatching	0.9870	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:126736007		skos:exactMatch	MONDO:0021080	blood vessel neoplasm	semapv:CompositeMatching	0.9919	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:414029004		skos:exactMatch	MONDO:0005046	immune system disorder	semapv:CompositeMatching	0.9953	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:68633000		skos:exactMatch	MONDO:0002285	pupil disorder	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92559007		skos:exactMatch	MONDO:0021289	carcinoma in situ of cecum	semapv:CompositeMatching	0.9957	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1179296003		skos:exactMatch	MONDO:0011239	colobomatous macrophthalmia-microcornea syndrome	semapv:CompositeMatching	0.9417	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:84438001		skos:exactMatch	MONDO:0018608	pure autonomic failure	semapv:CompositeMatching	0.9761	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:718850008		skos:exactMatch	MONDO:0011423	autosomal recessive limb-girdle muscular dystrophy type 2E	semapv:CompositeMatching	0.9641	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:400171002		skos:exactMatch	MONDO:0011208	malignant atrophic papulosis	semapv:CompositeMatching	0.9880	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:880065001		skos:exactMatch	MONDO:0012222	alpha-N-acetylgalactosaminidase deficiency type 2	semapv:CompositeMatching	0.9668	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:425657001		skos:exactMatch	MONDO:0017364	POEMS syndrome	semapv:CompositeMatching	0.5180	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.998
+SCTID:303063000		skos:exactMatch	MONDO:0001754	eclampsia	semapv:CompositeMatching	0.8242	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.995
+SCTID:195889001		skos:exactMatch	MONDO:0005824	Legionnaires' disease	semapv:CompositeMatching	0.9938	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:34736002		skos:exactMatch	MONDO:0001788	nutmeg liver	semapv:CompositeMatching	0.9899	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763713000		skos:exactMatch	MONDO:0005807	idiopathic CD4-positive T-lymphocytopenia	semapv:CompositeMatching	0.9027	kev-4b-snomed-full@ll	tier=gold-removed relation=same p_same=0.999
+SCTID:61758007		skos:exactMatch	MONDO:0010805	bladder exstrophy	semapv:CompositeMatching	0.9609	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:733454004		skos:exactMatch	MONDO:0007212	brachydactyly-long thumb syndrome	semapv:CompositeMatching	0.9551	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:31993003		skos:exactMatch	MONDO:0004851	toxic myocarditis	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:442917000		skos:exactMatch	MONDO:0019171	familial long QT syndrome	semapv:CompositeMatching	0.9376	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238031009		skos:exactMatch	MONDO:0018868	metachromatic leukodystrophy	semapv:CompositeMatching	0.9530	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238014002		skos:exactMatch	MONDO:0009111	dihydropyrimidinuria	semapv:CompositeMatching	0.9531	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:232049001		skos:exactMatch	MONDO:0011979	adult-onset foveomacular vitelliform dystrophy	semapv:CompositeMatching	0.9751	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363380002		skos:exactMatch	MONDO:0004724	submandibular gland cancer	semapv:CompositeMatching	0.9777	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:78975002		skos:exactMatch	MONDO:0001133	malignant essential hypertension	semapv:CompositeMatching	0.9926	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92047003		skos:exactMatch	MONDO:0037739	benign neoplasm of cauda equina	semapv:CompositeMatching	0.9911	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:240104008		skos:exactMatch	MONDO:0035646	congenital-onset Steinert myotonic dystrophy	semapv:CompositeMatching	0.6636	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230552007		skos:exactMatch	MONDO:0018994	Charcot-Marie-Tooth disease type X	semapv:CompositeMatching	0.9639	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:9824006		skos:exactMatch	MONDO:0001219	serous conjunctivitis except viral	semapv:CompositeMatching	0.9843	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:718189004		skos:exactMatch	MONDO:0008365	recombinant 8 syndrome	semapv:CompositeMatching	0.9798	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:402792003		skos:exactMatch	MONDO:0003780	T-cell immunodeficiency	semapv:CompositeMatching	0.9576	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:22841008		skos:exactMatch	MONDO:0017441	congenital absence of upper arm and forearm with hand present	semapv:CompositeMatching	0.9444	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:91521000119104		skos:exactMatch	MONDO:0019371	narcolepsy without cataplexy	semapv:CompositeMatching	0.9919	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720408003		skos:exactMatch	MONDO:0008715	acrofrontofacionasal dysostosis	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:85828009		skos:exactMatch	MONDO:0007179	autoimmune disease	semapv:CompositeMatching	0.9972	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:718609003		skos:exactMatch	MONDO:0011948	pontocerebellar hypoplasia type 3	semapv:CompositeMatching	0.9793	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:406446000		skos:exactMatch	MONDO:0004885	choroidal sclerosis	semapv:CompositeMatching	0.4873	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.961
+SCTID:39452003		skos:exactMatch	MONDO:0017689	disorder of fructose metabolism	semapv:CompositeMatching	0.9773	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:187716008		skos:exactMatch	MONDO:0004685	Waldeyer's ring cancer	semapv:CompositeMatching	0.9738	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:93390002		skos:exactMatch	MONDO:0001476	coloboma	semapv:CompositeMatching	0.9833	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:41309000		skos:exactMatch	MONDO:0043693	alcoholic liver disease	semapv:CompositeMatching	0.9863	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:721221000		skos:exactMatch	MONDO:0009342	Hirschsprung disease-hearing loss-polydactyly syndrome	semapv:CompositeMatching	0.9579	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:79586000		skos:exactMatch	MONDO:0043762	tubal pregnancy	semapv:CompositeMatching	0.9920	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363393007		skos:exactMatch	MONDO:0006998	tonsil cancer	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:609580007		skos:exactMatch	MONDO:0012480	diabetes mellitus, transient neonatal, 2	semapv:CompositeMatching	0.9877	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725904009		skos:exactMatch	MONDO:0019680	genochondromatosis type 2	semapv:CompositeMatching	0.9856	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:702417004		skos:exactMatch	MONDO:0012176	Emanuel syndrome	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:29504002		skos:exactMatch	MONDO:0020364	posterior polymorphous corneal dystrophy	semapv:CompositeMatching	0.9861	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:45781009		skos:exactMatch	MONDO:0003615	nerve compression syndrome	semapv:CompositeMatching	0.9758	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:716660007		skos:exactMatch	MONDO:0019094	congenital Epstein-Barr virus infection	semapv:CompositeMatching	0.9845	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:711499009		skos:exactMatch	MONDO:0043355	collagenous gastritis	semapv:CompositeMatching	0.9921	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1231182008		skos:exactMatch	MONDO:0015634	isolated osteopoikilosis	semapv:CompositeMatching	0.9789	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:403938001		skos:exactMatch	MONDO:0003448	benign spiradenoma	semapv:CompositeMatching	0.9876	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254164007		skos:exactMatch	MONDO:0007812	ichthyosis, lamellar, autosomal dominant	semapv:CompositeMatching	0.8098	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:95588004		skos:exactMatch	MONDO:0001556	urethral obstruction	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:438583008		skos:exactMatch	MONDO:0020340	bilateral perisylvian polymicrogyria	semapv:CompositeMatching	0.5018	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.981
+SCTID:128272009		skos:exactMatch	MONDO:0000270	lower respiratory tract disorder	semapv:CompositeMatching	0.6273	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.990
+SCTID:724384008		skos:exactMatch	MONDO:0007176	helicoid peripapillary chorioretinal degeneration	semapv:CompositeMatching	0.9773	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719210007		skos:exactMatch	MONDO:0011540	spinocerebellar ataxia type 14	semapv:CompositeMatching	0.9901	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:402700001		skos:exactMatch	MONDO:0024480	dermatosis of eyelid	semapv:CompositeMatching	0.9910	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:240450004		skos:exactMatch	MONDO:0020545	staphylococcal toxic-shock syndrome	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:122811000119101		skos:exactMatch	MONDO:0010720	partial androgen insensitivity syndrome	semapv:CompositeMatching	0.9828	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237822008		skos:exactMatch	MONDO:0000569	autoimmune disorder of endocrine system	semapv:CompositeMatching	0.8449	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:82275008		skos:exactMatch	MONDO:0015943	eosinophilic granulomatosis with polyangiitis	semapv:CompositeMatching	0.9813	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:40178009		skos:exactMatch	MONDO:0006526	allergic urticaria	semapv:CompositeMatching	0.9937	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:442348004		skos:exactMatch	MONDO:0001337	inflamed seborrheic keratosis	semapv:CompositeMatching	0.9861	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:230381009		skos:exactMatch	MONDO:0005384	focal epilepsy	semapv:CompositeMatching	0.9503	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:229706001		skos:exactMatch	MONDO:0006800	ideomotor apraxia	semapv:CompositeMatching	0.9176	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:765748009		skos:exactMatch	MONDO:0020338	adult pure red cell aplasia	semapv:CompositeMatching	0.9817	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:722859001		skos:exactMatch	MONDO:0017623	PTEN hamartoma tumor syndrome	semapv:CompositeMatching	0.9794	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:190502001		skos:exactMatch	MONDO:0009050	Cushing disease due to pituitary adenoma	semapv:CompositeMatching	0.5896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:56905009		skos:exactMatch	MONDO:0006807	intestinal perforation	semapv:CompositeMatching	0.9959	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:23205009		skos:exactMatch	MONDO:0004877	transient neonatal thrombocytopenia	semapv:CompositeMatching	0.9919	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:13600006		skos:exactMatch	MONDO:0006552	folliculitis	semapv:CompositeMatching	0.9966	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:707234001		skos:exactMatch	MONDO:0015378	fourth branchial cleft anomaly	semapv:CompositeMatching	0.9330	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.998
+SCTID:129104009		skos:exactMatch	MONDO:0005503	developmental disorder of mental health	semapv:CompositeMatching	0.7543	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.998
+SCTID:230500006		skos:exactMatch	MONDO:0043969	nocturnal paroxysmal dystonia	semapv:CompositeMatching	0.9612	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763069002		skos:exactMatch	MONDO:0013239	hereditary spastic paraplegia 41	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:240062007		skos:exactMatch	MONDO:0000355	Ullrich congenital muscular dystrophy	semapv:CompositeMatching	0.9354	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:702344008		skos:exactMatch	MONDO:0012589	Pitt-Hopkins syndrome	semapv:CompositeMatching	0.9775	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:764100007		skos:exactMatch	MONDO:0011744	primary intraosseous venous malformation	semapv:CompositeMatching	0.9889	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:386810004		skos:exactMatch	MONDO:0003699	phobic disorder	semapv:CompositeMatching	0.9955	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254666005		skos:exactMatch	MONDO:0006566	keratosis	semapv:CompositeMatching	0.9857	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398102009		skos:exactMatch	MONDO:0017373	poliomyelitis	semapv:CompositeMatching	0.9832	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:87696004		skos:exactMatch	MONDO:0000496	hemorrhagic cystitis	semapv:CompositeMatching	0.9970	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:268232000		skos:exactMatch	MONDO:0019980	renal hypoplasia, bilateral	semapv:CompositeMatching	0.9943	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:48723006		skos:exactMatch	MONDO:0009421	hypogonadism, male	semapv:CompositeMatching	0.7235	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:41565005		skos:exactMatch	MONDO:0005076	periodontitis	semapv:CompositeMatching	0.9936	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:702380008		skos:exactMatch	MONDO:0600023	idiopathic inflammatory myopathy	semapv:CompositeMatching	0.4848	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:723508002		skos:exactMatch	MONDO:0013767	autoimmune lymphoproliferative syndrome type 4	semapv:CompositeMatching	0.9677	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:26460006		skos:exactMatch	MONDO:0018382	epiphysiolysis of the hip	semapv:CompositeMatching	0.9667	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:73415002		skos:exactMatch	MONDO:0013098	noise induced hearing loss	semapv:CompositeMatching	0.9954	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:414667000		skos:exactMatch	MONDO:0017069	spina bifida cystica	semapv:CompositeMatching	0.9625	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:307496006		skos:exactMatch	MONDO:0004235	diverticulitis	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:404041003		skos:exactMatch	MONDO:0003252	granular cell cancer	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720459002		skos:exactMatch	MONDO:0009049	Cushing syndrome due to macronodular adrenal hyperplasia	semapv:CompositeMatching	0.9111	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:79291003		skos:exactMatch	MONDO:0004706	discoid lupus erythematosus of eyelid	semapv:CompositeMatching	0.9760	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254825007		skos:exactMatch	MONDO:0002373	benign mesothelioma	semapv:CompositeMatching	0.9950	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1197357008		skos:exactMatch	MONDO:0008927	colobomatous optic disc-macular atrophy-chorioretinopathy syndrome	semapv:CompositeMatching	0.9728	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:92197001		skos:exactMatch	MONDO:0021443	benign neoplasm of lymph node	semapv:CompositeMatching	0.9974	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722451006		skos:exactMatch	MONDO:0011157	Gomez-Lopez-Hernandez syndrome	semapv:CompositeMatching	0.9786	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722282008		skos:exactMatch	MONDO:0010333	corpus callosum agenesis-intellectual disability-coloboma-micrognathia syndrome	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:233728004		skos:exactMatch	MONDO:0008969	cholesterol pneumonia	semapv:CompositeMatching	0.6672	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.998
+SCTID:703267003		skos:exactMatch	MONDO:0015406	cerebrofacial arteriovenous metameric syndrome type 1	semapv:CompositeMatching	0.9830	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:13920009		skos:exactMatch	MONDO:0001711	hepatic encephalopathy	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92109005		skos:exactMatch	MONDO:0021520	benign neoplasm of floor of mouth	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:17322007		skos:exactMatch	MONDO:0005135	parasitic infectious disease	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:407476002		skos:exactMatch	MONDO:0005913	phlebotomus fever	semapv:CompositeMatching	0.9861	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254915003		skos:exactMatch	MONDO:0005005	clear cell renal carcinoma	semapv:CompositeMatching	0.9747	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:307576001		skos:exactMatch	MONDO:0002629	bone osteosarcoma	semapv:CompositeMatching	0.9941	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:7573000		skos:exactMatch	MONDO:0019259	classic phenylketonuria	semapv:CompositeMatching	0.9618	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:419039007		skos:exactMatch	MONDO:0007377	granular corneal dystrophy type I	semapv:CompositeMatching	0.9555	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:76802005		skos:exactMatch	MONDO:0002029	chronic gonorrhea of cervix	semapv:CompositeMatching	0.5115	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:109041000119107		skos:exactMatch	MONDO:0015905	syndromic dyslipidemia	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:26111005		skos:exactMatch	MONDO:0020123	metabolic myopathy	semapv:CompositeMatching	0.9920	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:42930003		skos:exactMatch	MONDO:0004736	inborn disorder of amino acid metabolism	semapv:CompositeMatching	0.9902	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:91662004		skos:exactMatch	MONDO:0004799	ulcerative blepharitis	semapv:CompositeMatching	0.9932	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:446995005		skos:exactMatch	MONDO:0002085	benign shuddering attacks	semapv:CompositeMatching	0.9601	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363469001		skos:exactMatch	MONDO:0001952	parietal lobe cancer	semapv:CompositeMatching	0.9932	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:266257000		skos:exactMatch	MONDO:0005264	transient ischemic attack	semapv:CompositeMatching	0.9761	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:27536004		skos:exactMatch	MONDO:0001181	secondary corneal edema	semapv:CompositeMatching	0.9957	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:77157004		skos:exactMatch	MONDO:0002135	optic nerve disorder	semapv:CompositeMatching	0.6270	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.986
+SCTID:189130001		skos:exactMatch	MONDO:0002193	Bartholin gland benign neoplasm	semapv:CompositeMatching	0.9119	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.998
+SCTID:253737007		skos:exactMatch	MONDO:0007878	congenital laryngomalacia	semapv:CompositeMatching	0.9915	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763348005		skos:exactMatch	MONDO:0018129	autosomal recessive cerebellar ataxia with late-onset spasticity	semapv:CompositeMatching	0.9762	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:235828008		skos:exactMatch	MONDO:0017574	chronic intestinal pseudoobstruction	semapv:CompositeMatching	0.6082	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:87694001		skos:exactMatch	MONDO:0009949	pyruvate carboxylase deficiency disease	semapv:CompositeMatching	0.9671	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:699297004		skos:exactMatch	MONDO:0010477	blepharophimosis - intellectual disability syndrome, MKB type	semapv:CompositeMatching	0.9126	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:72000004		skos:exactMatch	MONDO:0007016	vitamin A deficiency	semapv:CompositeMatching	0.9807	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:192782005		skos:exactMatch	MONDO:0009499	Krabbe disease	semapv:CompositeMatching	0.9772	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1237225007		skos:exactMatch	MONDO:0009161	Ehlers-Danlos syndrome, dermatosparaxis type	semapv:CompositeMatching	0.9724	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:718720007		skos:exactMatch	MONDO:0011004	lissencephaly type 3-metacarpal bone dysplasia syndrome	semapv:CompositeMatching	0.9332	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363402007		skos:exactMatch	MONDO:0007576	esophageal cancer	semapv:CompositeMatching	0.9827	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:127230005		skos:exactMatch	MONDO:0036696	spleen neoplasm	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:124322002		skos:exactMatch	MONDO:0010613	inborn glycerol kinase deficiency	semapv:CompositeMatching	0.7543	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.992
+SCTID:446079007		skos:exactMatch	MONDO:0016217	mal de Debarquement	semapv:CompositeMatching	0.9792	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:718717004		skos:exactMatch	MONDO:0012559	primary immunodeficiency syndrome due to p14 deficiency	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:58213005		skos:exactMatch	MONDO:0000758	bacillary angiomatosis	semapv:CompositeMatching	0.9959	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:17024001		skos:exactMatch	MONDO:0021902	aortopulmonary window	semapv:CompositeMatching	0.9759	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:17226007		skos:exactMatch	MONDO:0003265	adjustment disorder	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:90935002		skos:exactMatch	MONDO:0018660	hemophilia	semapv:CompositeMatching	0.9903	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:711403001		skos:exactMatch	MONDO:0100034	cerebral folate deficiency	semapv:CompositeMatching	0.9134	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.997
+SCTID:8635005		skos:exactMatch	MONDO:0006642	alcohol withdrawal delirium	semapv:CompositeMatching	0.9191	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:36948007		skos:exactMatch	MONDO:0004830	fasciitis	semapv:CompositeMatching	0.9955	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:732252005		skos:exactMatch	MONDO:0013870	TMEM165-congenital disorder of glycosylation	semapv:CompositeMatching	0.9499	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:79886009		skos:exactMatch	MONDO:0017762	disorder of copper metabolism	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:203045001		skos:exactMatch	MONDO:0006345	palmar fibromatosis	semapv:CompositeMatching	0.9696	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:82800008		skos:exactMatch	MONDO:0040870	primary polydipsia	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:723363009		skos:exactMatch	MONDO:0019073	hypotrichosis-lymphedema-telangiectasia-renal defect syndrome	semapv:CompositeMatching	0.8230	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:718608006		skos:exactMatch	MONDO:0009166	pontocerebellar hypoplasia type 4	semapv:CompositeMatching	0.9745	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363379000		skos:exactMatch	MONDO:0004700	parotid gland cancer	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:232006002		skos:exactMatch	MONDO:0006843	macular holes	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:129639005		skos:exactMatch	MONDO:0008092	hereditary neutrophilia	semapv:CompositeMatching	0.9927	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126980002		skos:exactMatch	MONDO:0001406	peripheral nervous system neoplasm	semapv:CompositeMatching	0.7944	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.990
+SCTID:83482000		skos:exactMatch	MONDO:0000690	body dysmorphic disorder	semapv:CompositeMatching	0.9887	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254837009		skos:exactMatch	MONDO:0007254	breast cancer	semapv:CompositeMatching	0.9814	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:718210003		skos:exactMatch	MONDO:0010379	Brunner syndrome	semapv:CompositeMatching	0.9709	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763127004		skos:exactMatch	MONDO:0008206	benign paroxysmal tonic upgaze of childhood with ataxia	semapv:CompositeMatching	0.9811	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:41799005		skos:exactMatch	MONDO:0019118	inherited retinal dystrophy	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:764999002		skos:exactMatch	MONDO:0019788	non-secreting paraganglioma	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:66695004		skos:exactMatch	MONDO:0016588	infantile mercury poisoning	semapv:CompositeMatching	0.5469	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.996
+SCTID:404056007		skos:exactMatch	MONDO:0011655	alveolar soft part sarcoma	semapv:CompositeMatching	0.9680	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:4887000		skos:exactMatch	MONDO:0010160	tyrosinemia type II	semapv:CompositeMatching	0.9723	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715771008		skos:exactMatch	MONDO:0000170	microphthalmia, isolated, with coloboma	semapv:CompositeMatching	0.9713	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:715755008		skos:exactMatch	MONDO:0010847	spinocerebellar ataxia type 4	semapv:CompositeMatching	0.9910	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126703006		skos:exactMatch	MONDO:0021210	trachea neoplasm	semapv:CompositeMatching	0.9925	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:37272000		skos:exactMatch	MONDO:0019107	Rh deficiency syndrome	semapv:CompositeMatching	0.9913	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763312008		skos:exactMatch	MONDO:0018189	autosomal recessive cerebellar ataxia - pyramidal signs - nystagmus - oculomotor apraxia syndrome	semapv:CompositeMatching	0.9426	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:88092000		skos:exactMatch	MONDO:0004323	muscular atrophy	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1340174002		skos:exactMatch	MONDO:0850071	developmental delay-immunodeficiency-leukoencephalopathy-hypohomocysteinemia syndrome	semapv:CompositeMatching	0.6893	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:92336000		skos:exactMatch	MONDO:0021472	benign neoplasm of scrotum	semapv:CompositeMatching	0.9970	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:426055002		skos:exactMatch	MONDO:0008450	spinal arachnoiditis	semapv:CompositeMatching	0.9963	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716194005		skos:exactMatch	MONDO:0009871	pili torti-developmental delay-neurological abnormalities syndrome	semapv:CompositeMatching	0.9762	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:190785000		skos:exactMatch	MONDO:0017773	hypoalphalipoproteinemia	semapv:CompositeMatching	0.9931	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92385005		skos:exactMatch	MONDO:0021501	benign neoplasm of small intestine	semapv:CompositeMatching	0.9942	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238763007		skos:exactMatch	MONDO:0008534	generalized essential telangiectasia	semapv:CompositeMatching	0.9793	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:192781003		skos:exactMatch	MONDO:0019046	leukodystrophy	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:711480000		skos:exactMatch	MONDO:0018338	activated PI3K-delta syndrome	semapv:CompositeMatching	0.7805	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254709009		skos:exactMatch	MONDO:0044789	digital papillary eccrine carcinoma	semapv:CompositeMatching	0.9440	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716338001		skos:exactMatch	MONDO:0012243	B-cell immunodeficiency, distal limb anomalies, and urogenital malformations	semapv:CompositeMatching	0.6335	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:14535005		skos:exactMatch	MONDO:0003231	acute nonparalytic poliomyelitis	semapv:CompositeMatching	0.9801	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:734029004		skos:exactMatch	MONDO:0012740	chromosome 22q11.2 deletion syndrome, distal	semapv:CompositeMatching	0.9689	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715801001		skos:exactMatch	MONDO:0013959	Charcot-Marie-Tooth disease type 4F	semapv:CompositeMatching	0.9869	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:717254007		skos:exactMatch	MONDO:0012204	familial pseudohyperkalemia	semapv:CompositeMatching	0.9750	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:68779003		skos:exactMatch	MONDO:0005342	IgA glomerulonephritis	semapv:CompositeMatching	0.9059	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:28189009		skos:exactMatch	MONDO:0001261	Mobitz type II atrioventricular block	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237091009		skos:exactMatch	MONDO:0023557	infective vaginitis	semapv:CompositeMatching	0.9953	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:29928006		skos:exactMatch	MONDO:0001298	congenital mitral valve insufficiency	semapv:CompositeMatching	0.9883	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:47277009		skos:exactMatch	MONDO:0041536	Far-East scarlet-like fever	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:408643008		skos:exactMatch	MONDO:0004953	invasive ductal breast carcinoma	semapv:CompositeMatching	0.9633	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254219004		skos:exactMatch	MONDO:0007358	comedones, familial Dyskeratotic	semapv:CompositeMatching	0.9197	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:702397002		skos:exactMatch	MONDO:0017609	renal tubular dysgenesis	semapv:CompositeMatching	0.9842	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715530004		skos:exactMatch	MONDO:0018030	tetrasomy 9p	semapv:CompositeMatching	0.9746	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:102449007		skos:exactMatch	MONDO:0010096	tardive dyskinesia	semapv:CompositeMatching	0.9846	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:205473008		skos:exactMatch	MONDO:0023599	mesomelic dysplasia	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:312104005		skos:exactMatch	MONDO:0019087	cholangiocarcinoma	semapv:CompositeMatching	0.9625	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:63175003		skos:exactMatch	MONDO:0019025	extracutaneous mastocytoma	semapv:CompositeMatching	0.9118	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363493006		skos:exactMatch	MONDO:0001672	bronchus cancer	semapv:CompositeMatching	0.9952	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1489008		skos:exactMatch	MONDO:0001642	hordeolum externum	semapv:CompositeMatching	0.9490	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:234576008		skos:exactMatch	MONDO:0008089	neutropenia, chronic familial	semapv:CompositeMatching	0.9332	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:124267007		skos:exactMatch	MONDO:0009292	glycogen storage disease due to glycogen branching enzyme deficiency	semapv:CompositeMatching	0.9695	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:724142005		skos:exactMatch	MONDO:0008908	MGAT2-congenital disorder of glycosylation	semapv:CompositeMatching	0.9582	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:717632002		skos:exactMatch	MONDO:0010268	X-linked lissencephaly with abnormal genitalia	semapv:CompositeMatching	0.9603	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:733447005		skos:exactMatch	MONDO:0013843	intestinal obstruction in the newborn due to guanylate cyclase 2C deficiency	semapv:CompositeMatching	0.9540	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:6729006		skos:exactMatch	MONDO:0018892	Wyburn-Mason syndrome	semapv:CompositeMatching	0.9781	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763793004		skos:exactMatch	MONDO:0017179	limbic encephalitis with caspr2 antibodies	semapv:CompositeMatching	0.9575	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715342005		skos:exactMatch	MONDO:0010519	alpha thalassemia-X-linked intellectual disability syndrome	semapv:CompositeMatching	0.9644	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:187151009		skos:exactMatch	MONDO:0015260	diphyllobothriasis	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:50869007		skos:exactMatch	MONDO:0007527	Ehlers-Danlos syndrome, periodontitis type	semapv:CompositeMatching	0.9703	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:73237007		skos:exactMatch	MONDO:0004757	chronic ethmoidal sinusitis	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763529005		skos:exactMatch	MONDO:0015580	distal monosomy 7q36	semapv:CompositeMatching	0.9714	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254790003		skos:exactMatch	MONDO:0003258	hobnail hemangioma	semapv:CompositeMatching	0.9763	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:126677000		skos:exactMatch	MONDO:0001764	ethmoidal sinus neoplasm	semapv:CompositeMatching	0.9818	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:202882003		skos:exactMatch	MONDO:0004833	plantar fasciitis	semapv:CompositeMatching	0.9954	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:36233006		skos:exactMatch	MONDO:0019813	congenital tricuspid stenosis	semapv:CompositeMatching	0.9857	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719949001		skos:exactMatch	MONDO:0018064	trigonocephaly-broad thumbs syndrome	semapv:CompositeMatching	0.9670	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:61071003		skos:exactMatch	MONDO:0009400	hyperprolinemia type 1	semapv:CompositeMatching	0.9770	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:218728005		skos:exactMatch	MONDO:0009010	aortic arch interruption	semapv:CompositeMatching	0.8991	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:28314004		skos:exactMatch	MONDO:0006663	perinatal asphyxia	semapv:CompositeMatching	0.9436	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:24269006		skos:exactMatch	MONDO:0019942	distal arthrogryposis	semapv:CompositeMatching	0.8438	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:722376008		skos:exactMatch	MONDO:0009901	Bartsocas-Papas syndrome 1	semapv:CompositeMatching	0.9605	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715406003		skos:exactMatch	MONDO:0015205	isolated lissencephaly type 1 without known genetic defects	semapv:CompositeMatching	0.9743	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126680004		skos:exactMatch	MONDO:0005375	nasopharyngeal neoplasm	semapv:CompositeMatching	0.9691	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:428281000		skos:exactMatch	MONDO:0002129	bone cancer	semapv:CompositeMatching	0.8466	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.998
+SCTID:722391005		skos:exactMatch	MONDO:0009198	congenital lethal erythroderma	semapv:CompositeMatching	0.9937	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:231829006		skos:exactMatch	MONDO:0021313	eyelid cancer	semapv:CompositeMatching	0.9709	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:708536001		skos:exactMatch	MONDO:0010584	dyskeratosis congenita, X-linked	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:398723007		skos:exactMatch	MONDO:0019319	verrucous nevus	semapv:CompositeMatching	0.9529	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:721756002		skos:exactMatch	MONDO:0030603	Klebsiella infectious disease	semapv:CompositeMatching	0.9124	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254895003		skos:exactMatch	MONDO:0024609	vulvar squamous cell carcinoma	semapv:CompositeMatching	0.9147	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:255072001		skos:exactMatch	MONDO:0004669	salivary gland cancer	semapv:CompositeMatching	0.9830	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:423471004		skos:exactMatch	MONDO:0012041	familial adenomatous polyposis 2	semapv:CompositeMatching	0.9796	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:25147002		skos:exactMatch	MONDO:0006614	subcorneal pustular dermatosis	semapv:CompositeMatching	0.9891	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254846003		skos:exactMatch	MONDO:0004150	breast giant fibroadenoma	semapv:CompositeMatching	0.9735	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:3323003		skos:exactMatch	MONDO:0006830	leukoplakia of penis	semapv:CompositeMatching	0.9903	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:41446000		skos:exactMatch	MONDO:0004785	blepharitis	semapv:CompositeMatching	0.9784	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:41572006		skos:exactMatch	MONDO:0009655	mucopolysaccharidosis type 3A	semapv:CompositeMatching	0.9721	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:276645004		skos:exactMatch	MONDO:0000212	hypercalcemia, infantile	semapv:CompositeMatching	0.9714	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:35031005		skos:exactMatch	MONDO:0007073	Hypoglossia-hypodactyly syndrome	semapv:CompositeMatching	0.9800	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:85375000		skos:exactMatch	MONDO:0005983	tinea favosa	semapv:CompositeMatching	0.9921	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:719659003		skos:exactMatch	MONDO:0012864	chromosome 2q32-q33 deletion syndrome	semapv:CompositeMatching	0.9299	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:81564005		skos:exactMatch	MONDO:0001213	serous glue ear	semapv:CompositeMatching	0.9547	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:723829000		skos:exactMatch	MONDO:0016214	pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome	semapv:CompositeMatching	0.9255	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:22125009		skos:exactMatch	MONDO:0006591	panniculitis	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:28183005		skos:exactMatch	MONDO:0009251	fructose-1,6-bisphosphatase deficiency	semapv:CompositeMatching	0.9150	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:53597009		skos:exactMatch	MONDO:0006598	phototoxic dermatitis	semapv:CompositeMatching	0.9617	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:25010000		skos:exactMatch	MONDO:0009064	ocular cystinosis	semapv:CompositeMatching	0.6937	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:22949006		skos:exactMatch	MONDO:0021643	mesenteric varices	semapv:CompositeMatching	0.9765	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230410004		skos:exactMatch	MONDO:0100023	self-limited familial neonatal epilepsy	semapv:CompositeMatching	0.9013	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=0.999
+SCTID:91051003		skos:exactMatch	MONDO:0042484	disseminated sporotrichosis	semapv:CompositeMatching	0.9848	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725027004		skos:exactMatch	MONDO:0012693	glycogen storage disease due to muscle and heart glycogen synthase deficiency	semapv:CompositeMatching	0.9521	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:25690000		skos:exactMatch	MONDO:0006759	femoral neuropathy	semapv:CompositeMatching	0.9747	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:67895005		skos:exactMatch	MONDO:0001317	phlyctenulosis	semapv:CompositeMatching	0.9745	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237751000		skos:exactMatch	MONDO:0018479	congenital adrenal hyperplasia	semapv:CompositeMatching	0.9851	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:445436005		skos:exactMatch	MONDO:0020442	left superior vena cava persisting to left-sided atrium	semapv:CompositeMatching	0.7252	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:438476003		skos:exactMatch	MONDO:0019740	acquired thrombotic thrombocytopenic purpura	semapv:CompositeMatching	0.9722	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:191382009		skos:exactMatch	MONDO:0001367	chronic congestive splenomegaly	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:255154009		skos:exactMatch	MONDO:0021460	benign neoplasm of salivary gland	semapv:CompositeMatching	0.9951	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363378008		skos:exactMatch	MONDO:0044743	major salivary gland cancer	semapv:CompositeMatching	0.9488	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:126686005		skos:exactMatch	MONDO:0021358	neoplasm of hypopharynx	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:43152001		skos:exactMatch	MONDO:0007294	central core myopathy	semapv:CompositeMatching	0.9841	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:723411003		skos:exactMatch	MONDO:0008182	nasopalpebral lipoma-coloboma syndrome	semapv:CompositeMatching	0.7465	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.994
+SCTID:725591002		skos:exactMatch	MONDO:0015171	congenital enterocyte heparan sulfate deficiency	semapv:CompositeMatching	0.9730	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:5262007		skos:exactMatch	MONDO:0001516	spinal muscular atrophy	semapv:CompositeMatching	0.9452	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:28244003		skos:exactMatch	MONDO:0001766	eversion of lacrimal punctum	semapv:CompositeMatching	0.9860	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:128082002		skos:exactMatch	MONDO:0024265	Duane syndrome type 1	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720749004		skos:exactMatch	MONDO:0009015	corneal dystrophy-perceptive deafness syndrome	semapv:CompositeMatching	0.9346	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:56871000		skos:exactMatch	MONDO:0017817	primary localized amyloidosis	semapv:CompositeMatching	0.7368	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=0.999
+SCTID:31659000		skos:exactMatch	MONDO:0005963	sparganosis	semapv:CompositeMatching	0.9695	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:10623005		skos:exactMatch	MONDO:0000845	fibrous dysplasia	semapv:CompositeMatching	0.9828	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:772225005		skos:exactMatch	MONDO:0700247	RAB18 deficiency	semapv:CompositeMatching	0.9733	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:45377007		skos:exactMatch	MONDO:0001837	acute gonococcal salpingitis	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254067002		skos:exactMatch	MONDO:0015708	immuno-osseous dysplasia	semapv:CompositeMatching	0.9807	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715415005		skos:exactMatch	MONDO:0009493	Richards-Rundle syndrome	semapv:CompositeMatching	0.9858	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:429233001		skos:exactMatch	MONDO:0019395	Hinman syndrome	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:15350006		skos:exactMatch	MONDO:0006770	giant cell reparative granuloma	semapv:CompositeMatching	0.9412	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:238091006		skos:exactMatch	MONDO:0018999	LCAT deficiency	semapv:CompositeMatching	0.9760	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:37350004		skos:exactMatch	MONDO:0009212	congenital factor X deficiency	semapv:CompositeMatching	0.9293	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:372140005		skos:exactMatch	MONDO:0003220	gallbladder carcinoma	semapv:CompositeMatching	0.9261	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:733518000		skos:exactMatch	MONDO:0016834	16p11.2p12.2 microduplication syndrome	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:360481003		skos:exactMatch	MONDO:0015273	complete atrioventricular canal	semapv:CompositeMatching	0.8489	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:111565003		skos:exactMatch	MONDO:0001473	medulloadrenal hyperfunction	semapv:CompositeMatching	0.9852	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:763067000		skos:exactMatch	MONDO:0010839	neuronopathy, distal hereditary motor, autosomal dominant 8	semapv:CompositeMatching	0.9309	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:82458004		skos:exactMatch	MONDO:0020398	congenital mitral stenosis	semapv:CompositeMatching	0.9800	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:24868007		skos:exactMatch	MONDO:0001777	acute gonococcal cystitis	semapv:CompositeMatching	0.9935	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:27621000119100		skos:exactMatch	MONDO:0006744	endolymphatic hydrops	semapv:CompositeMatching	0.8632	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.998
+SCTID:92040001		skos:exactMatch	MONDO:0021464	benign neoplasm of cecum	semapv:CompositeMatching	0.9899	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:764944006		skos:exactMatch	MONDO:0011486	congenital muscular dystrophy 1B	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:707341005		skos:exactMatch	MONDO:0005789	hepatitis D virus infection	semapv:CompositeMatching	0.9715	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:27059002		skos:exactMatch	MONDO:0002002	postsurgical hypothyroidism	semapv:CompositeMatching	0.9830	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:773774000		skos:exactMatch	MONDO:0016269	high-grade neuroendocrine carcinoma of the corpus uteri	semapv:CompositeMatching	0.9854	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:128128003		skos:exactMatch	MONDO:0044996	cerebral cortex disorder	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1293071007		skos:exactMatch	MONDO:0003305	cellular neurofibroma	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:71325002		skos:exactMatch	MONDO:0006573	lipodystrophy	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:709075008		skos:exactMatch	MONDO:0007690	aromatase excess syndrome	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:236644005		skos:exactMatch	MONDO:0041154	disorder of neck of urinary bladder	semapv:CompositeMatching	0.9723	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:109983007		skos:exactMatch	MONDO:0004960	monoclonal gammopathy	semapv:CompositeMatching	0.9925	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92039003		skos:exactMatch	MONDO:0021524	benign neoplasm of buccal mucosa	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92617001		skos:exactMatch	MONDO:0004698	intestine carcinoma in situ	semapv:CompositeMatching	0.9900	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:76916001		skos:exactMatch	MONDO:0000859	spina bifida occulta	semapv:CompositeMatching	0.9848	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:19034001		skos:exactMatch	MONDO:0001530	secondary hyperparathyroidism of renal origin	semapv:CompositeMatching	0.9507	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:93235007		skos:exactMatch	MONDO:0016241	alternating hemiplegia of childhood	semapv:CompositeMatching	0.7164	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.998
+SCTID:70931000		skos:exactMatch	MONDO:0001670	tooth resorption	semapv:CompositeMatching	0.7257	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.990
+SCTID:233915000		skos:exactMatch	MONDO:0100234	paroxysmal familial ventricular fibrillation	semapv:CompositeMatching	0.9886	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:253187005		skos:exactMatch	MONDO:0008939	isolated cerebellar hypoplasia/agenesis	semapv:CompositeMatching	0.6109	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:270516002		skos:exactMatch	MONDO:0007927	congenital macroglossia	semapv:CompositeMatching	0.9844	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:232442001		skos:exactMatch	MONDO:0007876	laryngeal abductor paralysis	semapv:CompositeMatching	0.6474	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:86500004		skos:exactMatch	MONDO:0005688	campylobacteriosis	semapv:CompositeMatching	0.9946	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:707756004		skos:exactMatch	MONDO:0009904	Gitelman syndrome	semapv:CompositeMatching	0.9918	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254711000		skos:exactMatch	MONDO:0003180	cutaneous adenocystic carcinoma	semapv:CompositeMatching	0.9736	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:54470008		skos:exactMatch	MONDO:0008727	congenital adrenal hyperplasia due to 3-beta-hydroxysteroid dehydrogenase deficiency	semapv:CompositeMatching	0.8675	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:19138001		skos:exactMatch	MONDO:0009176	epidermodysplasia verruciformis	semapv:CompositeMatching	0.9876	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:782754006		skos:exactMatch	MONDO:0012216	foveal hypoplasia - optic nerve decussation defect - anterior segment dysgenesis syndrome	semapv:CompositeMatching	0.9650	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:716723000		skos:exactMatch	MONDO:0020347	acute inflammatory demyelinating polyradiculoneuropathy	semapv:CompositeMatching	0.9740	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:408751001		skos:exactMatch	MONDO:0020572	complex regional pain syndrome type 2	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92087008		skos:exactMatch	MONDO:0021508	benign neoplasm of epicardium	semapv:CompositeMatching	0.9932	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:7259005		skos:exactMatch	MONDO:0009659	mucopolysaccharidosis type 4A	semapv:CompositeMatching	0.9715	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:721882001		skos:exactMatch	MONDO:0011555	radio-ulnar synostosis-amegakaryocytic thrombocytopenia syndrome	semapv:CompositeMatching	0.9575	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237610008		skos:exactMatch	MONDO:0008812	AREDYLD syndrome	semapv:CompositeMatching	0.9176	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:118611004		skos:exactMatch	MONDO:0017844	Sezary syndrome	semapv:CompositeMatching	0.9818	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237963003		skos:exactMatch	MONDO:0017690	disorder of galactose metabolism	semapv:CompositeMatching	0.9844	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:49584005		skos:exactMatch	MONDO:0004598	acute cor pulmonale	semapv:CompositeMatching	0.9941	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:732928005		skos:exactMatch	MONDO:0008611	humerus trochlea aplasia	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:86638007		skos:exactMatch	MONDO:0004584	maple bark strippers' lung	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725463007		skos:exactMatch	MONDO:0014094	severe congenital hypochromic anemia with ringed sideroblasts	semapv:CompositeMatching	0.9724	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:205468002		skos:exactMatch	MONDO:0007793	hypochondroplasia	semapv:CompositeMatching	0.9928	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722457005		skos:exactMatch	MONDO:0012786	juvenile cataract-microcornea-renal glucosuria syndrome	semapv:CompositeMatching	0.9579	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237683004		skos:exactMatch	MONDO:0010712	panhypopituitarism, X-linked	semapv:CompositeMatching	0.9535	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:713060000		skos:exactMatch	MONDO:0016079	sporadic Creutzfeldt-Jakob disease	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:3978000		skos:exactMatch	MONDO:0019532	autoimmune hemolytic anemia, warm type	semapv:CompositeMatching	0.9627	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:417607009		skos:exactMatch	MONDO:0005969	st. Louis encephalitis	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:44274007		skos:exactMatch	MONDO:0009537	lymphoid interstitial pneumonia	semapv:CompositeMatching	0.9668	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:724066002		skos:exactMatch	MONDO:0009900	polysyndactyly-cardiac malformation syndrome	semapv:CompositeMatching	0.9669	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:702437000		skos:exactMatch	MONDO:0011790	Amish lethal microcephaly	semapv:CompositeMatching	0.9845	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:58976002		skos:exactMatch	MONDO:0019992	pseudohypoparathyroidism	semapv:CompositeMatching	0.9684	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:397758007		skos:exactMatch	MONDO:0005380	osteonecrosis	semapv:CompositeMatching	0.9881	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:726051002		skos:exactMatch	MONDO:0009710	Thomsen and Becker disease	semapv:CompositeMatching	0.9655	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92205005		skos:exactMatch	MONDO:0021492	benign neoplasm of major salivary gland	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363495004		skos:exactMatch	MONDO:0005864	muscle cancer	semapv:CompositeMatching	0.9582	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363458004		skos:exactMatch	MONDO:0008627	ureter cancer	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:723552005		skos:exactMatch	MONDO:0018014	transient neonatal multiple acyl-CoA dehydrogenase deficiency	semapv:CompositeMatching	0.9596	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:726610000		skos:exactMatch	MONDO:0014305	hereditary spastic paraplegia 63	semapv:CompositeMatching	0.9603	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:230450001		skos:exactMatch	MONDO:0015645	eating seizures	semapv:CompositeMatching	0.9887	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:718053009		skos:exactMatch	MONDO:0001338	acute apical periodontitis	semapv:CompositeMatching	0.9753	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:8634009		skos:exactMatch	MONDO:0007922	lymphedema-distichiasis syndrome	semapv:CompositeMatching	0.8511	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719456001		skos:exactMatch	MONDO:0011008	cleft lip/palate-intestinal malrotation-cardiopathy syndrome	semapv:CompositeMatching	0.9408	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:57993004		skos:exactMatch	MONDO:0004808	benign mammary dysplasia	semapv:CompositeMatching	0.9927	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:111396008		skos:exactMatch	MONDO:0008963	Chediak-Higashi syndrome	semapv:CompositeMatching	0.9776	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237611007		skos:exactMatch	MONDO:0008023	muscular atrophy-ataxia-retinitis pigmentosa-diabetes mellitus syndrome	semapv:CompositeMatching	0.9573	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:187736009		skos:exactMatch	MONDO:0001061	pylorus cancer	semapv:CompositeMatching	0.9591	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230496009		skos:exactMatch	MONDO:0019137	non-24-hour sleep-wake syndrome	semapv:CompositeMatching	0.9840	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:80328002		skos:exactMatch	MONDO:0015993	cone-rod dystrophy	semapv:CompositeMatching	0.8709	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.998
+SCTID:195469007		skos:exactMatch	MONDO:0006549	fibroepithelial polyp of the anus	semapv:CompositeMatching	0.9707	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1264565005		skos:exactMatch	MONDO:0009515	Norum disease	semapv:CompositeMatching	0.9070	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:448664009		skos:exactMatch	MONDO:0005522	small intestine carcinoma	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:240613006		skos:exactMatch	MONDO:0001246	typhus	semapv:CompositeMatching	0.9812	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:50279003		skos:exactMatch	MONDO:0800486	metabolic bone disorder	semapv:CompositeMatching	0.7351	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=0.999
+SCTID:127217009		skos:exactMatch	MONDO:0018864	Kikuchi-Fujimoto disease	semapv:CompositeMatching	0.9814	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:188264002		skos:exactMatch	MONDO:0002658	iris cancer	semapv:CompositeMatching	0.9844	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230571009		skos:exactMatch	MONDO:0100646	neuropathy in endocrine disorder	semapv:CompositeMatching	0.9068	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:425940002		skos:exactMatch	MONDO:0001557	olecranon bursitis	semapv:CompositeMatching	0.9904	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:95280005		skos:exactMatch	MONDO:0001745	subserous uterine fibroid	semapv:CompositeMatching	0.9919	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722690001		skos:exactMatch	MONDO:0024470	benign chondrogenic neoplasm	semapv:CompositeMatching	0.9908	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:85102008		skos:exactMatch	MONDO:0000437	cerebellar ataxia	semapv:CompositeMatching	0.9962	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:390936003		skos:exactMatch	MONDO:0000914	cerebral arteriopathy, autosomal dominant, with subcortical infarcts and leukoencephalopathy, type 1	semapv:CompositeMatching	0.5611	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.997
+SCTID:86406008		skos:exactMatch	MONDO:0005109	HIV infectious disease	semapv:CompositeMatching	0.9905	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:205550003		skos:exactMatch	MONDO:0017778	lamellar ichthyosis	semapv:CompositeMatching	0.9492	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:192727001		skos:exactMatch	MONDO:0020068	postinfectious encephalitis	semapv:CompositeMatching	0.9213	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403970001		skos:exactMatch	MONDO:0002298	cutaneous glomangioma	semapv:CompositeMatching	0.9838	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:62009002		skos:exactMatch	MONDO:0019260	adult neuronal ceroid lipofuscinosis	semapv:CompositeMatching	0.9724	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:8691004		skos:exactMatch	MONDO:0018683	acquired ichthyosis	semapv:CompositeMatching	0.9957	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:127232002		skos:exactMatch	MONDO:0024339	lymph node neoplasm	semapv:CompositeMatching	0.9952	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:27614006		skos:exactMatch	MONDO:0000939	intracranial abscess	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:267607008		skos:exactMatch	MONDO:0000995	familial periodic paralysis	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:75238000		skos:exactMatch	MONDO:0009657	mucopolysaccharidosis type 3C	semapv:CompositeMatching	0.9766	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:764625002		skos:exactMatch	MONDO:0019869	mosaic trisomy 22	semapv:CompositeMatching	0.9572	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:40149008		skos:exactMatch	MONDO:0004852	gonococcal keratitis	semapv:CompositeMatching	0.9856	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:70090004		skos:exactMatch	MONDO:0005720	cowpox	semapv:CompositeMatching	0.9941	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:307406004		skos:exactMatch	MONDO:0001883	blue toe syndrome	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:92080005		skos:exactMatch	MONDO:0006734	benign duodenal neoplasm	semapv:CompositeMatching	0.9918	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:25898005		skos:exactMatch	MONDO:0045032	congenital secretory diarrhea	semapv:CompositeMatching	0.9820	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363404008		skos:exactMatch	MONDO:0006815	jejunal cancer	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:26479009		skos:exactMatch	MONDO:0004924	chronic canaliculitis	semapv:CompositeMatching	0.8134	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:234633000		skos:exactMatch	MONDO:0000133	immunodeficiency-centromeric instability-facial anomalies syndrome	semapv:CompositeMatching	0.9421	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:720813007		skos:exactMatch	MONDO:0007401	craniosynostosis-Dandy-Walker malformation-hydrocephalus syndrome	semapv:CompositeMatching	0.9579	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:442696006		skos:exactMatch	MONDO:0005460	swine influenza	semapv:CompositeMatching	0.9525	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:426336007		skos:exactMatch	MONDO:0002755	solitary osseous plasmacytoma	semapv:CompositeMatching	0.9217	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403975006		skos:exactMatch	MONDO:0006841	lymphangioendothelioma	semapv:CompositeMatching	0.9834	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:232364006		skos:exactMatch	MONDO:0003753	nasal vestibule squamous papilloma	semapv:CompositeMatching	0.9939	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:448794008		skos:exactMatch	MONDO:0020387	double outlet right ventricle with subpulmonary ventricular septal defect	semapv:CompositeMatching	0.9718	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:724642009		skos:exactMatch	MONDO:0015690	myeloid neoplasm associated with PDGFRB rearrangement	semapv:CompositeMatching	0.9686	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:278043000		skos:exactMatch	MONDO:0003826	mediastinum seminoma	semapv:CompositeMatching	0.8350	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=0.998
+SCTID:720635002		skos:exactMatch	MONDO:0800436	craniofacial dysmorphism, skeletal anomalies, and impaired intellectual development 1	semapv:CompositeMatching	0.9744	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715952000		skos:exactMatch	MONDO:0019518	Waardenburg-Shah syndrome	semapv:CompositeMatching	0.9589	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:32139003		skos:exactMatch	MONDO:0022745	mixed dust pneumoconiosis	semapv:CompositeMatching	0.9583	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:204370002		skos:exactMatch	MONDO:0006935	pulmonary subvalvular stenosis	semapv:CompositeMatching	0.9565	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725034002		skos:exactMatch	MONDO:0100083	hereditary thrombocytopenia and hematological cancer predisposition syndrome associated with RUNX1	semapv:CompositeMatching	0.9504	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:721974000		skos:exactMatch	MONDO:0010851	Lowry-MacLean syndrome	semapv:CompositeMatching	0.9878	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:400948003		skos:exactMatch	MONDO:0017201	Spasmus nutans	semapv:CompositeMatching	0.9941	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:31742004		skos:exactMatch	MONDO:0007318	Alagille syndrome	semapv:CompositeMatching	0.9894	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:127055007		skos:exactMatch	MONDO:0018922	cold agglutinin disease	semapv:CompositeMatching	0.9908	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:398623004		skos:exactMatch	MONDO:0019454	myelodysplastic syndrome with excess blasts	semapv:CompositeMatching	0.9876	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:192877007		skos:exactMatch	MONDO:0044877	paraneoplastic cerebellar degeneration	semapv:CompositeMatching	0.9878	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:268163008		skos:exactMatch	MONDO:0008340	congenital ptosis	semapv:CompositeMatching	0.9797	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:193413001		skos:exactMatch	MONDO:0018998	Leber congenital amaurosis	semapv:CompositeMatching	0.9228	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715504003		skos:exactMatch	MONDO:0010732	spastic paraparesis-deafness syndrome	semapv:CompositeMatching	0.9585	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:367434002		skos:exactMatch	MONDO:0006751	Erysipelothrix infectious disease	semapv:CompositeMatching	0.9870	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:371045000		skos:exactMatch	MONDO:0700128	translocation Down syndrome	semapv:CompositeMatching	0.9691	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:51744007		skos:exactMatch	MONDO:0010098	taurodontism	semapv:CompositeMatching	0.9970	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715736008		skos:exactMatch	MONDO:0019924	paternal uniparental disomy of chromosome 20	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:51387008		skos:exactMatch	MONDO:0006022	acidosis disorder	semapv:CompositeMatching	0.9926	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:48528004		skos:exactMatch	MONDO:0009179	recessive dystrophic epidermolysis bullosa	semapv:CompositeMatching	0.6547	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:82236004		skos:exactMatch	MONDO:0010619	X-linked dominant hypophosphatemic rickets	semapv:CompositeMatching	0.7213	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:10934005		skos:exactMatch	MONDO:0022904	cryofibrinogenemia	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:733112007		skos:exactMatch	MONDO:0014271	STT3B-congenital disorder of glycosylation	semapv:CompositeMatching	0.9708	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:70737009		skos:exactMatch	MONDO:0010674	mucopolysaccharidosis type 2	semapv:CompositeMatching	0.9825	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:718897009		skos:exactMatch	MONDO:0019421	X-linked intellectual disability, Seemanova type	semapv:CompositeMatching	0.9893	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:11296007		skos:exactMatch	MONDO:0002568	tracheal stenosis	semapv:CompositeMatching	0.9920	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:726707004		skos:exactMatch	MONDO:0012342	7q11.23 microduplication syndrome	semapv:CompositeMatching	0.9865	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:63684002		skos:exactMatch	MONDO:0016829	familial visceral myopathy	semapv:CompositeMatching	0.9725	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:236811002		skos:exactMatch	MONDO:0023554	acquired testicular failure	semapv:CompositeMatching	0.9924	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:72900001		skos:exactMatch	MONDO:0021055	classic familial adenomatous polyposis	semapv:CompositeMatching	0.9500	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230421008		skos:exactMatch	MONDO:0014633	epilepsy with myoclonic atonic seizures	semapv:CompositeMatching	0.9739	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92788005		skos:exactMatch	MONDO:0004710	uterus carcinoma in situ	semapv:CompositeMatching	0.9853	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126799003		skos:exactMatch	MONDO:0021383	neoplasm of floor of mouth	semapv:CompositeMatching	0.9922	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:33982008		skos:exactMatch	MONDO:0016596	hyperphosphatasia-intellectual disability syndrome	semapv:CompositeMatching	0.9699	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:721843003		skos:exactMatch	MONDO:0009263	GAPO syndrome	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:95333004		skos:exactMatch	MONDO:0850048	classic eosinophilic pustular folliculitis	semapv:CompositeMatching	0.7249	kev-4b-snomed-full@ll	tier=gold-removed relation=same p_same=0.999
+SCTID:89242004		skos:exactMatch	MONDO:0001785	malignant secondary hypertension	semapv:CompositeMatching	0.9815	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:432261003		skos:exactMatch	MONDO:0044070	candidemia	semapv:CompositeMatching	0.9936	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:716859000		skos:exactMatch	MONDO:0007648	hereditary diffuse gastric adenocarcinoma	semapv:CompositeMatching	0.9475	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763376002		skos:exactMatch	MONDO:0012256	hereditary spastic paraplegia 28	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:83799000		skos:exactMatch	MONDO:0016301	congenitally corrected transposition of the great arteries	semapv:CompositeMatching	0.9607	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715192004		skos:exactMatch	MONDO:0019635	idiopathic achalasia	semapv:CompositeMatching	0.9850	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1654001		skos:exactMatch	MONDO:0004930	steroid-induced glaucoma	semapv:CompositeMatching	0.9484	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:367489004		skos:exactMatch	MONDO:0019026	autosomal recessive osteopetrosis	semapv:CompositeMatching	0.9764	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:725908007		skos:exactMatch	MONDO:0009740	neurofaciodigitorenal syndrome	semapv:CompositeMatching	0.9849	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:19092004		skos:exactMatch	MONDO:0007732	Holt-Oram syndrome	semapv:CompositeMatching	0.9809	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:44553005		skos:exactMatch	MONDO:0009380	Dubin-Johnson syndrome	semapv:CompositeMatching	0.9834	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:187752007		skos:exactMatch	MONDO:0000954	Meckel diverticulum cancer	semapv:CompositeMatching	0.9681	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92428008		skos:exactMatch	MONDO:0021447	benign neoplasm of testis	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:402356004		skos:exactMatch	MONDO:0020547	chronic graft versus host disease	semapv:CompositeMatching	0.9950	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763403007		skos:exactMatch	MONDO:0017275	spastic paraplegia-facial-cutaneous lesions syndrome	semapv:CompositeMatching	0.9502	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254851009		skos:exactMatch	MONDO:0002701	ovarian mucinous cystadenocarcinoma	semapv:CompositeMatching	0.9882	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:62151007		skos:exactMatch	MONDO:0009415	hypoglycemia, leucine-induced	semapv:CompositeMatching	0.9362	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:30369007		skos:exactMatch	MONDO:0005895	paragonimiasis	semapv:CompositeMatching	0.9614	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:361115000		skos:exactMatch	MONDO:0015299	Asherman syndrome	semapv:CompositeMatching	0.9915	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:284449005		skos:exactMatch	MONDO:0006536	congenital generalized lipodystrophy	semapv:CompositeMatching	0.5117	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:253149002		skos:exactMatch	MONDO:0018869	cobblestone lissencephaly	semapv:CompositeMatching	0.9525	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:111524003		skos:exactMatch	MONDO:0002137	noninfectious dermatoses of eyelid	semapv:CompositeMatching	0.8526	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722476007		skos:exactMatch	MONDO:0007504	thickened earlobes-conductive deafness syndrome	semapv:CompositeMatching	0.9735	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363422006		skos:exactMatch	MONDO:0001128	nasal cavity cancer	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:83886009		skos:exactMatch	MONDO:0023054	klumpke's paralysis	semapv:CompositeMatching	0.9812	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:7699004		skos:exactMatch	MONDO:0001234	adhesive otitis media	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716091000		skos:exactMatch	MONDO:0009921	holoprosencephaly-postaxial polydactyly syndrome	semapv:CompositeMatching	0.9590	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237960000		skos:exactMatch	MONDO:0010924	D-2-hydroxyglutaric aciduria	semapv:CompositeMatching	0.9756	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:703199001		skos:exactMatch	MONDO:0015317	laryngotracheal angioma	semapv:CompositeMatching	0.9313	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:78200003		skos:exactMatch	MONDO:0021132	tertiary hyperparathyroidism	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:76520005		skos:exactMatch	MONDO:0019978	Robinow syndrome	semapv:CompositeMatching	0.9903	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:68092007		skos:exactMatch	MONDO:0015239	abnormal origin of the pulmonary artery	semapv:CompositeMatching	0.9527	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:709018004		skos:exactMatch	MONDO:0019444	trichinellosis	semapv:CompositeMatching	0.9770	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254986007		skos:exactMatch	MONDO:0017827	malignant peripheral nerve sheath tumor	semapv:CompositeMatching	0.7487	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.990
+SCTID:83942000		skos:exactMatch	MONDO:0019383	acute disseminated encephalomyelitis	semapv:CompositeMatching	0.9870	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763716008		skos:exactMatch	MONDO:0017329	familial vesicoureteral reflux	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:734031008		skos:exactMatch	MONDO:0017929	congenital achiasma	semapv:CompositeMatching	0.9921	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:17585008		skos:exactMatch	MONDO:0001415	atrophy of testis	semapv:CompositeMatching	0.9866	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:25897000		skos:exactMatch	MONDO:0002266	malt worker's lung	semapv:CompositeMatching	0.9912	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:702447002		skos:exactMatch	MONDO:0015241	arthrogryposis-like syndrome	semapv:CompositeMatching	0.9348	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:768927001		skos:exactMatch	MONDO:0016847	trisomy 1q	semapv:CompositeMatching	0.9752	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:443719001		skos:exactMatch	MONDO:0005058	leiomyosarcoma	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:23849003		skos:exactMatch	MONDO:0010006	Sandhoff disease	semapv:CompositeMatching	0.9916	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:233913007		skos:exactMatch	MONDO:0012061	familial sick sinus syndrome	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238080004		skos:exactMatch	MONDO:0015903	hyperalphalipoproteinemia	semapv:CompositeMatching	0.9300	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:43658003		skos:exactMatch	MONDO:0001258	vertebral artery occlusion	semapv:CompositeMatching	0.7300	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=0.996
+SCTID:277921008		skos:exactMatch	MONDO:0035449	atelencephaly	semapv:CompositeMatching	0.9897	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:363444001		skos:exactMatch	MONDO:0002158	fallopian tube cancer	semapv:CompositeMatching	0.9656	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:56692003		skos:exactMatch	MONDO:0015776	rhizomelic chondrodysplasia punctata	semapv:CompositeMatching	0.9841	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722375007		skos:exactMatch	MONDO:0009437	Bamforth-Lazarus syndrome	semapv:CompositeMatching	0.9793	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:699251001		skos:exactMatch	MONDO:0018933	Mazabraud syndrome	semapv:CompositeMatching	0.9758	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92415001		skos:exactMatch	MONDO:0021481	benign neoplasm of submandibular gland	semapv:CompositeMatching	0.9915	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:14070001000004105		skos:exactMatch	MONDO:0016040	harlequin syndrome	semapv:CompositeMatching	0.9827	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:404160007		skos:exactMatch	MONDO:0020518	Hashimoto-Pritzker syndrome	semapv:CompositeMatching	0.9845	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:200999007		skos:exactMatch	MONDO:0016770	actinic lichen planus	semapv:CompositeMatching	0.9920	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1155842003		skos:exactMatch	MONDO:0019251	oligosaccharidosis	semapv:CompositeMatching	0.9927	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:253781004		skos:exactMatch	MONDO:0100354	megacystis-microcolon-intestinal hypoperistalsis syndrome 1	semapv:CompositeMatching	0.9554	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:707530009		skos:exactMatch	MONDO:0023275	Graham-Boyle-Troxell syndrome	semapv:CompositeMatching	0.9621	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:70405009		skos:exactMatch	MONDO:0001856	splenic artery aneurysm	semapv:CompositeMatching	0.9845	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:239873007		skos:exactMatch	MONDO:0005416	osteoarthritis, knee	semapv:CompositeMatching	0.9584	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:255055008		skos:exactMatch	MONDO:0005586	head and neck neoplasm	semapv:CompositeMatching	0.9535	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:194785008		skos:exactMatch	MONDO:0001646	benign secondary hypertension	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:93559003		skos:exactMatch	MONDO:0018800	Kallmann syndrome	semapv:CompositeMatching	0.9701	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237059008		skos:exactMatch	MONDO:0011366	ovarian germ cell tumor	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:410063006		skos:exactMatch	MONDO:0005508	hereditary multiple osteochondromas	semapv:CompositeMatching	0.9575	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:56453003		skos:exactMatch	MONDO:0015033	ABeta amyloidosis, dutch type	semapv:CompositeMatching	0.4500	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1259038005		skos:exactMatch	MONDO:0015087	autosomal dominant complex spastic paraplegia	semapv:CompositeMatching	0.9879	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:403889000		skos:exactMatch	MONDO:0021538	verrucous carcinoma of oral cavity	semapv:CompositeMatching	0.9822	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:703524005		skos:exactMatch	MONDO:0008045	spinal muscular atrophy-progressive myoclonic epilepsy syndrome	semapv:CompositeMatching	0.9739	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:447351004		skos:exactMatch	MONDO:0800448	leukoencephalopathy with vanishing white matter	semapv:CompositeMatching	0.9634	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:192965001		skos:exactMatch	MONDO:0016215	spastic quadriplegic cerebral palsy	semapv:CompositeMatching	0.9520	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:716077006		skos:exactMatch	MONDO:0005602	ovarian teratoma	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:77478005		skos:exactMatch	MONDO:0002737	acute sanguinous otitis media	semapv:CompositeMatching	0.9643	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:28790007		skos:exactMatch	MONDO:0003718	occlusion precerebral artery	semapv:CompositeMatching	0.6959	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:95435007		skos:exactMatch	MONDO:0018694	isolated tracheo-esophageal fistula	semapv:CompositeMatching	0.9268	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:17111003		skos:exactMatch	MONDO:0021677	post-infectious neuralgia	semapv:CompositeMatching	0.9944	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:55912009		skos:exactMatch	MONDO:0009293	glycogen storage disease V	semapv:CompositeMatching	0.9813	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720634003		skos:exactMatch	MONDO:0011038	cerebellar ataxia-areflexia-pes cavus-optic atrophy-sensorineural hearing loss syndrome	semapv:CompositeMatching	0.9624	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126790004		skos:exactMatch	MONDO:0021242	sublingual gland neoplasm	semapv:CompositeMatching	0.9911	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:25766007		skos:exactMatch	MONDO:0001568	mixed receptive-expressive language disorder	semapv:CompositeMatching	0.9916	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:66758006		skos:exactMatch	MONDO:0019797	acrodysostosis	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:717003001		skos:exactMatch	MONDO:0031037	famililal cerebral cavernous malformations	semapv:CompositeMatching	0.5508	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725167001		skos:exactMatch	MONDO:0024501	appendix neuroendocrine neoplasm	semapv:CompositeMatching	0.9822	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:2251002		skos:exactMatch	MONDO:0001503	primary eye hypotony	semapv:CompositeMatching	0.9922	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:372105009		skos:exactMatch	MONDO:0004357	carcinoma of supraglottis	semapv:CompositeMatching	0.9943	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:197585004		skos:exactMatch	MONDO:0001871	acute diffuse glomerulonephritis	semapv:CompositeMatching	0.7664	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.998
+SCTID:126859007		skos:exactMatch	MONDO:0021040	pancreatic neoplasm	semapv:CompositeMatching	0.9948	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:723362004		skos:exactMatch	MONDO:0018914	hypotrichosis simplex	semapv:CompositeMatching	0.9649	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230422001		skos:exactMatch	MONDO:0019487	epilepsy with myoclonic absences	semapv:CompositeMatching	0.8690	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403824007		skos:exactMatch	MONDO:0008018	Muir-Torre syndrome	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:189197001		skos:exactMatch	MONDO:0002337	intra-abdominal hemangioma	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:49455004		skos:exactMatch	MONDO:0001583	diabetic polyneuropathy	semapv:CompositeMatching	0.9798	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:34566007		skos:exactMatch	MONDO:0010027	free sialic acid storage disease, infantile form	semapv:CompositeMatching	0.7997	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:13394002		skos:exactMatch	MONDO:0004549	cork-handlers' disease	semapv:CompositeMatching	0.9869	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363353009		skos:exactMatch	MONDO:0005411	gallbladder cancer	semapv:CompositeMatching	0.9672	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:441456002		skos:exactMatch	MONDO:0005079	polyp	semapv:CompositeMatching	0.9971	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:18241005		skos:exactMatch	MONDO:0043207	urethral obstruction sequence	semapv:CompositeMatching	0.9934	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:233621003		skos:exactMatch	MONDO:0005947	rickettsial pneumonia	semapv:CompositeMatching	0.9820	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:240063002		skos:exactMatch	MONDO:0011271	rigid spine muscular dystrophy 1	semapv:CompositeMatching	0.7606	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:92413008		skos:exactMatch	MONDO:0021495	benign neoplasm of sublingual gland	semapv:CompositeMatching	0.9881	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:764694005		skos:exactMatch	MONDO:0017886	MIT family translocation renal cell carcinoma	semapv:CompositeMatching	0.9860	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:83911000119104		skos:exactMatch	MONDO:0005139	morbid obesity	semapv:CompositeMatching	0.5626	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.992
+SCTID:417093003		skos:exactMatch	MONDO:0002282	West Nile fever	semapv:CompositeMatching	0.9556	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716663009		skos:exactMatch	MONDO:0009549	severe early-childhood-onset retinal dystrophy	semapv:CompositeMatching	0.9748	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719378009		skos:exactMatch	MONDO:0018091	microcephaly-brachydactyly-kyphoscoliosis syndrome	semapv:CompositeMatching	0.9518	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:87730004		skos:exactMatch	MONDO:0001956	capillary leak syndrome	semapv:CompositeMatching	0.9873	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716249009		skos:exactMatch	MONDO:0010110	tetraamelia-multiple malformations syndrome	semapv:CompositeMatching	0.9575	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:267532001		skos:exactMatch	MONDO:0001197	qualitative platelet defect	semapv:CompositeMatching	0.7382	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254069004		skos:exactMatch	MONDO:0800088	lysosomal storage disease with skeletal involvement	semapv:CompositeMatching	0.9622	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:56090007		skos:exactMatch	MONDO:0011301	pseudohypoparathyroidism type 1B	semapv:CompositeMatching	0.9830	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:410041002		skos:exactMatch	MONDO:0023094	exogenous ochronosis	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:40956001		skos:exactMatch	MONDO:0016218	Guillain-Barre syndrome	semapv:CompositeMatching	0.9861	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:715374003		skos:exactMatch	MONDO:0014720	autosomal dominant optic atrophy plus syndrome	semapv:CompositeMatching	0.9365	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:59252009		skos:exactMatch	MONDO:0017569	de Barsy syndrome	semapv:CompositeMatching	0.9320	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=0.999
+SCTID:711163009		skos:exactMatch	MONDO:0012033	bradyopsia	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398036000		skos:exactMatch	MONDO:0005439	familial hypercholesterolemia	semapv:CompositeMatching	0.9703	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:69134001		skos:exactMatch	MONDO:0001456	cobblestone retinal degeneration	semapv:CompositeMatching	0.9404	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:7393007		skos:exactMatch	MONDO:0001735	paranasal sinus disorder	semapv:CompositeMatching	0.9728	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:61738006		skos:exactMatch	MONDO:0044092	collagenous sprue	semapv:CompositeMatching	0.9808	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:236740006		skos:exactMatch	MONDO:0002790	seminal vesicle tumor	semapv:CompositeMatching	0.9922	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403426003		skos:exactMatch	MONDO:0024350	pityriasis steatoides	semapv:CompositeMatching	0.9938	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720979002		skos:exactMatch	MONDO:0008754	alopecia - contractures - dwarfism - intellectual disability syndrome	semapv:CompositeMatching	0.9448	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:186437007		skos:exactMatch	MONDO:0006929	Proteus infectious disease	semapv:CompositeMatching	0.9545	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:134031000119108		skos:exactMatch	MONDO:0006193	endometrial hyperplasia without atypia	semapv:CompositeMatching	0.9812	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:95643007		skos:exactMatch	MONDO:0020640	autoimmune encephalitis	semapv:CompositeMatching	0.9891	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:72991005		skos:exactMatch	MONDO:0019934	polyploidy	semapv:CompositeMatching	0.9875	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:400178008		skos:exactMatch	MONDO:0002013	lymphangioma	semapv:CompositeMatching	0.9921	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:698251009		skos:exactMatch	MONDO:0007701	progressive familial heart block type II	semapv:CompositeMatching	0.9788	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363478007		skos:exactMatch	MONDO:0002108	thyroid cancer	semapv:CompositeMatching	0.9909	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:297232009		skos:exactMatch	MONDO:0009787	3-methylglutaconic aciduria type 3	semapv:CompositeMatching	0.9809	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:50967008		skos:exactMatch	MONDO:0017719	gangliosidosis	semapv:CompositeMatching	0.9944	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:302162004		skos:exactMatch	MONDO:0044212	chronic idiopathic urticaria	semapv:CompositeMatching	0.9848	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:45339001		skos:exactMatch	MONDO:0001361	spontaneous ocular nystagmus	semapv:CompositeMatching	0.9750	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:419097006		skos:exactMatch	MONDO:0010281	Danon disease	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92175003		skos:exactMatch	MONDO:0002354	benign laryngeal neoplasm	semapv:CompositeMatching	0.9806	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:36803009		skos:exactMatch	MONDO:0005579	idiopathic generalized epilepsy	semapv:CompositeMatching	0.9782	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:2576002		skos:exactMatch	MONDO:0001249	trachoma	semapv:CompositeMatching	0.7822	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:458432002		skos:exactMatch	MONDO:0008818	arterial tortuosity syndrome	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1059007		skos:exactMatch	MONDO:0005884	opisthorchiasis	semapv:CompositeMatching	0.9850	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:26037005		skos:exactMatch	MONDO:0019529	radiation myelitis	semapv:CompositeMatching	0.6668	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:47125007		skos:exactMatch	MONDO:0002567	tracheal disorder	semapv:CompositeMatching	0.9969	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719838008		skos:exactMatch	MONDO:0010378	X-linked hereditary sensory and autonomic neuropathy with hearing loss	semapv:CompositeMatching	0.9207	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:128870005		skos:exactMatch	MONDO:0001951	Norwegian scabies	semapv:CompositeMatching	0.9554	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:2946003		skos:exactMatch	MONDO:0000250	osmotic diarrheal disease	semapv:CompositeMatching	0.9825	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:274864009		skos:exactMatch	MONDO:0009290	glycogen storage disease II	semapv:CompositeMatching	0.9511	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:54280009		skos:exactMatch	MONDO:0009672	spinal muscular atrophy, type III	semapv:CompositeMatching	0.9689	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:373905003		skos:exactMatch	MONDO:0002441	Jervell and Lange-Nielsen syndrome	semapv:CompositeMatching	0.9779	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92668003		skos:exactMatch	MONDO:0021298	carcinoma in situ of oropharynx	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:88687001		skos:exactMatch	MONDO:0017638	manganese poisoning	semapv:CompositeMatching	0.7755	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.990
+SCTID:190794006		skos:exactMatch	MONDO:0018150	Gaucher disease	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:18504008		skos:exactMatch	MONDO:0001881	toxic shock syndrome	semapv:CompositeMatching	0.9780	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:265798000		skos:exactMatch	MONDO:0017438	amelia of lower limb	semapv:CompositeMatching	0.9537	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:403818001		skos:exactMatch	MONDO:0003304	plexiform neurofibroma	semapv:CompositeMatching	0.9876	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:285251000119101		skos:exactMatch	MONDO:0019443	dextro-looped transposition of the great arteries	semapv:CompositeMatching	0.8742	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:36989005		skos:exactMatch	MONDO:0000989	mumps infectious disease	semapv:CompositeMatching	0.5083	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:763632004		skos:exactMatch	MONDO:0015648	startle epilepsy	semapv:CompositeMatching	0.9721	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92059004		skos:exactMatch	MONDO:0021487	benign neoplasm of choroid	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:389203001		skos:exactMatch	MONDO:0015748	hereditary mucosal leukokeratosis	semapv:CompositeMatching	0.9415	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:37785001		skos:exactMatch	MONDO:0001042	patellar tendinitis	semapv:CompositeMatching	0.9822	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237877004		skos:exactMatch	MONDO:0018018	wild type ATTR amyloidosis	semapv:CompositeMatching	0.9763	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:304603007		skos:exactMatch	MONDO:0007012	variant Creutzfeldt-Jakob disease	semapv:CompositeMatching	0.9875	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254062008		skos:exactMatch	MONDO:0100510	spondyloepimetaphyseal dysplasia	semapv:CompositeMatching	0.9746	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:725392005		skos:exactMatch	MONDO:0000211	striatal degeneration, autosomal dominant	semapv:CompositeMatching	0.9487	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:14386001		skos:exactMatch	MONDO:0001391	indeterminate leprosy	semapv:CompositeMatching	0.9692	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254180002		skos:exactMatch	MONDO:0007556	epidermolysis bullosa simplex 2F, with mottled pigmentation	semapv:CompositeMatching	0.9828	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:766928004		skos:exactMatch	MONDO:0011605	generalized basaloid follicular hamartoma syndrome	semapv:CompositeMatching	0.9808	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:62628008		skos:exactMatch	MONDO:0017923	multiple synostoses syndrome	semapv:CompositeMatching	0.9848	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:127024001		skos:exactMatch	MONDO:0017611	pituitary tumor	semapv:CompositeMatching	0.9824	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:198029003		skos:exactMatch	MONDO:0022293	vascular disorder of penis	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:6631009		skos:exactMatch	MONDO:0002249	thrombocytosis disease	semapv:CompositeMatching	0.9215	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:399072004		skos:exactMatch	MONDO:0006679	bladder neck obstruction	semapv:CompositeMatching	0.9834	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254167000		skos:exactMatch	MONDO:0007239	epidermolytic ichthyosis	semapv:CompositeMatching	0.9462	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:703219008		skos:exactMatch	MONDO:0010829	CARASIL syndrome	semapv:CompositeMatching	0.9626	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254052001		skos:exactMatch	MONDO:0010024	Beemer-Langer syndrome	semapv:CompositeMatching	0.9241	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:67782005		skos:exactMatch	MONDO:0006502	acute respiratory distress syndrome	semapv:CompositeMatching	0.8696	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237946002		skos:exactMatch	MONDO:0019267	vitamin B12-unresponsive methylmalonic acidemia type mut-	semapv:CompositeMatching	0.9702	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:204036008		skos:exactMatch	MONDO:0018838	lissencephaly spectrum disorders	semapv:CompositeMatching	0.9612	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:93870000		skos:exactMatch	MONDO:0002691	liver cancer	semapv:CompositeMatching	0.9961	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:57219006		skos:exactMatch	MONDO:0015469	craniosynostosis	semapv:CompositeMatching	0.9783	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254157005		skos:exactMatch	MONDO:0024304	ichthyosis vulgaris	semapv:CompositeMatching	0.9939	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:128333008		skos:exactMatch	MONDO:0001673	diarrheal disease	semapv:CompositeMatching	0.9880	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:389272007		skos:exactMatch	MONDO:0007490	carpotarsal osteochondromatosis	semapv:CompositeMatching	0.9853	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:717052002		skos:exactMatch	MONDO:0016814	maternally-inherited Leigh syndrome	semapv:CompositeMatching	0.9838	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254096001		skos:exactMatch	MONDO:0008881	kyphomelic dysplasia	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:59276001		skos:exactMatch	MONDO:0001660	proliferative diabetic retinopathy	semapv:CompositeMatching	0.9485	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:717014003		skos:exactMatch	MONDO:0011903	Charcot-Marie-Tooth disease type 2J	semapv:CompositeMatching	0.9726	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:56048001		skos:exactMatch	MONDO:0010213	xeroderma pigmentosum group E	semapv:CompositeMatching	0.9964	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:45142002		skos:exactMatch	MONDO:0009933	congenital pulmonary lymphangiectasia	semapv:CompositeMatching	0.9860	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:61094002		skos:exactMatch	MONDO:0019378	la Crosse encephalitis	semapv:CompositeMatching	0.9946	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:197260007		skos:exactMatch	MONDO:0018178	intestinal lymphangiectasia	semapv:CompositeMatching	0.9820	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363481002		skos:exactMatch	MONDO:0021311	malignant tumor of parathyroid gland	semapv:CompositeMatching	0.9719	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:29227009		skos:exactMatch	MONDO:0017776	nocardiosis	semapv:CompositeMatching	0.9951	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:128207002		skos:exactMatch	MONDO:0009749	giant axonal neuropathy 1	semapv:CompositeMatching	0.5722	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:233858000		skos:exactMatch	MONDO:0008004	familial mitral valve prolapse	semapv:CompositeMatching	0.9842	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363352004		skos:exactMatch	MONDO:0000405	anal canal cancer	semapv:CompositeMatching	0.9887	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:65814009		skos:exactMatch	MONDO:0001271	lens subluxation	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:63844009		skos:exactMatch	MONDO:0018910	oculocutaneous albinism	semapv:CompositeMatching	0.9274	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254957009		skos:exactMatch	MONDO:0006238	growth hormone-producing pituitary gland adenoma	semapv:CompositeMatching	0.9504	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:397734008		skos:exactMatch	MONDO:0018213	hereditary sensory and autonomic neuropathy type 1	semapv:CompositeMatching	0.8251	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:36874002		skos:exactMatch	MONDO:0019538	Gaisbock syndrome	semapv:CompositeMatching	0.9784	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92058007		skos:exactMatch	MONDO:0021529	benign neoplasm of chest wall	semapv:CompositeMatching	0.9946	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:110004001		skos:exactMatch	MONDO:0012883	acute promyelocytic leukemia	semapv:CompositeMatching	0.9773	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398796005		skos:exactMatch	MONDO:0018473	hyperlipoproteinemia type 3	semapv:CompositeMatching	0.9003	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:302161006		skos:exactMatch	MONDO:0044213	acute idiopathic urticaria	semapv:CompositeMatching	0.9951	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:191169008		skos:exactMatch	MONDO:0017319	hereditary elliptocytosis	semapv:CompositeMatching	0.9628	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:719012009		skos:exactMatch	MONDO:0010758	Wieacker-Wolff syndrome	semapv:CompositeMatching	0.8550	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:269533000		skos:exactMatch	MONDO:0002032	colon carcinoma	semapv:CompositeMatching	0.9944	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:397015000		skos:exactMatch	MONDO:0020332	systemic mastocytosis with an associated clonal hematologic non-mast cell lineage disease	semapv:CompositeMatching	0.9589	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:129154003		skos:exactMatch	MONDO:0044881	hematopoietic and lymphoid cell neoplasm	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:716588005		skos:exactMatch	MONDO:0004322	non-gestational ovarian choriocarcinoma	semapv:CompositeMatching	0.9136	kev-4b-snomed-full@ll	tier=gold-removed relation=same p_same=1.000
+SCTID:56787009		skos:exactMatch	MONDO:0001393	peripheral focal chorioretinitis	semapv:CompositeMatching	0.9829	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:716649003		skos:exactMatch	MONDO:0015686	primary peritoneal carcinoma	semapv:CompositeMatching	0.9490	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:723096000		skos:exactMatch	MONDO:0002842	bacterial gastritis	semapv:CompositeMatching	0.9935	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:39912006		skos:exactMatch	MONDO:0019064	hereditary spastic paraplegia	semapv:CompositeMatching	0.9885	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:22451001		skos:exactMatch	MONDO:0044811	idiopathic torsion dystonia	semapv:CompositeMatching	0.9864	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:124275001		skos:exactMatch	MONDO:0016088	hypoxanthine-guanine phosphoribosyltransferase deficiency	semapv:CompositeMatching	0.9568	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:126833009		skos:exactMatch	MONDO:0021375	tumor of duodenum	semapv:CompositeMatching	0.9839	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:717821004		skos:exactMatch	MONDO:0013291	glycogen storage disease XV	semapv:CompositeMatching	0.9690	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:39288006		skos:exactMatch	MONDO:0005975	suppurative otitis media	semapv:CompositeMatching	0.9629	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:62311004		skos:exactMatch	MONDO:0022424	alpha-mannosidosis type 1	semapv:CompositeMatching	0.4963	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.981
+SCTID:255084004		skos:exactMatch	MONDO:0001470	anal margin squamous cell carcinoma	semapv:CompositeMatching	0.5232	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:762282007		skos:exactMatch	MONDO:0018673	IgG4-related pachymeningitis	semapv:CompositeMatching	0.9665	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:276860003		skos:exactMatch	MONDO:0001651	scrotum squamous cell carcinoma	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:33958003		skos:exactMatch	MONDO:0002036	penile disorder	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720414005		skos:exactMatch	MONDO:0008707	acro-renal-mandibular syndrome	semapv:CompositeMatching	0.9466	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363436001		skos:exactMatch	MONDO:0003687	endocardium cancer	semapv:CompositeMatching	0.9683	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92083007		skos:exactMatch	MONDO:0021505	benign neoplasm of endocardium	semapv:CompositeMatching	0.9960	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398768004		skos:exactMatch	MONDO:0004671	penis carcinoma in situ	semapv:CompositeMatching	0.9457	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:404077005		skos:exactMatch	MONDO:0002621	extraosseous osteosarcoma	semapv:CompositeMatching	0.9615	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:51500006		skos:exactMatch	MONDO:0018071	trisomy 18	semapv:CompositeMatching	0.9004	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:82639001		skos:exactMatch	MONDO:0004169	premenstrual tension	semapv:CompositeMatching	0.9857	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:4760008		skos:exactMatch	MONDO:0004800	chronic dacryoadenitis	semapv:CompositeMatching	0.9931	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:126485001		skos:exactMatch	MONDO:0005492	urticaria	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:57917004		skos:exactMatch	MONDO:0019342	Seckel syndrome	semapv:CompositeMatching	0.9938	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:703403003		skos:exactMatch	MONDO:0008800	microphthalmia with limb anomalies	semapv:CompositeMatching	0.9753	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:402525008		skos:exactMatch	MONDO:0002951	skin adenoid basal cell carcinoma	semapv:CompositeMatching	0.8960	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:719209002		skos:exactMatch	MONDO:0011529	spinocerebellar ataxia type 13	semapv:CompositeMatching	0.9926	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:721094006		skos:exactMatch	MONDO:0011946	diaphanospondylodysostosis	semapv:CompositeMatching	0.9681	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:91612009		skos:exactMatch	MONDO:0001936	brawny scleritis	semapv:CompositeMatching	0.9712	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1187464007		skos:exactMatch	MONDO:0005006	clear cell sarcoma of kidney	semapv:CompositeMatching	0.9733	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:17025000		skos:exactMatch	MONDO:0017314	Ehlers-Danlos syndrome, vascular type	semapv:CompositeMatching	0.9701	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:57863006		skos:exactMatch	MONDO:0008705	lysosomal acid phosphatase deficiency	semapv:CompositeMatching	0.9850	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254838004		skos:exactMatch	MONDO:0004989	breast carcinoma	semapv:CompositeMatching	0.9891	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363494000		skos:exactMatch	MONDO:0005843	mediastinal cancer	semapv:CompositeMatching	0.9852	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:31220004		skos:exactMatch	MONDO:0010185	methylmalonic aciduria and homocystinuria type cblD	semapv:CompositeMatching	0.9722	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:204431007		skos:exactMatch	MONDO:0001863	aorta atresia	semapv:CompositeMatching	0.9793	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:734020000		skos:exactMatch	MONDO:0014475	spinocerebellar ataxia type 40	semapv:CompositeMatching	0.9942	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:626004		skos:exactMatch	MONDO:0043472	ectopic ACTH secretion syndrome	semapv:CompositeMatching	0.9897	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:52186006		skos:exactMatch	MONDO:0009738	sialidosis type 2	semapv:CompositeMatching	0.9505	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:422886007		skos:exactMatch	MONDO:0006329	olfactory neuroblastoma	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:609573005		skos:exactMatch	MONDO:0011668	maturity-onset diabetes of the young type 6	semapv:CompositeMatching	0.9908	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:72893007		skos:exactMatch	MONDO:0006682	brachial plexus neuritis	semapv:CompositeMatching	0.5080	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.997
+SCTID:2177002		skos:exactMatch	MONDO:0041052	postherpetic neuralgia	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:239032007		skos:exactMatch	MONDO:0009522	Leukomelanoderma-infantilism-intellectual disability-hypodontia-hypotrichosis syndrome	semapv:CompositeMatching	0.9594	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398680004		skos:exactMatch	MONDO:0015991	citrullinemia	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:733626002		skos:exactMatch	MONDO:0016850	atypical Norrie disease due to monosomy Xp11.3	semapv:CompositeMatching	0.9750	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:724840004		skos:exactMatch	MONDO:0015550	suprabasal epidermolysis bullosa simplex	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:303852004		skos:exactMatch	MONDO:0009109	lysinuric protein intolerance	semapv:CompositeMatching	0.9713	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92272009		skos:exactMatch	MONDO:0021463	benign neoplasm of parathyroid gland	semapv:CompositeMatching	0.9913	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720636001		skos:exactMatch	MONDO:0012997	cholestasis-pigmentary retinopathy-cleft palate syndrome	semapv:CompositeMatching	0.9462	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:22935002		skos:exactMatch	MONDO:0009902	cutaneous porphyria	semapv:CompositeMatching	0.8010	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=0.999
+SCTID:716742001		skos:exactMatch	MONDO:0005508	hereditary multiple osteochondromas	semapv:CompositeMatching	0.9324	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398114001		skos:exactMatch	MONDO:0020066	Ehlers-Danlos syndrome	semapv:CompositeMatching	0.9859	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:30281009		skos:exactMatch	MONDO:0003105	prostate disorder	semapv:CompositeMatching	0.9936	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:78511005		skos:exactMatch	MONDO:0001262	African histoplasmosis	semapv:CompositeMatching	0.9660	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:26360005		skos:exactMatch	MONDO:0043878	hereditary optic atrophy	semapv:CompositeMatching	0.9880	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403964007		skos:exactMatch	MONDO:0975758	microvenular haemangioma	semapv:CompositeMatching	0.9720	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:303098002		skos:exactMatch	MONDO:0018491	3-phosphoglycerate dehydrogenase deficiency	semapv:CompositeMatching	0.6472	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:703544004		skos:exactMatch	MONDO:0000507	inclusion body myopathy with Paget disease of bone and frontotemporal dementia	semapv:CompositeMatching	0.9534	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:35111009		skos:exactMatch	MONDO:0018066	trisomy X	semapv:CompositeMatching	0.9862	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:27916005		skos:exactMatch	MONDO:0700051	liver abscess (disease)	semapv:CompositeMatching	0.9961	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:72124005		skos:exactMatch	MONDO:0001303	abnormal pupillary function	semapv:CompositeMatching	0.9715	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:111354009		skos:exactMatch	MONDO:0004622	chronic intestinal vascular insufficiency	semapv:CompositeMatching	0.9307	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:11218009		skos:exactMatch	MONDO:0040732	Pseudomonas aeruginosa infectious disease	semapv:CompositeMatching	0.9845	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:716277000		skos:exactMatch	MONDO:0015169	chronic diarrhea due to glucoamylase deficiency	semapv:CompositeMatching	0.9612	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:67678004		skos:exactMatch	MONDO:0001224	Angelucci syndrome	semapv:CompositeMatching	0.9669	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:766050000		skos:exactMatch	MONDO:0012964	chromosome 15q26-qter deletion syndrome	semapv:CompositeMatching	0.9765	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:196133001		skos:exactMatch	MONDO:0002047	pulmonary systemic sclerosis	semapv:CompositeMatching	0.9839	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:38731000087104		skos:exactMatch	MONDO:0018301	interstitial cystitis	semapv:CompositeMatching	0.9790	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:234577004		skos:exactMatch	MONDO:0009347	familial lipochrome histiocytosis	semapv:CompositeMatching	0.9707	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:95776004		skos:exactMatch	MONDO:0001834	visual pathway disorder	semapv:CompositeMatching	0.9700	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:124252008		skos:exactMatch	MONDO:0011624	transaldolase deficiency	semapv:CompositeMatching	0.9316	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:402425006		skos:exactMatch	MONDO:0001907	adult dermatomyositis	semapv:CompositeMatching	0.8597	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722059002		skos:exactMatch	MONDO:0014070	oculocutaneous albinism type 7	semapv:CompositeMatching	0.9099	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:193756007		skos:exactMatch	MONDO:0022140	Charles bonnet syndrome	semapv:CompositeMatching	0.9951	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:57203004		skos:exactMatch	MONDO:0003394	dental pulp disorder	semapv:CompositeMatching	0.8444	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:308870004		skos:exactMatch	MONDO:0006151	colon dysplasia	semapv:CompositeMatching	0.9966	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:398909004		skos:exactMatch	MONDO:0006604	rosacea	semapv:CompositeMatching	0.9930	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92624000		skos:exactMatch	MONDO:0004732	kidney carcinoma in situ	semapv:CompositeMatching	0.9969	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:403805009		skos:exactMatch	MONDO:0007077	Tietz syndrome	semapv:CompositeMatching	0.9791	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:21897009		skos:exactMatch	MONDO:0001942	generalized anxiety disorder	semapv:CompositeMatching	0.9863	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:255003007		skos:exactMatch	MONDO:0006173	conjunctival squamous cell carcinoma	semapv:CompositeMatching	0.9855	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:783705006		skos:exactMatch	MONDO:0017659	sporadic hyperekplexia	semapv:CompositeMatching	0.9588	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:726609005		skos:exactMatch	MONDO:0014303	hereditary spastic paraplegia 64	semapv:CompositeMatching	0.9910	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:238676008		skos:exactMatch	MONDO:0020666	Löfgren syndrome	semapv:CompositeMatching	0.9884	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:19905009		skos:exactMatch	MONDO:0022103	chronic prostatitis	semapv:CompositeMatching	0.9953	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:404120006		skos:exactMatch	MONDO:0015809	localized pagetoid reticulosis	semapv:CompositeMatching	0.9518	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:722290008		skos:exactMatch	MONDO:0011804	autoimmune lymphoproliferative syndrome type 2B	semapv:CompositeMatching	0.9428	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:399463004		skos:exactMatch	MONDO:0002708	retinitis	semapv:CompositeMatching	0.9965	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230595006		skos:exactMatch	MONDO:0100642	infectious neuropathy	semapv:CompositeMatching	0.9957	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:783558004		skos:exactMatch	MONDO:0013969	combined oxidative phosphorylation defect type 11	semapv:CompositeMatching	0.9491	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:86203003		skos:exactMatch	MONDO:0004585	polyhydramnios	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:89655007		skos:exactMatch	MONDO:0015134	constitutional neutropenia	semapv:CompositeMatching	0.8937	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:28656008		skos:exactMatch	MONDO:0019809	congenital aortic valve insufficiency	semapv:CompositeMatching	0.9834	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:442551007		skos:exactMatch	MONDO:0001041	dentin caries	semapv:CompositeMatching	0.9940	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:764997000		skos:exactMatch	MONDO:0019890	non-distal trisomy 9q	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1237346001		skos:exactMatch	MONDO:0018808	Caroli syndrome	semapv:CompositeMatching	0.9729	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:118600007		skos:exactMatch	MONDO:0005062	lymphoma	semapv:CompositeMatching	0.9817	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:400142003		skos:exactMatch	MONDO:0044656	epidermolytic nevus	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:48718006		skos:exactMatch	MONDO:0100253	Roberts-SC phocomelia syndrome	semapv:CompositeMatching	0.7609	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715748006		skos:exactMatch	MONDO:0008119	spinocerebellar ataxia type 1	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:449096009		skos:exactMatch	MONDO:0000376	respiratory system cancer	semapv:CompositeMatching	0.9851	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:718607001		skos:exactMatch	MONDO:0012438	pontocerebellar hypoplasia type 5	semapv:CompositeMatching	0.9870	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:79830009		skos:exactMatch	MONDO:0001334	hypertrichosis of eyelid	semapv:CompositeMatching	0.9917	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:698290008		skos:exactMatch	MONDO:0010305	creatine transporter deficiency	semapv:CompositeMatching	0.9627	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:721014007		skos:exactMatch	MONDO:0012417	heart-hand syndrome, Slovenian type	semapv:CompositeMatching	0.9641	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:392662004		skos:exactMatch	MONDO:0019376	West-Nile encephalitis	semapv:CompositeMatching	0.9779	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:22784002		skos:exactMatch	MONDO:0043294	linear scleroderma	semapv:CompositeMatching	0.9777	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715397000		skos:exactMatch	MONDO:0018308	liver mesenchymal hamartoma	semapv:CompositeMatching	0.5949	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:238874008		skos:exactMatch	MONDO:0009910	Wiedemann-Rautenstrauch syndrome	semapv:CompositeMatching	0.9752	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:239069005		skos:exactMatch	MONDO:0009552	mal de Meleda	semapv:CompositeMatching	0.9714	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:268240006		skos:exactMatch	MONDO:0008583	inherited torticollis	semapv:CompositeMatching	0.9807	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:32620007		skos:exactMatch	MONDO:0006937	pulpitis	semapv:CompositeMatching	0.9938	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:79674009		skos:exactMatch	MONDO:0007752	hyperheparinemia	semapv:CompositeMatching	0.9882	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:725408001		skos:exactMatch	MONDO:0018996	spinocerebellar ataxia, autosomal recessive, with axonal neuropathy 2	semapv:CompositeMatching	0.9578	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:445257004		skos:exactMatch	MONDO:0010545	Nance-Horan syndrome	semapv:CompositeMatching	0.9916	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:707435002		skos:exactMatch	MONDO:0016322	neuroendocrine cell hyperplasia of infancy	semapv:CompositeMatching	0.9923	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715427008		skos:exactMatch	MONDO:0011359	acromelic frontonasal dysostosis	semapv:CompositeMatching	0.9521	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:187722004		skos:exactMatch	MONDO:0021326	malignant neoplasm of cervical esophagus	semapv:CompositeMatching	0.9860	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:733068001		skos:exactMatch	MONDO:0010981	absent tibia-polydactyly-arachnoid cyst syndrome	semapv:CompositeMatching	0.9520	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:609581006		skos:exactMatch	MONDO:0012522	diabetes mellitus, transient neonatal, 3	semapv:CompositeMatching	0.9873	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:58833000		skos:exactMatch	MONDO:0007078	pseudohypoparathyroidism type 1A	semapv:CompositeMatching	0.9810	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:720344007		skos:exactMatch	MONDO:0015871	benign breast phyllodes tumor	semapv:CompositeMatching	0.9868	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:428174001		skos:exactMatch	MONDO:0001857	Brucella canis brucellosis	semapv:CompositeMatching	0.9106	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:92405007		skos:exactMatch	MONDO:0021506	benign neoplasm of spinal cord	semapv:CompositeMatching	0.9892	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:715395008		skos:exactMatch	MONDO:0018054	familial atrial fibrillation	semapv:CompositeMatching	0.9647	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:719069008		skos:exactMatch	MONDO:0008426	Shprintzen-Goldberg syndrome	semapv:CompositeMatching	0.9677	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:1260130005		skos:exactMatch	MONDO:0014559	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	semapv:CompositeMatching	0.9357	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:85478004		skos:exactMatch	MONDO:0002289	iris disorder	semapv:CompositeMatching	0.9969	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:721231007		skos:exactMatch	MONDO:0016346	hydrocephalus-obesity-hypogonadism syndrome	semapv:CompositeMatching	0.9705	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:266578003		skos:exactMatch	MONDO:0001009	solitary cyst of breast	semapv:CompositeMatching	0.9895	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:55379003		skos:exactMatch	MONDO:0017462	congenital pseudoarthrosis of the tibia	semapv:CompositeMatching	0.9937	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:400166009		skos:exactMatch	MONDO:0006522	acquired keratosis	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:3135009		skos:exactMatch	MONDO:0004795	otitis externa	semapv:CompositeMatching	0.9933	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:27201004		skos:exactMatch	MONDO:0007056	acroosteolysis	semapv:CompositeMatching	0.9949	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:238032002		skos:exactMatch	MONDO:0045016	cholesterol catabolic process disease	semapv:CompositeMatching	0.9216	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:16872008		skos:exactMatch	MONDO:0015719	severe hemophilia A	semapv:CompositeMatching	0.9762	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:403760006		skos:exactMatch	MONDO:0015028	48,XXYY syndrome	semapv:CompositeMatching	0.9499	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:762295002		skos:exactMatch	MONDO:0017117	congenital non-communicating hydrocephalus	semapv:CompositeMatching	0.9882	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:68067009		skos:exactMatch	MONDO:0011725	Crigler-Najjar syndrome type 2	semapv:CompositeMatching	0.9663	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:719981005		skos:exactMatch	MONDO:0011570	Charcot-Marie-Tooth disease type 2B2	semapv:CompositeMatching	0.9888	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:80960004		skos:exactMatch	MONDO:0042370	Yersinia enterocolitica infectious disease	semapv:CompositeMatching	0.9906	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:74469006		skos:exactMatch	MONDO:0004883	hereditary choroidal atrophy	semapv:CompositeMatching	0.9470	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:1271009		skos:exactMatch	MONDO:0007866	Bart-Pumphrey syndrome	semapv:CompositeMatching	0.9548	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:73757007		skos:exactMatch	MONDO:0002089	retinal vascular occlusion	semapv:CompositeMatching	0.9939	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:68409003		skos:exactMatch	MONDO:0015265	bronchiolitis obliterans syndrome	semapv:CompositeMatching	0.9065	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.997
+SCTID:238021002		skos:exactMatch	MONDO:0017724	Tay-Sachs disease, b variant, infantile form	semapv:CompositeMatching	0.6162	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:443439001		skos:exactMatch	MONDO:0002142	undifferentiated pleomorphic sarcoma	semapv:CompositeMatching	0.9675	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:254131007		skos:exactMatch	MONDO:0007764	autosomal dominant osteosclerosis, Worth type	semapv:CompositeMatching	0.8545	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:5217008		skos:exactMatch	MONDO:0008491	stiff-person syndrome	semapv:CompositeMatching	0.9775	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:238007004		skos:exactMatch	MONDO:0010299	hypoxanthine guanine phosphoribosyltransferase partial deficiency	semapv:CompositeMatching	0.9378	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:716653001		skos:exactMatch	MONDO:0020516	thymic neuroendocrine carcinoma	semapv:CompositeMatching	0.9883	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:416769008		skos:exactMatch	MONDO:0021282	malignant teratoma of testis	semapv:CompositeMatching	0.9790	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:363468009		skos:exactMatch	MONDO:0002218	temporal lobe cancer	semapv:CompositeMatching	0.9831	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:402601007		skos:exactMatch	MONDO:0006599	physical urticaria	semapv:CompositeMatching	0.9934	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:91968002		skos:exactMatch	MONDO:0021468	benign neoplasm of adrenal medulla	semapv:CompositeMatching	0.9946	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:85769006		skos:exactMatch	MONDO:0021680	streptococcal infection	semapv:CompositeMatching	0.9903	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:253020008		skos:exactMatch	MONDO:0002805	hidradenoma	semapv:CompositeMatching	0.9551	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:188241004		skos:exactMatch	MONDO:0001319	bladder lateral wall cancer	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:72815004		skos:exactMatch	MONDO:0002287	glandular cystitis	semapv:CompositeMatching	0.9773	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:25044007		skos:exactMatch	MONDO:0019100	neuromyelitis optica	semapv:CompositeMatching	0.9725	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:726341009		skos:exactMatch	MONDO:0016923	partial duplication of chromosome 3	semapv:CompositeMatching	0.9721	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:9245008		skos:exactMatch	MONDO:0020815	dentigerous cyst	semapv:CompositeMatching	0.9928	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:237997005		skos:exactMatch	MONDO:0008723	very long chain acyl-CoA dehydrogenase deficiency	semapv:CompositeMatching	0.9762	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:302226006		skos:exactMatch	MONDO:0005244	peripheral neuropathy	semapv:CompositeMatching	0.9636	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:95462004		skos:exactMatch	MONDO:0020058	gonosome anomaly	semapv:CompositeMatching	0.9198	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:125603006		skos:exactMatch	MONDO:0043895	ankle injury	semapv:CompositeMatching	0.9967	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:280816001		skos:exactMatch	MONDO:0001835	facial paralysis	semapv:CompositeMatching	0.5160	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.997
+SCTID:363427000		skos:exactMatch	MONDO:0001756	frontal sinus cancer	semapv:CompositeMatching	0.9839	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:253147000		skos:exactMatch	MONDO:0015146	classic lissencephaly	semapv:CompositeMatching	0.9601	kev-4b-snomed-full@ll	tier=none-narrower relation=same p_same=1.000
+SCTID:720750004		skos:exactMatch	MONDO:0010063	corneal-cerebellar syndrome	semapv:CompositeMatching	0.9642	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:84706005		skos:exactMatch	MONDO:0005871	Nematoda infectious disease	semapv:CompositeMatching	0.7067	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:766705006		skos:exactMatch	MONDO:0013467	immunodeficiency due to ficolin3 deficiency	semapv:CompositeMatching	0.9742	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:302820008		skos:exactMatch	MONDO:0850302	intracranial meningioma	semapv:CompositeMatching	0.9914	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:717943008		skos:exactMatch	MONDO:0019153	brain malformation-congenital heart disease-postaxial polydactyly syndrome	semapv:CompositeMatching	0.9591	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:237913008		skos:exactMatch	MONDO:0045014	tetrahydrobiopterin metabolic process disease	semapv:CompositeMatching	0.9806	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:62201009		skos:exactMatch	MONDO:0009265	Gaucher disease type I	semapv:CompositeMatching	0.9741	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:702809001		skos:exactMatch	MONDO:0015340	drug rash with eosinophilia and systemic symptoms	semapv:CompositeMatching	0.9588	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:77090002		skos:exactMatch	MONDO:0019082	bullous pemphigoid	semapv:CompositeMatching	0.9929	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:54552008		skos:exactMatch	MONDO:0000926	eye accommodation disease	semapv:CompositeMatching	0.9938	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:2032001		skos:exactMatch	MONDO:0006684	brain edema	semapv:CompositeMatching	0.9740	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.999
+SCTID:205484001		skos:exactMatch	MONDO:0015461	short rib-polydactyly syndrome	semapv:CompositeMatching	0.9464	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:15628003		skos:exactMatch	MONDO:0004277	gonorrhea	semapv:CompositeMatching	0.9915	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:402355000		skos:exactMatch	MONDO:0020546	acute graft versus host disease	semapv:CompositeMatching	0.9896	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:234405009		skos:exactMatch	MONDO:0014221	triosephosphate isomerase deficiency	semapv:CompositeMatching	0.9702	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:55711009		skos:exactMatch	MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasia type	semapv:CompositeMatching	0.9735	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:42786005		skos:exactMatch	MONDO:0008600	trigger thumb	semapv:CompositeMatching	0.6937	kev-4b-snomed-full@ll	tier=easy relation=same p_same=0.997
+SCTID:699315005		skos:exactMatch	MONDO:0012545	neutral lipid storage myopathy	semapv:CompositeMatching	0.9596	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:3951002		skos:exactMatch	MONDO:0005538	proctitis	semapv:CompositeMatching	0.9867	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:193687000		skos:exactMatch	MONDO:0019152	Oguchi disease	semapv:CompositeMatching	0.9855	kev-4b-snomed-full@ll	tier=retrieval-miss relation=same p_same=1.000
+SCTID:233815004		skos:exactMatch	MONDO:0022430	persistent fetal circulation syndrome	semapv:CompositeMatching	0.8111	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:418763003		skos:exactMatch	MONDO:0005905	periodic limb movement disorder	semapv:CompositeMatching	0.9953	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254771006		skos:exactMatch	MONDO:0003362	cutaneous leiomyosarcoma	semapv:CompositeMatching	0.9948	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254831005		skos:exactMatch	MONDO:0021354	tumor of adipose tissue	semapv:CompositeMatching	0.9879	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:371979001		skos:exactMatch	MONDO:0002290	clitoris cancer	semapv:CompositeMatching	0.9841	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:60232001		skos:exactMatch	MONDO:0800108	cleft leaflet of tricuspid valve	semapv:CompositeMatching	0.9764	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:724072002		skos:exactMatch	MONDO:0012805	childhood onset GLUT1 deficiency syndrome 2	semapv:CompositeMatching	0.9117	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:711164003		skos:exactMatch	MONDO:0014405	STING-associated vasculopathy with onset in infancy	semapv:CompositeMatching	0.9957	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:367542003		skos:exactMatch	MONDO:0004802	pulmonary eosinophilia	semapv:CompositeMatching	0.9839	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:419645003		skos:exactMatch	MONDO:0021445	benign neoplasm of oral cavity	semapv:CompositeMatching	0.9916	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:230655004		skos:exactMatch	MONDO:0100640	chronic idiopathic neuropathy	semapv:CompositeMatching	0.9548	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:721311006		skos:exactMatch	MONDO:0018223	systemic Epstein-Barr virus-positive T-cell lymphoproliferative disease of childhood	semapv:CompositeMatching	0.9541	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:766756002		skos:exactMatch	MONDO:0020444	subaortic course of innominate vein	semapv:CompositeMatching	0.9872	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:82661006		skos:exactMatch	MONDO:0043759	abdominal ectopic pregnancy	semapv:CompositeMatching	0.9935	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:10890000		skos:exactMatch	MONDO:0001142	salivary gland disorder	semapv:CompositeMatching	0.9774	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:92169007		skos:exactMatch	MONDO:0021488	benign neoplasm of lacrimal gland	semapv:CompositeMatching	0.9943	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:118615008		skos:exactMatch	MONDO:0019024	mast cell sarcoma	semapv:CompositeMatching	0.9501	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:95211004		skos:exactMatch	MONDO:0021402	polyp of external auditory canal	semapv:CompositeMatching	0.9840	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:404065000		skos:exactMatch	MONDO:0000977	chondroid lipoma	semapv:CompositeMatching	0.9947	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:29731002		skos:exactMatch	MONDO:0004813	tuberculous pneumothorax	semapv:CompositeMatching	0.9966	kev-4b-snomed-full@ll	tier=easy relation=same p_same=1.000
+SCTID:363425008		skos:exactMatch	MONDO:0001748	maxillary sinus carcinoma	semapv:CompositeMatching	0.7730	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.997
+SCTID:398670003		skos:exactMatch	MONDO:0023273	pigmented dermatofibrosarcoma protuberans	semapv:CompositeMatching	0.9810	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:763279007		skos:exactMatch	MONDO:0014044	dysmorphism-conductive hearing loss-heart defect syndrome	semapv:CompositeMatching	0.7853	kev-4b-snomed-full@ll	tier=hard relation=same p_same=0.999
+SCTID:76976005		skos:exactMatch	MONDO:0003608	optic atrophy	semapv:CompositeMatching	0.9689	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000
+SCTID:254976006		skos:exactMatch	MONDO:0003235	optic nerve glioma	semapv:CompositeMatching	0.9940	kev-4b-snomed-full@ll	tier=hard relation=same p_same=1.000

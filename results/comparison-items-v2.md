@@ -1,0 +1,47 @@
+| metric | kev-4b@ll | kev-9b@ll | kev-0.8b-snomed-full@ll | kev-4b-snomed-full@ll |
+|---|---|---|---|---|
+| overall n | 1700 | 1700 | 1700 | 1700 |
+| overall acc | 0.804 | 0.825 | 0.872 | 0.894 |
+| overall acc_gold_present | 0.927 | 0.935 | 0.866 | 0.891 |
+| overall acc_gold_absent | 0.640 | 0.678 | 0.879 | 0.897 |
+| overall none_rate | 0.286 | 0.304 | 0.428 | 0.422 |
+| overall none_precision | 0.957 | 0.955 | 0.878 | 0.908 |
+| overall none_recall | 0.640 | 0.678 | 0.879 | 0.897 |
+| overall lexical_top1_acc | 0.423 | 0.423 | 0.423 | 0.423 |
+| overall brier | 0.318 | 0.316 | 0.226 | 0.194 |
+| overall ece | 0.077 | 0.115 | 0.087 | 0.073 |
+| overall coverage@5 | 0.126 | 0.009 | 0.486 | 0.542 |
+| overall coverage@10 | 0.472 | 0.429 | 0.896 | 0.972 |
+| overall auto_accept_precision | 0.900 | 0.895 | 0.903 | 0.914 |
+| overall n_auto_accept | 781 | 839 | 1487 | 1559 |
+| overall rel_acc | 0.871 | 0.888 | 0.912 | 0.925 |
+| overall fp_same | 0.042 | 0.022 | 0.042 | 0.028 |
+| easy acc | 0.920 | 0.935 | 0.855 | 0.892 |
+| easy lexical_top1_acc | 0.714 | 0.714 | 0.714 | 0.714 |
+| easy coverage@5 | 0.947 | 0.965 | 0.000 | 0.000 |
+| easy rel_acc | 0.928 | 0.918 | 0.939 | 0.937 |
+| gold-removed acc | 0.760 | 0.820 | 0.965 | 0.985 |
+| gold-removed lexical_top1_acc | 0.000 | 0.000 | 0.000 | 0.000 |
+| gold-removed coverage@5 | 0.025 | 0.000 | 1.000 | 1.000 |
+| gold-removed rel_acc | - | - | - | - |
+| hard acc | 0.934 | 0.936 | 0.878 | 0.890 |
+| hard lexical_top1_acc | 0.764 | 0.764 | 0.764 | 0.764 |
+| hard coverage@5 | 0.950 | 0.959 | 0.066 | 0.000 |
+| hard rel_acc | 0.858 | 0.874 | 0.902 | 0.919 |
+| lex-ambiguous acc | 0.806 | 0.828 | 0.802 | 0.825 |
+| lex-ambiguous lexical_top1_acc | 0.294 | 0.294 | 0.294 | 0.294 |
+| lex-ambiguous coverage@5 | 0.068 | 0.003 | 0.223 | 0.213 |
+| lex-ambiguous rel_acc | - | - | - | - |
+| lex-clear acc | 0.981 | 0.987 | 0.942 | 0.971 |
+| lex-clear lexical_top1_acc | 1.000 | 1.000 | 1.000 | 1.000 |
+| lex-clear coverage@5 | 1.000 | 1.000 | 0.985 | 1.000 |
+| lex-clear rel_acc | - | - | - | - |
+| none-narrower acc | 0.523 | 0.543 | 0.847 | 0.853 |
+| none-narrower lexical_top1_acc | 0.000 | 0.000 | 0.000 | 0.000 |
+| none-narrower coverage@5 | 0.000 | 0.000 | 0.753 | 0.850 |
+| none-narrower rel_acc | 0.877 | 0.940 | 0.943 | 0.947 |
+| retrieval-miss acc | 0.687 | 0.731 | 0.846 | 0.877 |
+| retrieval-miss lexical_top1_acc | 0.000 | 0.000 | 0.000 | 0.000 |
+| retrieval-miss coverage@5 | 0.004 | 0.000 | 0.753 | 0.824 |
+| retrieval-miss rel_acc | - | - | - | - |
+| median latency ms | 111.000 | 192.300 | 29.100 | 174.600 |

@@ -1,0 +1,64 @@
+{
+  "models": [
+    {
+      "name": "kev-latest",
+      "description": "Kev pointer head on Qwen/Qwen3.5-0.8B-Base, serving ../runs/kev-0.8b-snomed-full at temperature 1.00",
+      "release_date": "2026-09-25",
+      "run": "../runs/kev-0.8b-snomed-full",
+      "base": "Qwen/Qwen3.5-0.8B-Base",
+      "lora": 16,
+      "device": "cuda",
+      "backend": "torch",
+      "dtype": "bfloat16",
+      "temperature": 1.0,
+      "cuda_graphs": {
+        "captured": 45,
+        "kept": 45,
+        "pending": 0,
+        "failed": 0
+      },
+      "prefix_cache": {
+        "size": 4,
+        "min_state_tokens": 0,
+        "hits": 0,
+        "misses": 1700,
+        "cached_states": 4
+      },
+      "batches": {
+        "count": 1700,
+        "requests": 1700,
+        "queued": 0
+      }
+    },
+    {
+      "name": "jev-latest",
+      "description": "Kev pointer head on Qwen/Qwen3.5-0.8B-Base, serving ../runs/kev-0.8b-snomed-full at temperature 1.00",
+      "release_date": "2026-09-25",
+      "run": "../runs/kev-0.8b-snomed-full",
+      "base": "Qwen/Qwen3.5-0.8B-Base",
+      "lora": 16,
+      "device": "cuda",
+      "backend": "torch",
+      "dtype": "bfloat16",
+      "temperature": 1.0,
+      "cuda_graphs": {
+        "captured": 45,
+        "kept": 45,
+        "pending": 0,
+        "failed": 0
+      },
+      "prefix_cache": {
+        "size": 4,
+        "min_state_tokens": 0,
+        "hits": 0,
+        "misses": 1700,
+        "cached_states": 4
+      },
+      "batches": {
+        "count": 1700,
+        "requests": 1700,
+        "queued": 0
+      }
+    }
+  ]
+}

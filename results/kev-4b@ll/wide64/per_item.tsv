@@ -1,0 +1,601 @@
+item_id	tier	truth	pred	hit	lex_hit	ambiguous	p_top	p_truth	brier	confidence	latency_ms
+easy:715533002	easy	H	H	True	True	False	0.7888	0.7888	0.04907142000000004	0.7855	121.6
+none-narrower:724784006	none-narrower	none	none	True	False		0.2595	0.2595	0.5810737299999998	0.2479	203.6
+gold-removed:720010009	gold-removed	none	G	False	False		0.1425	0.0748	0.9048110500000001	0.1291	204.7
+easy:267639001	easy	BD	W	False	True	False	0.1511	0.1144	0.8290629799999999	0.1379	201.3
+easy:76520005	easy	BI	AN	False	False	True	0.6665	0.0167	1.41847145	0.6613	204.0
+hard:2625009	hard	AE	T	False	True	False	0.5664	0.0368	1.2586397000000002	0.5596	201.1
+hard:19604005	hard	AU	AU	True	False	True	0.6661	0.6661	0.12107670999999998	0.6609	141.8
+none-narrower:1177049006	none-narrower	none	AZ	False	False		0.3131	0.1747	0.7962971000000001	0.3024	138.3
+hard:28371001	hard	W	W	True	True	False	0.7891	0.7891	0.04684805999999999	0.7858	136.4
+easy:35962006	easy	AB	AB	True	True	False	0.5294	0.5294	0.23827824	0.522	204.6
+easy:717917007	easy	AP	BD	False	False	True	0.5351	0.1807	0.9626290400000002	0.5278	202.2
+gold-removed:763821001	gold-removed	none	none	True	False		0.1674	0.1674	0.7141587	0.1544	1673.4
+none-narrower:699700006	none-narrower	none	AI	False	False		0.6781	0.0339	1.39658864	0.6731	143.0
+easy:253590009	easy	W	W	True	True	False	0.8611	0.8611	0.020546690000000003	0.8589	55.8
+easy:44729001	easy	AM	AM	True	False	True	0.8805	0.8805	0.015572520000000013	0.8786	103.4
+hard:81407003	hard	AZ	AZ	True	True	True	0.7914	0.7914	0.04804515000000001	0.7881	137.4
+none-narrower:1156772007	none-narrower	none	BA	False	False		0.7117	0.0491	1.4148437	0.7072	51.9
+hard:763535005	hard	J	J	True	True	False	0.723	0.723	0.09000993000000003	0.7187	143.2
+easy:16872008	easy	AU	AU	True	True	True	0.8801	0.8801	0.016206630000000003	0.8783	200.8
+easy:398250003	easy	P	T	False	True	True	0.2021	0.1443	0.83677213	0.1896	139.5
+none-narrower:1179296003	none-narrower	none	W	False	False		0.8152	0.0227	1.62068002	0.8123	111.2
+easy:403889000	easy	W	W	True	True	False	0.7582	0.7582	0.06223846	0.7545	203.9
+easy:36742000	easy	M	M	True	True	False	0.8628	0.8628	0.020322379999999994	0.8607	55.2
+none-narrower:18040001	none-narrower	none	none	True	False		0.3272	0.3272	0.4673270400000001	0.3167	55.4
+hard:708031000	hard	N	N	True	True	True	0.521	0.521	0.27481437999999997	0.5136	138.4
+easy:715795005	easy	AF	AF	True	True	True	0.1323	0.1323	0.7791848000000001	0.1188	197.3
+retrieval-miss:95558008	retrieval-miss	none	none	True	False	True	0.3509	0.3509	0.43052478	0.3408	104.0
+none-narrower:237663000	none-narrower	none	none	True	False		0.307	0.307	0.4976382700000001	0.2961	51.4
+gold-removed:24129002	gold-removed	none	none	True	False		0.2074	0.2074	0.65891913	0.195	104.3
+none-narrower:307680001	none-narrower	none	none	True	False		0.159	0.159	0.7226884699999999	0.1459	148.3
+easy:73452002	easy	T	T	True	True	False	0.903	0.903	0.010357349999999994	0.9015	46.1
+easy:764957003	easy	AS	AS	True	True	False	0.8412	0.8412	0.02633685000000002	0.8387	106.4
+gold-removed:766710005	gold-removed	none	BF	False	False		0.1649	0.0711	0.9363472000000002	0.1518	58.2
+hard:128091003	hard	AK	AB	False	False	True	0.261	0.2078	0.75137511	0.2494	204.4
+hard:17709002	hard	BE	BE	True	True	True	0.8763	0.8763	0.017234590000000008	0.8744	54.4
+easy:47673003	easy	AY	none	False	True	False	0.1458	0.0172	1.0050589300000001	0.1324	54.9
+gold-removed:312956001	gold-removed	none	none	True	False		0.3887	0.3887	0.3857403	0.3791	141.9
+easy:81060008	easy	D	D	True	True	False	0.6692	0.6692	0.11829326999999996	0.664	52.2
+none-narrower:254255007	none-narrower	none	none	True	False		0.3081	0.3081	0.5020901099999999	0.2973	52.4
+hard:26360005	hard	F	F	True	True	True	0.3903	0.3903	0.40583432999999997	0.3808	62.2
+none-narrower:237782001	none-narrower	none	none	True	False		0.1905	0.1905	0.6766478499999999	0.1778	52.6
+hard:404160007	hard	Q	Q	True	False	True	0.7475	0.7475	0.06712718999999998	0.7436	56.7
+none-narrower:1340174002	none-narrower	none	BE	False	False		0.5046	0.0192	1.3187393	0.4968	198.5
+easy:59252009	easy	BD	AA	False	False	True	0.7035	0.0512	1.39907082	0.6989	61.2
+none-narrower:1142319002	none-narrower	none	none	True	False		0.2147	0.2147	0.65493545	0.2024	53.2
+easy:126799003	easy	AR	AR	True	True	False	0.7217	0.7217	0.08368403999999997	0.7173	45.1
+easy:30069002	easy	J	J	True	False	True	0.6461	0.6461	0.13173615	0.6406	52.3
+none-narrower:472699005	none-narrower	none	none	True	False		0.252	0.252	0.60250169	0.2403	54.8
+hard:763316006	hard	AR	AR	True	True	False	0.6837	0.6837	0.10513064000000004	0.6787	58.1
+easy:12301009	easy	AF	AF	True	False	True	0.7223	0.7223	0.08465172999999995	0.7179	44.0
+none-narrower:770728003	none-narrower	none	BD	False	False		0.5568	0.0253	1.2717748	0.5498	148.8
+easy:238853007	easy	BH	BH	True	False	True	0.7016	0.7016	0.09297127	0.6969	55.9
+hard:721841001	hard	BB	BB	True	False	True	0.7989	0.7989	0.04286221999999997	0.7957	142.6
+gold-removed:119291004	gold-removed	none	none	True	False		0.1761	0.1761	0.6979711	0.1633	52.2
+easy:83886009	easy	AQ	AQ	True	True	False	0.9244	0.9244	0.006082190000000001	0.9232	57.6
+easy:723611008	easy	AD	AD	True	True	True	0.3796	0.3796	0.4051396300000001	0.3699	58.6
+hard:254709009	hard	AY	AR	False	False	True	0.7189	0.0671	1.3911691700000002	0.7145	53.1
+hard:231857004	hard	J	J	True	True	False	0.7655	0.7655	0.06568021000000003	0.7618	52.0
+hard:49558004	hard	G	G	True	True	False	0.852	0.852	0.024510870000000008	0.8497	55.6
+none-narrower:703163006	none-narrower	none	none	True	False		0.2163	0.2163	0.6456044000000001	0.2041	52.3
+none-narrower:700289000	none-narrower	none	none	True	False		0.2296	0.2296	0.66313393	0.2175	52.0
+hard:721846006	hard	I	Z	False	False	True	0.1933	0.0671	0.9288775	0.1807	200.9
+none-narrower:428172002	none-narrower	none	none	True	False		0.2616	0.2616	0.5805089499999999	0.2501	55.4
+hard:363458004	hard	AB	AS	False	True	True	0.4822	0.4109	0.58125024	0.4741	103.4
+none-narrower:1144544008	none-narrower	none	none	True	False		0.4584	0.4584	0.3179588200000001	0.45	54.8
+easy:234097001	easy	AD	AD	True	True	False	0.4198	0.4198	0.3516572700000001	0.4108	63.0
+easy:721220004	easy	AN	AN	True	True	False	0.4428	0.4428	0.32007864999999985	0.4341	65.4
+easy:48788004	easy	AX	AX	True	True	False	0.6564	0.6564	0.12296859	0.651	198.9
+hard:277574007	hard	AC	AC	True	False	True	0.3935	0.3935	0.39311028000000003	0.3841	55.5
+none-narrower:698947004	none-narrower	none	none	True	False		0.2245	0.2245	0.68118294	0.2124	104.0
+easy:711482008	easy	U	U	True	True	True	0.4885	0.4885	0.34358442000000006	0.4805	196.5
+gold-removed:764523004	gold-removed	none	M	False	False		0.4205	0.1172	1.0168859399999999	0.4115	54.3
+gold-removed:702816000	gold-removed	none	BF	False	False		0.7361	0.0355	1.4871306899999999	0.732	143.3
+easy:92404006	easy	U	U	True	True	True	0.7762	0.7762	0.053786740000000006	0.7727	52.4
+easy:81598001	easy	Q	Q	True	True	False	0.89	0.89	0.013466769999999998	0.8882	64.3
+hard:363489000	hard	BG	BG	True	True	True	0.5067	0.5067	0.26812352999999994	0.499	45.2
+retrieval-miss:31367003	retrieval-miss	none	none	True	False	True	0.2711	0.2711	0.55524261	0.2597	57.0
+hard:95643007	hard	E	E	True	True	False	0.6814	0.6814	0.10872119999999998	0.6764	52.9
+none-narrower:1237225007	none-narrower	none	A	False	False		0.4716	0.0623	1.10834724	0.4634	200.7
+hard:238051008	hard	BD	BD	True	True	False	0.3549	0.3549	0.47506414	0.3448	55.6
+none-narrower:1162558000	none-narrower	none	none	True	False		0.3467	0.3467	0.4505693	0.3365	45.2
+gold-removed:230744007	gold-removed	none	BG	False	False		0.5163	0.0709	1.1926841000000001	0.5088	61.5
+easy:232039004	easy	AK	AK	True	True	False	0.772	0.772	0.05617533999999998	0.7684	52.3
+hard:715559004	hard	O	O	True	True	True	0.5701	0.5701	0.20234748999999994	0.5634	54.3
+easy:79604008	easy	G	G	True	True	False	0.1528	0.1528	0.7503836699999998	0.1396	44.6
+gold-removed:32117000	gold-removed	none	AG	False	False		0.272	0.2133	0.6984352899999999	0.2606	61.3
+hard:71322004	hard	AB	A	False	False	True	0.3306	0.1831	0.8098643999999998	0.3201	58.1
+gold-removed:79468000	gold-removed	none	none	True	False		0.2917	0.2917	0.5331286199999999	0.2806	55.1
+gold-removed:232016005	gold-removed	none	none	True	False		0.1166	0.1166	0.80991026	0.1027	62.9
+retrieval-miss:47916000	retrieval-miss	none	none	True	False	True	0.1625	0.1625	0.72127854	0.1494	56.6
+hard:2089002	hard	BI	BI	True	True	False	0.6857	0.6857	0.14112414	0.6808	55.4
+retrieval-miss:183342005	retrieval-miss	none	BG	False	False	True	0.2938	0.1712	0.79222492	0.2828	52.6
+hard:42786005	hard	AR	AR	True	False	True	0.328	0.328	0.48740392999999993	0.3175	57.2
+none-narrower:722529000	none-narrower	none	D	False	False		0.674	0.0476	1.36945646	0.6689	45.4
+hard:29966009	hard	AT	AT	True	True	False	0.1968	0.1968	0.6742751600000001	0.1843	55.8
+easy:254642004	easy	O	O	True	True	False	0.6004	0.6004	0.18672292999999995	0.5941	45.0
+gold-removed:371965009	gold-removed	none	M	False	False		0.4933	0.0466	1.26269018	0.4854	44.9
+gold-removed:36454001	gold-removed	none	BE	False	False		0.3323	0.1231	0.88775976	0.3219	55.2
+gold-removed:698250005	gold-removed	none	BJ	False	False		0.204	0.1397	0.8218482800000001	0.1916	55.8
+gold-removed:726346004	gold-removed	none	W	False	False		0.3339	0.1864	0.78402991	0.3235	62.7
+none-narrower:81531005	none-narrower	none	none	True	False		0.247	0.247	0.59280583	0.2353	56.0
+easy:240104008	easy	BC	AE	False	False	True	0.7037	0.0184	1.47535426	0.6991	64.2
+gold-removed:32893002	gold-removed	none	none	True	False		0.1406	0.1406	0.7655684599999999	0.1271	55.2
+easy:126499002	easy	AY	BE	False	True	False	0.1397	0.1345	0.7912296099999997	0.1263	53.2
+hard:725044000	hard	AP	AP	True	False	True	0.7794	0.7794	0.05062930000000001	0.7759	64.7
+none-narrower:698836007	none-narrower	none	none	True	False		0.2914	0.2914	0.51337797	0.2804	53.2
+gold-removed:85884009	gold-removed	none	none	True	False		0.3707	0.3707	0.40491689	0.3608	55.4
+none-narrower:1382212005	none-narrower	none	AD	False	False		0.1023	0.0578	0.9332029300000001	0.0883	54.8
+easy:363477002	easy	BF	BF	True	False	True	0.7732	0.7732	0.058526850000000005	0.7697	45.4
+gold-removed:721842008	gold-removed	none	none	True	False		0.0947	0.0947	0.84158687	0.0806	213.9
+retrieval-miss:235919008	retrieval-miss	none	none	True	False	True	0.5019	0.5019	0.26355129	0.4942	62.3
+none-narrower:16060551000119103	none-narrower	none	none	True	False		0.279	0.279	0.54424048	0.2677	44.9
+hard:278919001	hard	AD	AD	True	True	False	0.2962	0.2962	0.5266047	0.2852	203.9
+easy:239031000	easy	O	O	True	True	False	0.7696	0.7696	0.056507310000000026	0.766	56.5
+gold-removed:73160007	gold-removed	none	none	True	False		0.5527	0.5527	0.2038455	0.5457	61.8
+easy:725910009	easy	X	X	True	False	True	0.6904	0.6904	0.10481058000000001	0.6856	55.5
+retrieval-miss:48982009	retrieval-miss	none	none	True	False	True	0.3229	0.3229	0.47061717000000003	0.3123	54.9
+easy:715753001	easy	AX	AX	True	True	False	0.7264	0.7264	0.07749379999999996	0.7221	64.4
+easy:363359008	easy	O	AO	False	True	True	0.408	0.3454	0.6030047500000001	0.3988	45.2
+easy:732959007	easy	O	O	True	True	False	0.8306	0.8306	0.030454859999999997	0.828	58.6
+easy:724356003	easy	P	P	True	False	True	0.4014	0.4014	0.41068494999999994	0.3921	57.7
+hard:400171002	hard	AC	AC	True	False	True	0.8825	0.8825	0.01543665000000001	0.8807	53.0
+gold-removed:720950009	gold-removed	none	AG	False	False		0.2166	0.175	0.7700421	0.2044	54.2
+retrieval-miss:277921008	retrieval-miss	none	G	False	False	True	0.7363	0.0347	1.4751678799999999	0.7322	54.7
+hard:238776001	hard	AD	none	False	False	True	0.1787	0.1756	0.7285148500000002	0.1659	62.3
+none-narrower:52897009	none-narrower	none	none	True	False		0.2816	0.2816	0.5432294999999999	0.2703	56.5
+hard:233666007	hard	BG	BG	True	True	False	0.8451	0.8451	0.025089790000000008	0.8427	52.2
+easy:38804009	easy	AD	AD	True	True	False	0.7686	0.7686	0.05859292000000003	0.7649	55.3
+easy:363425008	easy	G	G	True	True	True	0.4479	0.4479	0.33261786	0.4393	105.7
+gold-removed:128477000	gold-removed	none	none	True	False		0.1723	0.1723	0.7135529	0.1593	204.3
+gold-removed:233629001	gold-removed	none	none	True	False		0.2055	0.2055	0.66576455	0.1931	51.5
+easy:73495003	easy	H	H	True	True	False	0.4185	0.4185	0.34932395999999993	0.4094	62.9
+gold-removed:763895001	gold-removed	none	none	True	False		0.1777	0.1777	0.6927543	0.1649	145.8
+gold-removed:702397002	gold-removed	none	AO	False	False		0.4291	0.0597	1.0953373800000001	0.4202	55.6
+gold-removed:715755008	gold-removed	none	G	False	False		0.1209	0.0661	0.91353687	0.1072	64.9
+easy:359007	easy	B	B	True	True	False	0.713	0.713	0.09396221000000003	0.7085	56.4
+gold-removed:83225003	gold-removed	none	O	False	False		0.3363	0.1298	0.9411910799999998	0.3259	45.2
+retrieval-miss:237692001	retrieval-miss	none	AP	False	False	True	0.3822	0.1449	0.9123614999999998	0.3726	56.2
+hard:193466003	hard	AB	AB	True	False	True	0.497	0.497	0.26432281	0.4891	53.3
+easy:28314004	easy	U	U	True	True	True	0.457	0.457	0.3606915799999999	0.4486	52.5
+hard:198297004	hard	P	P	True	True	False	0.1381	0.1381	0.78945658	0.1246	51.7
+easy:88687001	easy	AI	AI	True	False	True	0.2344	0.2344	0.6421053500000002	0.2224	54.9
+hard:277523004	hard	BG	AK	False	False	True	0.4507	0.0811	1.1103569	0.4422	52.3
+none-narrower:198448006	none-narrower	none	BG	False	False		0.1007	0.0947	0.8520070399999999	0.0867	51.9
+easy:766240006	easy	BK	BK	True	True	False	0.8993	0.8993	0.011012350000000002	0.8977	64.3
+easy:205649008	easy	BC	BC	True	False	True	0.5453	0.5453	0.22430366000000002	0.5382	55.9
+hard:41659003	hard	A	A	True	False	True	0.5818	0.5818	0.19251765000000004	0.5752	45.6
+gold-removed:4639008	gold-removed	none	W	False	False		0.7758	0.0809	1.4470086700000002	0.7723	55.9
+hard:253781004	hard	BG	BH	False	False	True	0.5872	0.0985	1.1695677400000002	0.5807	56.1
+easy:29159009	easy	AL	AL	True	True	False	0.6229	0.6229	0.15492816	0.617	53.9
+none-narrower:246943004	none-narrower	none	none	True	False		0.2436	0.2436	0.5915644199999999	0.2318	52.4
+easy:52506002	easy	AJ	AJ	True	True	False	0.7324	0.7324	0.09064991999999998	0.7282	54.2
+hard:85444005	hard	AK	U	False	True	False	0.4744	0.2986	0.7361163099999999	0.4662	52.4
+gold-removed:367506006	gold-removed	none	B	False	False		0.0579	0.0542	0.91390493	0.0432	62.4
+none-narrower:1259079006	none-narrower	none	none	True	False		0.2611	0.2611	0.56679083	0.2496	56.6
+retrieval-miss:10087007	retrieval-miss	none	none	True	False	True	0.2056	0.2056	0.68424274	0.1932	53.2
+gold-removed:57838006	gold-removed	none	J	False	False		0.0492	0.038	0.9476017099999999	0.0344	56.5
+easy:423425006	easy	A	BF	False	True	True	0.4333	0.1971	0.8457218799999999	0.4245	45.4
+gold-removed:35247001	gold-removed	none	none	True	False		0.1501	0.1501	0.75491719	0.1368	51.7
+hard:64233004	hard	X	AR	False	False	True	0.2094	0.0415	1.0071364100000002	0.1971	52.2
+hard:399955009	hard	BJ	AH	False	False	True	0.1065	0.0064	1.0297642200000001	0.0925	198.8
+retrieval-miss:59531002	retrieval-miss	none	BF	False	False	True	0.2044	0.1212	0.82878498	0.192	56.0
+gold-removed:4062006	gold-removed	none	none	True	False		0.2419	0.2419	0.61996746	0.23	56.0
+hard:27025001	hard	BB	BB	True	True	True	0.4267	0.4267	0.4572419599999999	0.4177	199.7
+hard:363505006	hard	AF	AF	True	True	True	0.446	0.446	0.454146	0.4374	46.9
+hard:718124006	hard	AD	AP	False	False	True	0.5294	0.0391	1.2335187200000002	0.5221	62.9
+gold-removed:419395007	gold-removed	none	BE	False	False		0.2375	0.1382	0.81783998	0.2256	55.0
+none-narrower:16039791000119101	none-narrower	none	none	True	False		0.2789	0.2789	0.5546588200000001	0.2676	55.3
+none-narrower:93646002	none-narrower	none	BH	False	False		0.2939	0.1878	0.7621018500000001	0.2829	45.3
+easy:763204003	easy	AF	AF	True	True	False	0.6537	0.6537	0.12275263000000004	0.6482	60.3
+easy:123782009	easy	AU	AU	True	True	False	0.8543	0.8543	0.02231571000000002	0.852	62.2
+easy:725045004	easy	Z	Z	True	True	True	0.5224	0.5224	0.25168981000000007	0.5149	57.7
+easy:25569003	easy	BI	BI	True	True	False	0.1782	0.1782	0.7120463899999999	0.1654	56.2
+hard:707273001	hard	BD	E	False	False	True	0.2711	0.1999	0.78025398	0.2597	61.8
+easy:254221009	easy	P	P	True	False	True	0.4664	0.4664	0.29648109	0.458	62.3
+none-narrower:1254886004	none-narrower	none	none	True	False		0.2082	0.2082	0.6623370300000001	0.1959	52.8
+hard:717407006	hard	AC	AC	True	True	False	0.7413	0.7413	0.07319438000000002	0.7373	57.3
+none-narrower:11780521000119105	none-narrower	none	none	True	False		0.3368	0.3368	0.46210637000000004	0.3264	52.7
+gold-removed:91992005	gold-removed	none	AL	False	False		0.1577	0.1303	0.82529012	0.1445	54.4
+none-narrower:733598001	none-narrower	none	Z	False	False		0.4812	0.014	1.37500713	0.4731	200.4
+easy:230450001	easy	AB	AB	True	False	True	0.2752	0.2752	0.5671319199999999	0.2639	55.1
+retrieval-miss:15566009	retrieval-miss	none	none	True	False	True	0.3093	0.3093	0.52070595	0.2985	53.7
+easy:302215000	easy	BK	BK	True	True	False	0.4556	0.4556	0.33830728	0.4471	45.1
+hard:7881005	hard	AD	S	False	False	True	0.81	0.0119	1.6345695999999998	0.8071	53.1
+none-narrower:410063006	none-narrower	none	W	False	False		0.6494	0.0408	1.34892038	0.6439	52.9
+easy:398963001	easy	Q	Q	True	False	True	0.4071	0.4071	0.39996635999999985	0.3979	52.5
+hard:39998009	hard	AA	AP	False	False	True	0.3558	0.2967	0.6659240200000002	0.3457	52.9
+none-narrower:89764009	none-narrower	none	none	True	False		0.2346	0.2346	0.62411618	0.2227	55.3
+easy:86073008	easy	I	I	True	False	True	0.2866	0.2866	0.5254585599999999	0.2754	63.0
+hard:32599008	hard	AK	AQ	False	False	True	0.4175	0.0197	1.1922674199999999	0.4084	53.3
+easy:20343006	easy	G	none	False	True	True	0.2846	0.2204	0.6984948600000002	0.2735	54.2
+hard:371583007	hard	H	H	True	False	True	0.5062	0.5062	0.26294935999999997	0.4985	52.1
+gold-removed:233985008	gold-removed	none	none	True	False		0.178	0.178	0.73491682	0.1652	55.6
+hard:92238001	hard	BJ	BJ	True	True	True	0.6688	0.6688	0.13038976000000002	0.6637	52.6
+hard:254939008	hard	AB	AZ	False	False	True	0.3061	0.2052	0.7400733599999998	0.2952	52.2
+gold-removed:370143000	gold-removed	none	C	False	False		0.3102	0.0462	1.03320784	0.2994	44.3
+hard:38323006	hard	AA	AA	True	True	False	0.6893	0.6893	0.10211394999999998	0.6845	52.5
+gold-removed:17827007	gold-removed	none	none	True	False		0.1145	0.1145	0.8107456099999999	0.1007	53.0
+gold-removed:63122002	gold-removed	none	C	False	False		0.2253	0.1585	0.7693517900000001	0.2132	57.5
+easy:39302008	easy	BK	none	False	False	True	0.0848	0.0517	0.92775299	0.0705	55.9
+easy:719600006	easy	BI	BI	True	True	False	0.8427	0.8427	0.026302719999999998	0.8403	199.4
+hard:232003005	hard	O	none	False	False	True	0.1541	0.0958	0.8651853399999999	0.1409	204.0
+hard:129609000	hard	BF	none	False	False	True	0.0776	0.0157	0.99074738	0.0631	61.2
+hard:442348004	hard	N	N	True	True	False	0.6182	0.6182	0.15533817000000003	0.6123	62.9
+hard:126676009	hard	V	V	True	True	False	0.5705	0.5705	0.19873429	0.5638	53.4
+gold-removed:67144006	gold-removed	none	none	True	False		0.0763	0.0763	0.87904553	0.0619	196.5
+hard:725167001	hard	O	AP	False	False	True	0.6379	0.066	1.2865779899999998	0.6322	54.8
+easy:124221007	easy	AJ	AJ	True	False	True	0.8532	0.8532	0.024868190000000016	0.851	57.9
+gold-removed:126559003	gold-removed	none	AA	False	False		0.6219	0.1488	1.11589303	0.616	52.4
+retrieval-miss:105706003	retrieval-miss	none	AD	False	False	True	0.3283	0.2815	0.6271708	0.3179	55.4
+retrieval-miss:204299009	retrieval-miss	none	AC	False	False	True	0.5636	0.1721	1.01087204	0.5567	52.4
+gold-removed:765331004	gold-removed	none	none	True	False		0.135	0.135	0.7789057500000001	0.1215	58.6
+retrieval-miss:8847002	retrieval-miss	none	X	False	False	True	0.6941	0.0508	1.3885278200000002	0.6893	55.9
+easy:400075008	easy	A	none	False	True	False	0.1763	0.0211	1.01503053	0.1635	103.5
+none-narrower:27358001	none-narrower	none	W	False	False		0.3994	0.0769	1.02440353	0.39	55.4
+hard:2109003	hard	M	M	True	False	True	0.4418	0.4418	0.3362049100000001	0.4331	55.2
+easy:254847007	easy	AA	AA	True	True	False	0.1578	0.1578	0.7705243700000002	0.1446	52.2
+gold-removed:702363009	gold-removed	none	K	False	False		0.2555	0.0497	1.0226529	0.2439	52.1
+none-narrower:1344682008	none-narrower	none	AQ	False	False		0.397	0.1324	0.96317962	0.3876	104.7
+hard:254725004	hard	Y	BK	False	False	True	0.2153	0.0475	0.9948457	0.203	55.3
+easy:715412008	easy	T	AU	False	False	True	0.3801	0.0741	1.0357304199999997	0.3704	54.6
+hard:363411007	hard	I	BG	False	True	True	0.466	0.4296	0.54361295	0.4577	44.9
+none-narrower:1287336004	none-narrower	none	AM	False	False		0.3797	0.2023	0.7940085299999999	0.3701	52.0
+gold-removed:237996001	gold-removed	none	none	True	False		0.1526	0.1526	0.7459229999999999	0.1393	62.5
+easy:128046007	easy	BI	BI	True	True	False	0.4784	0.4784	0.29356654000000004	0.4703	45.0
+easy:3731000119107	easy	AI	AI	True	True	False	0.709	0.709	0.09436701000000003	0.7044	51.7
+hard:722281001	hard	BC	BC	True	True	False	0.5819	0.5819	0.20938038	0.5753	58.7
+hard:126488004	hard	AW	AW	True	True	False	0.3933	0.3933	0.38381155	0.3838	53.1
+retrieval-miss:16459000	retrieval-miss	none	none	True	False	True	0.4864	0.4864	0.2694565300000001	0.4784	105.6
+retrieval-miss:204108000	retrieval-miss	none	none	True	False	True	0.2238	0.2238	0.61716094	0.2117	55.8
+none-narrower:126754006	none-narrower	none	X	False	False		0.3657	0.0734	1.03738257	0.3558	45.0
+hard:389203001	hard	BD	K	False	True	False	0.5103	0.3182	0.7290546799999997	0.5026	53.6
+easy:122811000119101	easy	M	M	True	True	True	0.8883	0.8883	0.013687360000000004	0.8866	57.4
+easy:715374003	easy	BI	BI	True	True	True	0.5551	0.5551	0.22130106999999996	0.5481	58.6
+easy:717254007	easy	AR	AR	True	True	False	0.9049	0.9049	0.010054649999999993	0.9034	57.7
+hard:16059006	hard	C	C	True	True	False	0.5533	0.5533	0.21321932	0.5463	55.9
+hard:11442006	hard	B	none	False	True	False	0.0701	0.0212	0.9880925500000001	0.0555	62.0
+easy:92557009	easy	BJ	BJ	True	True	False	0.5281	0.5281	0.28587283	0.5207	52.7
+none-narrower:126726004	none-narrower	none	none	True	False		0.111	0.111	0.81676866	0.0971	52.1
+none-narrower:337871000119100	none-narrower	none	AI	False	False		0.1956	0.1856	0.72089285	0.183	52.0
+retrieval-miss:37102008	retrieval-miss	none	none	True	False	True	0.2742	0.2742	0.55536003	0.2629	52.4
+hard:719848005	hard	AM	BD	False	False	True	0.2797	0.2537	0.6508047699999999	0.2684	51.9
+hard:253283000	hard	M	M	True	True	False	0.1579	0.1579	0.76465132	0.1448	55.4
+easy:406446000	easy	L	L	True	True	False	0.1296	0.1296	0.79920148	0.116	52.8
+hard:766051001	hard	U	U	True	True	False	0.7866	0.7866	0.049239210000000005	0.7833	59.4
+hard:702393003	hard	BJ	none	False	False	True	0.1107	0.0663	0.9222691	0.0968	62.6
+retrieval-miss:44231009	retrieval-miss	none	none	True	False	True	0.3144	0.3144	0.55099152	0.3037	64.5
+easy:403913006	easy	W	W	True	True	True	0.5927	0.5927	0.17593956	0.5863	52.8
+easy:423590009	easy	B	B	True	True	False	0.5999	0.5999	0.17379101000000002	0.5937	56.0
+easy:278991002	easy	V	V	True	False	True	0.408	0.408	0.37894463000000006	0.3988	55.2
+hard:46981006	hard	AG	AG	True	True	False	0.7157	0.7157	0.0870726	0.7113	52.4
+easy:237951008	easy	AL	AL	True	True	False	0.8302	0.8302	0.03041665999999998	0.8276	64.0
+none-narrower:783558004	none-narrower	none	AA	False	False		0.4938	0.0321	1.1861458599999999	0.4859	59.4
+easy:51604006	easy	BE	BE	True	True	True	0.788	0.788	0.04959926999999999	0.7847	52.2
+none-narrower:65528008	none-narrower	none	AT	False	False		0.4522	0.1331	0.96825304	0.4436	52.1
+easy:72925005	easy	AJ	E	False	False	True	0.1806	0.1371	0.8236139000000001	0.1678	53.9
+hard:236461000	hard	AZ	AZ	True	True	True	0.5456	0.5456	0.23524630000000002	0.5385	55.5
+easy:266578003	easy	AO	AO	True	True	False	0.7996	0.7996	0.04426055	0.7965	44.9
+hard:363444001	hard	O	O	True	True	True	0.4883	0.4883	0.33537615000000004	0.4803	53.8
+none-narrower:707607008	none-narrower	none	none	True	False		0.1608	0.1608	0.7235229399999998	0.1477	57.4
+hard:67256000	hard	AB	AB	True	False	True	0.6706	0.6706	0.13570349	0.6654	45.2
+retrieval-miss:763533003	retrieval-miss	none	Q	False	False	True	0.1322	0.0607	0.93119596	0.1187	65.7
+hard:51689003	hard	AW	AW	True	False	True	0.8368	0.8368	0.028599750000000004	0.8342	52.6
+retrieval-miss:403780007	retrieval-miss	none	AP	False	False	True	0.6481	0.029	1.3696688199999998	0.6426	62.0
+gold-removed:415561000	gold-removed	none	AQ	False	False		0.1444	0.1402	0.78330368	0.131	45.0
+gold-removed:718750004	gold-removed	none	none	True	False		0.1064	0.1064	0.8275365699999999	0.0924	66.3
+hard:197458008	hard	F	F	True	True	False	0.6464	0.6464	0.13434149000000004	0.6409	52.6
+none-narrower:446771003	none-narrower	none	P	False	False		0.4588	0.0911	1.06692724	0.4504	52.3
+gold-removed:64559002	gold-removed	none	P	False	False		0.2435	0.145	0.8494035099999999	0.2317	52.5
+gold-removed:18941000	gold-removed	none	AV	False	False		0.3075	0.211	0.76119548	0.2967	43.2
+easy:703504006	easy	S	S	True	True	False	0.8472	0.8472	0.025194830000000015	0.8448	57.4
+gold-removed:278042005	gold-removed	none	BB	False	False		0.1849	0.1109	0.85086464	0.1722	52.3
+none-narrower:1186810009	none-narrower	none	AZ	False	False		0.2831	0.0975	0.93225359	0.2719	62.0
+easy:25476006	easy	AB	AB	True	True	False	0.7886	0.7886	0.049897260000000006	0.7853	52.4
+easy:189099001	easy	G	G	True	True	False	0.6835	0.6835	0.11357502	0.6786	61.7
+retrieval-miss:238534006	retrieval-miss	none	none	True	False	True	0.4315	0.4315	0.33441288	0.4226	52.2
+retrieval-miss:81463002	retrieval-miss	none	none	True	False	True	0.5747	0.5747	0.18455765000000002	0.5681	61.9
+hard:65443008	hard	S	S	True	True	True	0.5076	0.5076	0.26277721999999987	0.4999	45.2
+none-narrower:707750005	none-narrower	none	Z	False	False		0.1377	0.1194	0.8288416700000001	0.1242	55.3
+gold-removed:58588007	gold-removed	none	BL	False	False		0.1036	0.0836	0.8736414	0.0896	62.6
+hard:34566007	hard	I	I	True	True	True	0.4774	0.4774	0.31569416	0.4692	55.7
+none-narrower:29320008	none-narrower	none	none	True	False		0.2407	0.2407	0.59486315	0.2288	56.2
+easy:8549006	easy	AJ	AJ	True	True	False	0.8217	0.8217	0.033425109999999994	0.8189	52.4
+none-narrower:433891000124100	none-narrower	none	M	False	False		0.1804	0.1205	0.83966813	0.1676	45.1
+gold-removed:763803004	gold-removed	none	F	False	False		0.6375	0.0716	1.27232747	0.6319	58.7
+hard:733068001	hard	AF	AF	True	True	True	0.6437	0.6437	0.16731153999999998	0.6381	58.1
+gold-removed:126790004	gold-removed	none	U	False	False		0.3123	0.1192	0.8925016400000001	0.3015	52.7
+gold-removed:422853008	gold-removed	none	none	True	False		0.3398	0.3398	0.44907467	0.3295	52.0
+gold-removed:41371000119100	gold-removed	none	none	True	False		0.3022	0.3022	0.50241885	0.2913	55.7
+gold-removed:235889003	gold-removed	none	none	True	False		0.2943	0.2943	0.53850208	0.2833	44.7
+easy:361126006	easy	AJ	AJ	True	True	False	0.8287	0.8287	0.03230074	0.826	55.0
+easy:254848002	easy	R	R	True	True	False	0.6179	0.6179	0.19305368000000003	0.6119	53.3
+gold-removed:9147009	gold-removed	none	H	False	False		0.4735	0.049	1.15412097	0.4653	62.8
+none-narrower:43634002	none-narrower	none	none	True	False		0.1978	0.1978	0.70879493	0.1853	52.9
+hard:400099008	hard	BE	BE	True	False	True	0.6332	0.6332	0.14245011000000002	0.6275	57.7
+none-narrower:60023006	none-narrower	none	none	True	False		0.2627	0.2627	0.5585320500000001	0.2512	55.2
+gold-removed:105997008	gold-removed	none	L	False	False		0.1546	0.1476	0.7726577700000001	0.1414	52.7
+retrieval-miss:254150007	retrieval-miss	none	P	False	False	True	0.3045	0.0484	1.05281848	0.2937	52.5
+retrieval-miss:254796009	retrieval-miss	none	AH	False	False	True	0.1597	0.1383	0.78934258	0.1466	52.4
+easy:17406005	easy	Q	Q	True	False	True	0.8996	0.8996	0.011255750000000005	0.898	51.6
+hard:45781009	hard	AH	AH	True	False	True	0.4704	0.4704	0.30350453000000005	0.4622	52.1
+gold-removed:188242006	gold-removed	none	AJ	False	False		0.2884	0.0797	0.9736685900000001	0.2773	45.0
+hard:78569004	hard	AJ	AJ	True	True	False	0.8802	0.8802	0.01532555	0.8783	55.3
+none-narrower:82069007	none-narrower	none	C	False	False		0.2783	0.1026	0.9292670899999999	0.267	52.6
+none-narrower:1209168005	none-narrower	none	Z	False	False		0.1351	0.0651	0.9359714399999999	0.1215	65.3
+easy:197284004	easy	AU	X	False	False	True	0.1466	0.0238	1.0229794699999997	0.1332	45.5
+gold-removed:65875003	gold-removed	none	none	True	False		0.2846	0.2846	0.5303509500000001	0.2735	55.5
+easy:763767006	easy	P	P	True	True	False	0.8393	0.8393	0.02731374999999998	0.8368	65.8
+hard:46557008	hard	AJ	AJ	True	True	False	0.8534	0.8534	0.023489719999999988	0.8511	45.2
+none-narrower:1197741006	none-narrower	none	AS	False	False		0.2651	0.2383	0.6833903000000001	0.2536	52.9
+hard:43916004	hard	AF	AF	True	True	False	0.8969	0.8969	0.011363609999999994	0.8953	64.6
+retrieval-miss:24693007	retrieval-miss	none	none	True	False	True	0.4073	0.4073	0.35841118	0.3981	63.0
+none-narrower:246762009	none-narrower	none	none	True	False		0.1054	0.1054	0.8195814000000001	0.0914	63.1
+easy:22125009	easy	A	A	True	True	True	0.4962	0.4962	0.26629326	0.4884	55.9
+retrieval-miss:237983002	retrieval-miss	none	none	True	False	True	0.2886	0.2886	0.5209049000000001	0.2774	55.5
+gold-removed:255084004	gold-removed	none	K	False	False		0.6233	0.0412	1.33784277	0.6174	54.8
+gold-removed:38837006	gold-removed	none	AK	False	False		0.5088	0.1249	1.03066295	0.5012	52.1
+gold-removed:92065004	gold-removed	none	none	True	False		0.2941	0.2941	0.54473518	0.2831	52.7
+none-narrower:37369009	none-narrower	none	none	True	False		0.3595	0.3595	0.4301315400000001	0.3495	52.6
+none-narrower:1186858000	none-narrower	none	none	True	False		0.4136	0.4136	0.36013021000000006	0.4044	62.4
+none-narrower:370481004	none-narrower	none	none	True	False		0.3861	0.3861	0.39100583	0.3765	56.5
+hard:128082002	hard	E	E	True	True	True	0.7183	0.7183	0.08637367999999997	0.7139	55.4
+easy:111227009	easy	BB	BB	True	False	True	0.3415	0.3415	0.45502979999999993	0.3313	62.4
+hard:733599009	hard	BK	AD	False	False	True	0.2556	0.0668	0.97488521	0.244	107.0
+hard:254840009	hard	AK	AK	True	True	False	0.8332	0.8332	0.02941711999999999	0.8306	51.3
+hard:702346005	hard	E	E	True	True	False	0.4894	0.4894	0.3096539199999999	0.4814	61.4
+hard:715561008	hard	Q	Q	True	True	True	0.8228	0.8228	0.03416562000000002	0.8201	54.0
+hard:63650001	hard	BD	BD	True	True	False	0.9232	0.9232	0.006732059999999996	0.922	54.8
+none-narrower:371074009	none-narrower	none	none	True	False		0.1831	0.1831	0.6996188099999999	0.1703	63.1
+easy:230410004	easy	J	N	False	False	True	0.6436	0.0158	1.3905716700000001	0.638	63.7
+easy:188264002	easy	BI	BI	True	True	True	0.4556	0.4556	0.40307864000000004	0.4471	45.2
+retrieval-miss:725291001	retrieval-miss	none	AM	False	False	True	0.3478	0.2708	0.6562929400000002	0.3377	59.1
+hard:9520006	hard	AT	AT	True	True	False	0.3659	0.3659	0.41296783000000004	0.356	62.1
+hard:124267007	hard	AX	AX	True	False	True	0.2216	0.2216	0.6547283800000001	0.2094	62.4
+easy:449074003	easy	H	H	True	True	False	0.7627	0.7627	0.062441029999999974	0.759	52.5
+gold-removed:7699004	gold-removed	none	B	False	False		0.1598	0.1201	0.8672009	0.1467	51.9
+hard:92590009	hard	AQ	AQ	True	True	False	0.7931	0.7931	0.046468929999999985	0.7899	51.9
+gold-removed:722461004	gold-removed	none	BL	False	False		0.189	0.1405	0.7882619099999999	0.1763	57.0
+hard:715721005	hard	BG	BG	True	True	False	0.6876	0.6876	0.10232771	0.6827	66.0
+hard:363475005	hard	AA	AA	True	True	True	0.5557	0.5557	0.20955644000000004	0.5487	53.4
+easy:5725006	easy	BG	BG	True	True	False	0.5852	0.5852	0.18225135999999997	0.5787	55.8
+hard:92115005	hard	AS	AS	True	True	True	0.8333	0.8333	0.030310359999999984	0.8307	52.9
+none-narrower:64634000	none-narrower	none	none	True	False		0.126	0.126	0.78349438	0.1123	52.3
+none-narrower:38731000087104	none-narrower	none	F	False	False		0.5636	0.1081	1.12448209	0.5568	52.7
+easy:197006009	easy	AZ	AZ	True	True	False	0.8061	0.8061	0.04547225999999999	0.803	56.0
+easy:312823001	easy	AC	AC	True	True	False	0.7218	0.7218	0.08338390000000001	0.7174	52.3
+easy:399422005	easy	C	C	True	True	False	0.417	0.417	0.3823964899999999	0.4079	52.3
+none-narrower:1197308005	none-narrower	none	none	True	False		0.1749	0.1749	0.71240744	0.1621	55.8
+easy:2576002	easy	AG	AG	True	False	True	0.8806	0.8806	0.015245529999999988	0.8787	55.7
+easy:23585005	easy	K	K	True	True	False	0.3	0.3	0.51477295	0.289	44.8
+easy:473418001	easy	AL	AL	True	False	True	0.2014	0.2014	0.6851913600000001	0.189	54.4
+none-narrower:240716009	none-narrower	none	AZ	False	False		0.1245	0.0697	0.9246407000000001	0.1108	55.6
+easy:92439006	easy	V	V	True	True	True	0.7855	0.7855	0.051166710000000004	0.7822	53.5
+none-narrower:61301000119102	none-narrower	none	X	False	False		0.5832	0.0871	1.1781710900000002	0.5767	52.9
+hard:237057005	hard	BC	BC	True	True	False	0.461	0.461	0.3224641099999999	0.4526	52.5
+none-narrower:403114001	none-narrower	none	Y	False	False		0.2706	0.1376	0.8919401200000001	0.2592	55.2
+easy:720757001	easy	AG	AG	True	True	True	0.7736	0.7736	0.05404826000000003	0.77	58.1
+hard:237982007	hard	O	BD	False	False	True	0.5606	0.0456	1.2794865000000002	0.5537	62.4
+retrieval-miss:20018005	retrieval-miss	none	none	True	False	True	0.2214	0.2214	0.63721149	0.2092	52.1
+easy:695751021000132104	easy	X	X	True	True	False	0.8354	0.8354	0.03000388999999999	0.8328	52.0
+easy:702431004	easy	AG	Y	False	False	True	0.6607	0.0647	1.3153863399999997	0.6554	57.5
+hard:776009	hard	AU	AU	True	False	True	0.5576	0.5576	0.21996898	0.5507	45.2
+retrieval-miss:48449000	retrieval-miss	none	S	False	False	True	0.2101	0.1375	0.8314204300000001	0.1977	52.9
+easy:59451000	easy	BI	D	False	False	True	0.1453	0.0408	0.9812874500000002	0.132	62.4
+easy:58795000	easy	AD	AD	True	True	False	0.5984	0.5984	0.17137610999999994	0.5921	63.0
+retrieval-miss:387778001	retrieval-miss	none	AS	False	False	True	0.248	0.13	0.88267415	0.2363	44.2
+retrieval-miss:44250009	retrieval-miss	none	Y	False	False	True	0.2485	0.1611	0.7968523200000001	0.2368	52.6
+retrieval-miss:124343001	retrieval-miss	none	none	True	False	True	0.2472	0.2472	0.6236222600000001	0.2355	55.5
+retrieval-miss:124274002	retrieval-miss	none	none	True	False	True	0.2451	0.2451	0.61172342	0.2333	56.5
+easy:703537008	easy	Z	Z	True	True	False	0.7881	0.7881	0.05498940999999997	0.7848	64.6
+hard:9491003	hard	AW	AW	True	True	False	0.7438	0.7438	0.07271085999999999	0.7398	53.4
+easy:726360002	easy	AT	AT	True	True	True	0.4464	0.4464	0.4246361299999999	0.4377	62.4
+gold-removed:770791000	gold-removed	none	M	False	False		0.1691	0.076	0.9196841900000001	0.1562	59.2
+gold-removed:400952003	gold-removed	none	BL	False	False		0.3222	0.0858	0.9568858699999999	0.3116	62.0
+easy:23205009	easy	M	M	True	True	False	0.7751	0.7751	0.052668059999999996	0.7716	55.4
+retrieval-miss:367649002	retrieval-miss	none	none	True	False	True	0.5049	0.5049	0.25095247	0.4972	56.5
+none-narrower:239813000	none-narrower	none	none	True	False		0.4164	0.4164	0.35413644	0.4073	55.7
+hard:15167005	hard	BB	BB	True	False	True	0.5647	0.5647	0.20363843000000004	0.5579	55.1
+easy:448990005	easy	G	G	True	True	False	0.5852	0.5852	0.19763130999999998	0.5787	52.6
+none-narrower:230174006	none-narrower	none	V	False	False		0.2794	0.0696	0.96288587	0.2681	55.1
+gold-removed:36653000	gold-removed	none	BL	False	False		0.3057	0.2517	0.65818649	0.2949	62.8
+hard:363494000	hard	AL	AL	True	True	True	0.3517	0.3517	0.44227100999999996	0.3416	54.8
+easy:721008000	easy	BF	BF	True	True	False	0.7397	0.7397	0.07340342999999999	0.7357	54.4
+easy:398670003	easy	H	H	True	True	True	0.5901	0.5901	0.18277416999999999	0.5837	52.7
+hard:10573002	hard	AS	K	False	True	False	0.5096	0.4407	0.57280622	0.502	45.3
+easy:722056009	easy	AN	AN	True	True	False	0.4917	0.4917	0.31327773	0.4837	64.3
+retrieval-miss:13151001	retrieval-miss	none	BE	False	False	True	0.4305	0.1313	0.9801336600000001	0.4217	45.0
+easy:188361007	easy	X	X	True	True	True	0.4403	0.4403	0.3474662499999999	0.4316	44.7
+none-narrower:12011009	none-narrower	none	none	True	False		0.2327	0.2327	0.63120032	0.2207	51.8
+easy:234646005	easy	G	G	True	True	True	0.7641	0.7641	0.06306095999999999	0.7604	45.0
+none-narrower:20833001	none-narrower	none	M	False	False		0.8508	0.0405	1.6459632300000002	0.8485	52.2
+easy:72776003	easy	AG	AG	True	True	False	0.6984	0.6984	0.09649338999999997	0.6937	51.6
+hard:95646004	hard	R	R	True	True	False	0.5268	0.5268	0.23304044999999995	0.5194	54.6
+hard:76098004	hard	H	H	True	False	True	0.3378	0.3378	0.47136715000000007	0.3275	52.6
+easy:725165009	easy	BD	BD	True	True	False	0.6074	0.6074	0.2441833	0.6013	55.2
+retrieval-miss:233692000	retrieval-miss	none	none	True	False	True	0.1867	0.1867	0.7174867300000001	0.174	54.6
+hard:20943002	hard	BL	BL	True	True	True	0.766	0.766	0.08084386999999997	0.7624	53.2
+easy:409664000	easy	AF	AF	True	False	True	0.8828	0.8828	0.015020449999999996	0.8809	52.6
+hard:764725008	hard	BJ	BJ	True	True	False	0.8573	0.8573	0.022491360000000012	0.855	201.7
+easy:429233001	easy	BH	BH	True	True	True	0.8136	0.8136	0.03956502	0.8107	52.3
+hard:4359001	hard	AZ	AZ	True	True	True	0.8016	0.8016	0.043049190000000015	0.7985	52.5
+retrieval-miss:124204003	retrieval-miss	none	none	True	False	True	0.2458	0.2458	0.59175804	0.234	55.3
+hard:23191004	hard	J	J	True	True	False	0.8789	0.8789	0.015886149999999995	0.877	55.7
+hard:764697003	hard	AM	AM	True	True	False	0.6893	0.6893	0.10178670999999997	0.6845	61.5
+easy:65593009	easy	Z	Z	True	True	True	0.7098	0.7098	0.09237781	0.7052	52.4
+hard:193428001	hard	AZ	AZ	True	True	False	0.3798	0.3798	0.41591662	0.3701	52.2
+hard:68566005	hard	AY	E	False	False	True	0.7394	0.1237	1.3159539	0.7353	45.2
+easy:3944006	easy	S	none	False	True	True	0.2526	0.0523	1.02084006	0.2409	58.2
+hard:91968002	hard	BE	BE	True	True	True	0.6613	0.6613	0.1542841	0.656	52.8
+none-narrower:1269531007	none-narrower	none	none	True	False		0.211	0.211	0.6609451000000001	0.1987	62.2
+hard:83223005	hard	D	D	True	True	False	0.5136	0.5136	0.25762407000000004	0.506	52.7
+easy:51742006	easy	Z	Z	True	True	False	0.552	0.552	0.20967627	0.545	51.9
+easy:723976005	easy	H	H	True	True	True	0.4251	0.4251	0.3414353999999999	0.4161	54.7
+none-narrower:1157157006	none-narrower	none	W	False	False		0.6659	0.0316	1.4007981900000002	0.6606	196.7
+none-narrower:1231185005	none-narrower	none	BC	False	False		0.2414	0.1138	0.85917847	0.2296	55.2
+easy:232254004	easy	L	L	True	True	True	0.8194	0.8194	0.03500191999999999	0.8165	52.7
+hard:92422009	hard	AX	AX	True	True	True	0.3116	0.3116	0.57960003	0.3008	52.2
+easy:423615009	easy	AB	AB	True	True	False	0.7735	0.7735	0.05526962000000001	0.7699	52.0
+none-narrower:197819009	none-narrower	none	none	True	False		0.5107	0.5107	0.24411369999999996	0.503	61.9
+hard:45283008	hard	T	T	True	True	False	0.5674	0.5674	0.22260538999999996	0.5607	55.5
+retrieval-miss:192877007	retrieval-miss	none	AX	False	False	True	0.7401	0.0478	1.45622521	0.7361	55.7
+easy:95678007	easy	C	C	True	True	False	0.6839	0.6839	0.11076575000000004	0.679	104.6
+gold-removed:230248006	gold-removed	none	N	False	False		0.4163	0.0607	1.06147754	0.4072	61.2
+easy:243321006	easy	AD	none	False	False	True	0.1575	0.1405	0.7856645899999998	0.1443	55.6
+gold-removed:95268002	gold-removed	none	O	False	False		0.6068	0.0365	1.3033494600000002	0.6007	55.9
+hard:277571004	hard	D	D	True	True	True	0.5322	0.5322	0.22913557999999998	0.5249	64.3
+easy:373905003	easy	AW	AW	True	True	True	0.5851	0.5851	0.25909389000000005	0.5786	55.9
+hard:276822007	hard	BE	BE	True	True	False	0.8703	0.8703	0.018373980000000012	0.8682	46.2
+none-narrower:68361004	none-narrower	none	none	True	False		0.2238	0.2238	0.6383911499999999	0.2117	56.0
+hard:720412009	hard	AV	AV	True	True	False	0.7276	0.7276	0.08078229999999999	0.7233	57.8
+hard:720637005	hard	BJ	BJ	True	True	False	0.6268	0.6268	0.14373184999999997	0.621	199.2
+hard:1197363004	hard	AW	AW	True	True	False	0.6252	0.6252	0.15047230000000003	0.6193	104.0
+gold-removed:414916001	gold-removed	none	none	True	False		0.098	0.098	0.8313289	0.0839	103.3
+gold-removed:46659004	gold-removed	none	Y	False	False		0.7025	0.0531	1.39375744	0.6978	56.5
+hard:23501004	hard	Z	Z	True	True	False	0.9029	0.9029	0.010185379999999996	0.9014	58.5
+hard:48813009	hard	AD	AD	True	True	False	0.5373	0.5373	0.22533256	0.5301	55.6
+hard:125605004	hard	AQ	AQ	True	True	False	0.5785	0.5785	0.18811102999999998	0.5719	45.6
+hard:87513003	hard	N	N	True	True	False	0.697	0.697	0.11434229000000004	0.6923	58.0
+hard:234350007	hard	AF	AF	True	True	False	0.2911	0.2911	0.5578249000000001	0.28	52.2
+hard:34287003	hard	BG	BG	True	True	False	0.2244	0.2244	0.68649638	0.2123	45.3
+easy:20052008	easy	AF	AS	False	False	True	0.3838	0.1313	0.9375081000000002	0.3742	53.7
+easy:277466009	easy	AJ	AA	False	True	False	0.1727	0.1384	0.7911126800000002	0.1597	51.8
+hard:7231009	hard	M	A	False	False	True	0.1444	0.1001	0.8617328799999999	0.1311	55.1
+hard:109385007	hard	H	H	True	True	False	0.8928	0.8928	0.012364319999999991	0.8911	45.7
+none-narrower:372024009	none-narrower	none	S	False	False		0.4545	0.019	1.30804092	0.446	45.2
+easy:697993003	easy	I	I	True	False	True	0.7427	0.7427	0.07003598	0.7387	52.8
+hard:715440003	hard	AX	AX	True	True	True	0.9079	0.9079	0.008961049999999991	0.9065	66.3
+hard:150541000119104	hard	T	none	False	False	True	0.3386	0.0941	0.9534351600000001	0.3282	44.8
+none-narrower:75548002	none-narrower	none	none	True	False		0.3137	0.3137	0.49244699000000003	0.303	55.2
+easy:725905005	easy	Q	Q	True	True	False	0.8305	0.8305	0.03197328	0.8278	53.3
+retrieval-miss:48180002	retrieval-miss	none	none	True	False	True	0.1077	0.1077	0.82041108	0.0938	55.4
+gold-removed:73132005	gold-removed	none	none	True	False		0.212	0.212	0.6656502900000001	0.1997	45.9
+easy:61598006	easy	BC	B	False	False	True	0.1611	0.0345	1.00199153	0.148	64.6
+hard:23975003	hard	AL	AL	True	True	True	0.7328	0.7328	0.08068945999999999	0.7287	52.3
+hard:420835009	hard	J	J	True	True	False	0.7082	0.7082	0.08950824999999997	0.7037	55.1
+hard:276803003	hard	AC	AC	True	True	False	0.876	0.876	0.016927299999999996	0.874	52.7
+easy:400085009	easy	L	L	True	True	False	0.8594	0.8594	0.022328239999999985	0.8572	52.3
+hard:702356009	hard	C	C	True	True	False	0.4711	0.4711	0.29197014999999993	0.4629	57.3
+none-narrower:1306326003	none-narrower	none	none	True	False		0.2104	0.2104	0.67583646	0.1981	52.9
+gold-removed:65340007	gold-removed	none	none	True	False		0.1793	0.1793	0.7235949399999999	0.1665	52.8
+easy:76886005	easy	AZ	AZ	True	True	False	0.6284	0.6284	0.14350571	0.6226	56.0
+none-narrower:870285004	none-narrower	none	AJ	False	False		0.2195	0.106	0.88520801	0.2073	201.1
+none-narrower:339331000119102	none-narrower	none	AU	False	False		0.7033	0.0498	1.4022293000000001	0.6987	45.0
+easy:403992002	easy	M	M	True	True	False	0.7791	0.7791	0.051869229999999995	0.7756	51.9
+hard:38281008	hard	AT	BJ	False	False	True	0.1542	0.0417	0.9830140300000002	0.141	104.5
+easy:274100004	easy	U	U	True	False	True	0.8619	0.8619	0.020717999999999993	0.8598	54.7
+retrieval-miss:62999006	retrieval-miss	none	none	True	False	True	0.3948	0.3948	0.3746460199999999	0.3853	53.9
+easy:449799008	easy	BK	BK	True	True	False	0.7612	0.7612	0.05973504	0.7574	55.3
+hard:363429002	hard	AM	AM	True	True	True	0.8713	0.8713	0.017855500000000007	0.8693	47.4
+easy:702355008	easy	J	J	True	True	False	0.774	0.774	0.05507880999999999	0.7705	55.4
+gold-removed:84438001	gold-removed	none	none	True	False		0.0626	0.0626	0.89839	0.048	53.2
+easy:767713001	easy	AL	AL	True	True	True	0.4753	0.4753	0.42330346999999985	0.4671	51.8
+gold-removed:426373005	gold-removed	none	AO	False	False		0.2156	0.2063	0.6970936	0.2033	51.9
+retrieval-miss:36696005	retrieval-miss	none	none	True	False	True	0.5315	0.5315	0.22383111000000003	0.5241	55.0
+gold-removed:719649004	gold-removed	none	none	True	False		0.2637	0.2637	0.5710037299999999	0.2522	203.2
+hard:719394002	hard	AQ	AQ	True	False	True	0.7025	0.7025	0.09194713999999998	0.6979	66.4
+hard:444604002	hard	BD	BD	True	True	False	0.6853	0.6853	0.14497582999999997	0.6804	52.4
+retrieval-miss:190773008	retrieval-miss	none	none	True	False	True	0.235	0.235	0.60027444	0.223	62.1
+hard:766928004	hard	J	J	True	True	True	0.7619	0.7619	0.062293149999999985	0.7582	56.4
+easy:371964008	easy	F	O	False	True	True	0.5683	0.3092	0.8021834800000001	0.5616	44.9
+hard:267369002	hard	A	AC	False	False	True	0.7171	0.0029	1.5131094299999996	0.7126	55.6
+gold-removed:16631009	gold-removed	none	none	True	False		0.1725	0.1725	0.70622863	0.1596	56.5
+retrieval-miss:396332003	retrieval-miss	none	none	True	False	True	0.3843	0.3843	0.39044539000000006	0.3747	62.3
+retrieval-miss:60086000	retrieval-miss	none	G	False	False	True	0.3934	0.1208	0.98512714	0.3839	55.9
+hard:715201005	hard	BD	BD	True	True	True	0.8445	0.8445	0.026123409999999986	0.842	58.7
+hard:92126004	hard	I	AI	False	True	True	0.3077	0.2483	0.69666196	0.2969	54.8
+easy:277522009	easy	F	F	True	False	True	0.3404	0.3404	0.4667066699999999	0.3301	52.4
+easy:233913007	easy	A	A	True	True	True	0.3924	0.3924	0.40285714999999994	0.3829	52.1
+hard:725394006	hard	D	D	True	True	False	0.6522	0.6522	0.13042907	0.6467	199.6
+easy:722285005	easy	BD	BD	True	False	True	0.607	0.607	0.16529102999999998	0.6008	64.8
+hard:21070001	hard	BF	BF	True	True	False	0.879	0.879	0.016183319999999998	0.8772	53.2
+none-narrower:192631000	none-narrower	none	U	False	False		0.4765	0.1925	0.88140357	0.4684	52.7
+gold-removed:254794007	gold-removed	none	AM	False	False		0.2268	0.1491	0.8271031200000001	0.2147	52.4
+hard:26843008	hard	H	H	True	True	True	0.8265	0.8265	0.035415089999999996	0.8238	55.3
+easy:66729008	easy	T	T	True	True	False	0.7579	0.7579	0.06736889999999998	0.7541	53.1
+easy:444691002	easy	BF	BF	True	False	True	0.8329	0.8329	0.031653030000000006	0.8303	52.5
+none-narrower:271386001	none-narrower	none	none	True	False		0.16	0.16	0.7454988999999999	0.1469	55.2
+gold-removed:302829009	gold-removed	none	none	True	False		0.1917	0.1917	0.6866358100000001	0.1791	45.3
+gold-removed:5370000	gold-removed	none	AF	False	False		0.2394	0.2033	0.70072222	0.2275	55.8
+hard:34713006	hard	AU	AU	True	True	False	0.675	0.675	0.11669897999999998	0.67	55.2
+gold-removed:80327007	gold-removed	none	AL	False	False		0.2668	0.0534	1.02025968	0.2554	52.7
+easy:254067002	easy	BA	BA	True	True	False	0.4648	0.4648	0.45292366999999994	0.4564	52.2
+easy:238612002	easy	U	U	True	True	False	0.7717	0.7717	0.05451300999999997	0.7682	57.2
+easy:254771006	easy	P	P	True	True	False	0.8896	0.8896	0.013242050000000012	0.8878	53.6
+hard:399463004	hard	Q	Q	True	True	True	0.2263	0.2263	0.62009984	0.2142	55.8
+easy:83911000119104	easy	N	N	True	False	True	0.4108	0.4108	0.36036784	0.4016	56.1
+easy:716231009	easy	Z	Z	True	True	False	0.7518	0.7518	0.06533053	0.748	57.1
+easy:53648006	easy	Z	Z	True	True	True	0.5148	0.5148	0.25363819	0.5072	52.4
+gold-removed:404058008	gold-removed	none	none	True	False		0.2222	0.2222	0.62479815	0.2101	52.0
+gold-removed:87191000119100	gold-removed	none	none	True	False		0.1847	0.1847	0.7055069700000001	0.172	55.6
+none-narrower:403632002	none-narrower	none	none	True	False		0.3334	0.3334	0.4640905800000001	0.323	204.3
+hard:66948001	hard	O	O	True	False	True	0.2073	0.2073	0.6590784299999999	0.1949	56.0
+hard:240613006	hard	G	G	True	False	True	0.5771	0.5771	0.19136660000000003	0.5705	45.7
+retrieval-miss:52542005	retrieval-miss	none	none	True	False	True	0.3403	0.3403	0.4814236499999999	0.33	55.0
+gold-removed:707234001	gold-removed	none	none	True	False		0.2676	0.2676	0.55943144	0.2561	52.7
+gold-removed:720571006	gold-removed	none	none	True	False		0.1699	0.1699	0.7090032500000001	0.1569	65.6
+gold-removed:38101003	gold-removed	none	none	True	False		0.5711	0.5711	0.18744442999999994	0.5644	63.3
+gold-removed:191260004	gold-removed	none	none	True	False		0.1434	0.1434	0.7637141800000001	0.1301	56.6
+hard:193683001	hard	AQ	AQ	True	True	False	0.3145	0.3145	0.49728086	0.3038	55.1
+gold-removed:253018005	gold-removed	none	I	False	False		0.4182	0.1617	0.9010399200000001	0.4092	44.8
+hard:91612009	hard	O	O	True	True	False	0.5399	0.5399	0.22104511999999993	0.5327	55.2
+none-narrower:448372003	none-narrower	none	AI	False	False		0.8308	0.0154	1.6668487	0.8282	53.6
+gold-removed:233642001	gold-removed	none	none	True	False		0.5235	0.5235	0.23371534000000005	0.5161	62.9
+none-narrower:707351006	none-narrower	none	none	True	False		0.2086	0.2086	0.67548457	0.1962	45.8
+none-narrower:124141008	none-narrower	none	J	False	False		0.4068	0.1084	0.9867184299999998	0.3975	63.0
+hard:720861000	hard	AG	E	False	False	True	0.1022	0.08	0.8882115000000002	0.0882	200.8
+none-narrower:55637002	none-narrower	none	none	True	False		0.1397	0.1397	0.7600241200000001	0.1262	51.7
+retrieval-miss:69646003	retrieval-miss	none	none	True	False	True	0.3919	0.3919	0.37742261	0.3824	55.3
+none-narrower:735549008	none-narrower	none	O	False	False		0.257	0.1033	0.95016407	0.2454	104.1
+hard:31681005	hard	V	V	True	True	False	0.882	0.882	0.014837949999999999	0.8801	55.3
+gold-removed:444910004	gold-removed	none	AP	False	False		0.183	0.1402	0.79810229	0.1703	55.5
+none-narrower:710360007	none-narrower	none	none	True	False		0.1285	0.1285	0.7865836799999999	0.1149	53.7
+easy:254050009	easy	AT	AT	True	True	False	0.3442	0.3442	0.4429911499999999	0.334	62.6
+easy:23238000	easy	BL	A	False	False	True	0.1945	0.011	1.03813907	0.1819	63.3
+easy:54036001	easy	AG	AG	True	False	True	0.4493	0.4493	0.3195888499999999	0.4407	58.5
+gold-removed:34225008	gold-removed	none	AD	False	False		0.372	0.1063	0.9842036799999999	0.3622	55.3
+hard:235888006	hard	X	AK	False	False	True	0.4298	0.0074	1.2688302900000001	0.4209	57.9
+easy:363436001	easy	AI	AI	True	True	True	0.7914	0.7914	0.04848568	0.7881	45.5
+easy:715564000	easy	AZ	AZ	True	False	True	0.5655	0.5655	0.19646606	0.5587	196.7
+none-narrower:239721001	none-narrower	none	none	True	False		0.3264	0.3264	0.46498273999999995	0.3158	62.9
+easy:709044004	easy	AD	AD	True	True	False	0.7229	0.7229	0.08343758	0.7185	56.3
+gold-removed:82053000	gold-removed	none	none	True	False		0.2486	0.2486	0.62938168	0.2369	52.3
+hard:94140004	hard	AA	AA	True	True	True	0.6277	0.6277	0.15692751999999996	0.6219	44.7
+hard:45170000	hard	AI	AI	True	True	True	0.4524	0.4524	0.3102049899999999	0.4439	54.9
+hard:715952000	hard	R	T	False	False	True	0.7087	0.0045	1.5026592400000003	0.7042	55.6
+easy:49762007	easy	BK	BK	True	True	True	0.6363	0.6363	0.15753689	0.6306	54.2
+easy:92279000	easy	BK	BK	True	True	True	0.8529	0.8529	0.023749000000000003	0.8506	53.1
+hard:702378002	hard	AE	AE	True	True	False	0.7203	0.7203	0.08184616999999997	0.7159	54.2
+hard:17385007	hard	E	E	True	True	False	0.4811	0.4811	0.3108845699999999	0.473	52.5
+hard:125666000	hard	AK	AK	True	True	False	0.2467	0.2467	0.6094060099999999	0.235	104.6
+none-narrower:21420006	none-narrower	none	none	True	False		0.2042	0.2042	0.6690719400000001	0.1918	56.4
+hard:17818006	hard	AP	AP	True	True	False	0.6386	0.6386	0.15229357000000007	0.633	55.3
+easy:75238000	easy	F	F	True	False	True	0.8192	0.8192	0.03456517999999998	0.8164	65.4
+easy:36083008	easy	AP	AP	True	True	False	0.6998	0.6998	0.09674123000000001	0.6952	53.3
+none-narrower:195680000	none-narrower	none	none	True	False		0.185	0.185	0.73563746	0.1722	45.4
+gold-removed:75068001	gold-removed	none	none	True	False		0.2132	0.2132	0.6661756699999999	0.2009	52.6
+hard:404056007	hard	AQ	AQ	True	True	False	0.9004	0.9004	0.010558460000000004	0.8988	52.4
+hard:76169001	hard	P	P	True	True	False	0.9259	0.9259	0.005959480000000009	0.9247	55.5
+hard:766992008	hard	AN	AN	True	False	True	0.5824	0.5824	0.18495853	0.5758	57.8
+hard:92039003	hard	J	J	True	True	True	0.8137	0.8137	0.03852085000000001	0.8108	55.2
+none-narrower:399044006	none-narrower	none	none	True	False		0.2782	0.2782	0.5367089899999999	0.2669	62.0
+hard:717336005	hard	I	I	True	True	False	0.447	0.447	0.40129283	0.4384	58.5
+gold-removed:4602007	gold-removed	none	none	True	False		0.1191	0.1191	0.8037807000000001	0.1054	55.3
+hard:267619000	hard	BL	BL	True	True	True	0.7807	0.7807	0.05662220000000002	0.7773	52.4
+gold-removed:118926004	gold-removed	none	none	True	False		0.0986	0.0986	0.83308494	0.0846	54.9
+hard:725590001	hard	E	E	True	True	True	0.4187	0.4187	0.35522176999999994	0.4096	58.5
+hard:49386006	hard	AR	BC	False	False	True	0.1141	0.0832	0.8758766000000002	0.1003	55.5
+hard:58976002	hard	BA	BA	True	True	True	0.5286	0.5286	0.23903465000000007	0.5212	103.1
+easy:443520009	easy	AG	AG	True	True	False	0.6394	0.6394	0.14224703	0.6337	56.0
+hard:448668007	hard	AU	AU	True	True	False	0.6604	0.6604	0.16773883	0.6551	45.1
+easy:5602001	easy	M	M	True	True	True	0.62	0.62	0.15969278999999997	0.6141	54.9
+easy:725033008	easy	Q	Q	True	False	True	0.7413	0.7413	0.07753327000000003	0.7373	66.6
+easy:724138007	easy	Z	Z	True	True	True	0.6125	0.6125	0.19158445	0.6064	58.9
+easy:711151004	easy	R	R	True	False	True	0.4114	0.4114	0.44760023	0.4022	55.6
+retrieval-miss:95208000	retrieval-miss	none	AU	False	False	True	0.1457	0.1074	0.8594531100000001	0.1323	52.7
+none-narrower:370484007	none-narrower	none	Z	False	False		0.5521	0.0605	1.2015699900000003	0.5451	54.9
+none-narrower:66893008	none-narrower	none	AV	False	False		0.7257	0.0376	1.4627169500000001	0.7214	55.8
+gold-removed:718849008	gold-removed	none	S	False	False		0.2081	0.042	0.9976732999999999	0.1957	54.6
+hard:25671008	hard	X	X	True	True	False	0.6788	0.6788	0.10820627000000002	0.6738	52.2
+gold-removed:721306009	gold-removed	none	AG	False	False		0.341	0.0793	1.01747562	0.3307	62.5
+hard:254049009	hard	AT	AT	True	True	False	0.8133	0.8133	0.035975579999999986	0.8104	55.7
+none-narrower:1222677008	none-narrower	none	T	False	False		0.7524	0.0237	1.5269934499999995	0.7486	59.2
+easy:45639009	easy	Z	Z	True	False	True	0.1679	0.1679	0.7419908300000001	0.1549	54.8
+easy:62332007	easy	BF	BF	True	True	True	0.6661	0.6661	0.14761054999999998	0.6609	55.6
+gold-removed:715316005	gold-removed	none	AO	False	False		0.1611	0.0718	0.9216569400000001	0.148	202.8
+easy:62676009	easy	AZ	AZ	True	True	False	0.9428	0.9428	0.0035580300000000037	0.9419	57.5
+hard:27270004	hard	AU	AU	True	True	False	0.7409	0.7409	0.06967008999999999	0.7369	55.7
+gold-removed:84568007	gold-removed	none	BJ	False	False		0.5547	0.1109	1.1027029499999998	0.5478	54.5
+easy:70917000	easy	AW	AW	True	True	False	0.7897	0.7897	0.049790750000000016	0.7865	55.9
+hard:724179008	hard	AX	AU	False	True	False	0.4746	0.0745	1.08669123	0.4664	58.1
+none-narrower:300312006	none-narrower	none	none	True	False		0.1428	0.1428	0.7639007999999999	0.1294	52.3
+hard:372109003	hard	AN	AN	True	True	False	0.3993	0.3993	0.3975948699999999	0.3899	44.6
+hard:234633000	hard	AR	AR	True	True	True	0.5006	0.5006	0.27383246	0.4928	200.7
+gold-removed:233970002	gold-removed	none	none	True	False		0.145	0.145	0.7807175199999999	0.1316	52.0
+gold-removed:254844000	gold-removed	none	AF	False	False		0.8187	0.0241	1.6260353799999998	0.8158	45.2
+none-narrower:686991000119106	none-narrower	none	BB	False	False		0.2366	0.1338	0.8358976899999999	0.2247	52.9
+easy:43424001	easy	S	S	True	True	False	0.8877	0.8877	0.013774379999999989	0.886	55.8
+retrieval-miss:196753007	retrieval-miss	none	none	True	False	True	0.4366	0.4366	0.35316243999999997	0.4278	53.0
+hard:68409003	hard	AV	AR	False	False	True	0.4168	0.2954	0.6739566199999999	0.4077	52.8
+none-narrower:50279003	none-narrower	none	BL	False	False		0.4316	0.075	1.0548533100000002	0.4227	45.5

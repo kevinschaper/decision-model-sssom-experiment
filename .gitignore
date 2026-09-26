@@ -1,0 +1,18 @@
+# Kev checkout (its own uv env, base weights land in ~/.cache/huggingface)
+kev/
+jevk5/
+kev-uv-sync.log
+# SNOMED CT content (labels, synonyms, definitions) is licensed and must not be redistributed:
+# every file that carries it stays local. data/ holds the term tables, item sets and training records;
+# runs/ holds adapters fine-tuned on that text (derivative-work status unresolved; keep local).
+data/
+runs/
+# raw model responses (letters + SCTIDs only, but large) and the cluster-pull staging dir
+results/**/responses*.jsonl
+results/.ll/
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+# run/serve/guard logs are noise
+results/*.log

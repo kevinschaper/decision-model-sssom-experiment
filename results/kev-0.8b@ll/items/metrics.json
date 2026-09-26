@@ -1,0 +1,169 @@
+{
+  "model": "kev-0.8b@ll",
+  "items": "items",
+  "overall": {
+    "n": 1500,
+    "acc": 0.736,
+    "lexical_top1_acc": 0.692,
+    "brier": 0.43898807871999995,
+    "ece": 0.21317840000000005,
+    "coverage@5": 0.06066666666666667,
+    "coverage@10": 0.382,
+    "auto_accept_precision": null,
+    "n_auto_accept": 0,
+    "none_rate": 0.10933333333333334,
+    "none_precision": 0.7073170731707317,
+    "none_recall": 0.3012987012987013,
+    "acc_gold_present": 0.8860986547085202,
+    "acc_gold_absent": 0.3012987012987013,
+    "rel_acc": 0.7151943462897526,
+    "rel_acc_by_truth": {
+      "narrower": {
+        "acc": 0.016666666666666666,
+        "n": 300
+      },
+      "same": {
+        "acc": 0.9031390134529148,
+        "n": 1115
+      }
+    },
+    "rel_confusion": {
+      "narrower": {
+        "broader": 154,
+        "same": 109,
+        "unrelated": 24,
+        "related": 8,
+        "narrower": 5
+      },
+      "same": {
+        "same": 1007,
+        "broader": 80,
+        "unrelated": 20,
+        "narrower": 6,
+        "related": 2
+      }
+    },
+    "fp_same": 0.10822232429949472
+  },
+  "tiers": {
+    "easy": {
+      "n": 559,
+      "acc": 0.8819320214669052,
+      "lexical_top1_acc": 0.9355992844364938,
+      "brier": 0.3251787552593917,
+      "ece": 0.3309032200357782,
+      "coverage@5": 0.7906976744186046,
+      "coverage@10": 0.9570661896243292,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "none_rate": 0.04830053667262969,
+      "none_precision": 0.0,
+      "none_recall": null,
+      "acc_gold_present": 0.8819320214669052,
+      "acc_gold_absent": null,
+      "rel_acc": 0.8998211091234347,
+      "rel_acc_by_truth": {
+        "same": {
+          "acc": 0.8998211091234347,
+          "n": 559
+        }
+      },
+      "rel_confusion": {
+        "same": {
+          "same": 503,
+          "broader": 38,
+          "unrelated": 13,
+          "narrower": 3,
+          "related": 2
+        }
+      },
+      "fp_same": 0.10145668285203169
+    },
+    "hard": {
+      "n": 556,
+      "acc": 0.8902877697841727,
+      "lexical_top1_acc": 0.9262589928057554,
+      "brier": 0.3047137301258993,
+      "ece": 0.3181512589928058,
+      "coverage@5": 0.8057553956834532,
+      "coverage@10": 0.9802158273381295,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "none_rate": 0.03776978417266187,
+      "none_precision": 0.0,
+      "none_recall": null,
+      "acc_gold_present": 0.8902877697841727,
+      "acc_gold_absent": null,
+      "rel_acc": 0.9064748201438849,
+      "rel_acc_by_truth": {
+        "same": {
+          "acc": 0.9064748201438849,
+          "n": 556
+        }
+      },
+      "rel_confusion": {
+        "same": {
+          "same": 504,
+          "broader": 42,
+          "unrelated": 7,
+          "narrower": 3
+        }
+      },
+      "fp_same": 0.0999486125385406
+    },
+    "none-narrower": {
+      "n": 300,
+      "acc": 0.26,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.8184775213000001,
+      "ece": 0.25714433333333325,
+      "coverage@5": 0.0,
+      "coverage@10": 0.0,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "none_rate": 0.26,
+      "none_precision": 1.0,
+      "none_recall": 0.26,
+      "acc_gold_present": null,
+      "acc_gold_absent": 0.26,
+      "rel_acc": 0.016666666666666666,
+      "rel_acc_by_truth": {
+        "narrower": {
+          "acc": 0.016666666666666666,
+          "n": 300
+        }
+      },
+      "rel_confusion": {
+        "narrower": {
+          "broader": 154,
+          "same": 109,
+          "unrelated": 24,
+          "related": 8,
+          "narrower": 5
+        }
+      },
+      "fp_same": 0.125
+    },
+    "retrieval-miss": {
+      "n": 85,
+      "acc": 0.4470588235294118,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.7263894535294118,
+      "ece": 0.23937529411764707,
+      "coverage@5": 0.0,
+      "coverage@10": 0.0,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "none_rate": 0.4470588235294118,
+      "none_precision": 1.0,
+      "none_recall": 0.4470588235294118,
+      "acc_gold_present": null,
+      "acc_gold_absent": 0.4470588235294118,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": 0.13529411764705881
+    }
+  },
+  "median_latency_ms": 24.7
+}

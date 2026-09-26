@@ -1,0 +1,140 @@
+{
+  "model": "jevk5-2b@ll",
+  "items": "items",
+  "overall": {
+    "n": 1500,
+    "acc": 0.666,
+    "lexical_top1_acc": 0.692,
+    "brier": 0.4740444628724614,
+    "ece": 0.12097706363598505,
+    "coverage@5": 0.15066666666666667,
+    "coverage@10": 0.35333333333333333,
+    "auto_accept_precision": 0.9285714285714286,
+    "n_auto_accept": 14,
+    "rel_acc": 0.4106007067137809,
+    "rel_acc_by_truth": {
+      "narrower": {
+        "acc": 0.83,
+        "n": 300
+      },
+      "same": {
+        "acc": 0.29775784753363227,
+        "n": 1115
+      }
+    },
+    "rel_confusion": {
+      "narrower": {
+        "narrower": 249,
+        "broader": 43,
+        "same": 5,
+        "related": 3
+      },
+      "same": {
+        "narrower": 625,
+        "same": 332,
+        "broader": 150,
+        "related": 8
+      }
+    },
+    "fp_same": 0.005144694533762058
+  },
+  "tiers": {
+    "easy": {
+      "n": 559,
+      "acc": 0.6869409660107334,
+      "lexical_top1_acc": 0.9355992844364938,
+      "brier": 0.4549454539362809,
+      "ece": 0.14040788325726025,
+      "coverage@5": 0.5008944543828264,
+      "coverage@10": 0.5599284436493739,
+      "auto_accept_precision": 1.0,
+      "n_auto_accept": 7,
+      "rel_acc": 0.3005366726296959,
+      "rel_acc_by_truth": {
+        "same": {
+          "acc": 0.3005366726296959,
+          "n": 559
+        }
+      },
+      "rel_confusion": {
+        "same": {
+          "narrower": 307,
+          "same": 168,
+          "broader": 82,
+          "related": 2
+        }
+      },
+      "fp_same": 0.006133401482238692
+    },
+    "hard": {
+      "n": 556,
+      "acc": 0.6888489208633094,
+      "lexical_top1_acc": 0.9262589928057554,
+      "brier": 0.45038689644605506,
+      "ece": 0.16146530055528063,
+      "coverage@5": 0.48381294964028776,
+      "coverage@10": 0.6348920863309353,
+      "auto_accept_precision": 1.0,
+      "n_auto_accept": 6,
+      "rel_acc": 0.2949640287769784,
+      "rel_acc_by_truth": {
+        "same": {
+          "acc": 0.2949640287769784,
+          "n": 556
+        }
+      },
+      "rel_confusion": {
+        "same": {
+          "narrower": 318,
+          "same": 164,
+          "broader": 68,
+          "related": 6
+        }
+      },
+      "fp_same": 0.003083247687564234
+    },
+    "none-narrower": {
+      "n": 300,
+      "acc": 0.5866666666666667,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.5494162583571411,
+      "ece": 0.2028197951118151,
+      "coverage@5": 0.0,
+      "coverage@10": 0.0,
+      "auto_accept_precision": 0.0,
+      "n_auto_accept": 1,
+      "rel_acc": 0.83,
+      "rel_acc_by_truth": {
+        "narrower": {
+          "acc": 0.83,
+          "n": 300
+        }
+      },
+      "rel_confusion": {
+        "narrower": {
+          "narrower": 249,
+          "broader": 43,
+          "same": 5,
+          "related": 3
+        }
+      },
+      "fp_same": 0.00625
+    },
+    "retrieval-miss": {
+      "n": 85,
+      "acc": 0.6588235294117647,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.48837874855484764,
+      "ece": 0.19916092297610116,
+      "coverage@5": 0.011764705882352941,
+      "coverage@10": 0.011764705882352941,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": 0.007352941176470588
+    }
+  },
+  "median_latency_ms": 330.89
+}

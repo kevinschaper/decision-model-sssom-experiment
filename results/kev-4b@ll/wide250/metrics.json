@@ -1,0 +1,226 @@
+{
+  "model": "kev-4b@ll",
+  "items": "wide250",
+  "overall": {
+    "n": 600,
+    "acc": 0.6316666666666667,
+    "lexical_top1_acc": 0.4166666666666667,
+    "brier": 0.62636289175,
+    "ece": 0.2957911666666667,
+    "coverage@5": 0.11833333333333333,
+    "auto_accept_precision": null,
+    "n_auto_accept": 0,
+    "rel_acc": 0.8022988505747126,
+    "rel_acc_by_truth": {
+      "broader": {
+        "acc": 0.4,
+        "n": 5
+      },
+      "narrower": {
+        "acc": 0.7078651685393258,
+        "n": 89
+      },
+      "related": {
+        "acc": 0.3,
+        "n": 10
+      },
+      "same": {
+        "acc": 0.8489425981873112,
+        "n": 331
+      }
+    },
+    "rel_confusion": {
+      "broader": {
+        "same": 2,
+        "broader": 2,
+        "related": 1
+      },
+      "narrower": {
+        "narrower": 63,
+        "same": 14,
+        "unrelated": 11,
+        "broader": 1
+      },
+      "related": {
+        "narrower": 4,
+        "unrelated": 3,
+        "same": 2,
+        "broader": 1
+      },
+      "same": {
+        "same": 281,
+        "narrower": 22,
+        "broader": 17,
+        "unrelated": 10,
+        "related": 1
+      }
+    },
+    "fp_same": 0.2702518720217835
+  },
+  "tiers": {
+    "easy": {
+      "n": 179,
+      "acc": 0.8324022346368715,
+      "lexical_top1_acc": 0.7150837988826816,
+      "brier": 0.4098178502793296,
+      "ece": 0.37496480446927377,
+      "coverage@5": 0.6536312849162011,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": 0.8606060606060606,
+      "rel_acc_by_truth": {
+        "same": {
+          "acc": 0.8606060606060606,
+          "n": 165
+        }
+      },
+      "rel_confusion": {
+        "same": {
+          "same": 142,
+          "narrower": 13,
+          "broader": 5,
+          "unrelated": 4,
+          "related": 1
+        }
+      },
+      "fp_same": 0.27956989247311825
+    },
+    "gold-removed": {
+      "n": 100,
+      "acc": 0.34,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.8887474836000001,
+      "ece": 0.266726,
+      "coverage@5": 0.0,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": 0.2833333333333333
+    },
+    "hard": {
+      "n": 179,
+      "acc": 0.7541899441340782,
+      "lexical_top1_acc": 0.6815642458100558,
+      "brier": 0.4949268210055866,
+      "ece": 0.33654134078212294,
+      "coverage@5": 0.24581005586592178,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": 0.7511961722488039,
+      "rel_acc_by_truth": {
+        "broader": {
+          "acc": 0.4,
+          "n": 5
+        },
+        "narrower": {
+          "acc": 0.4642857142857143,
+          "n": 28
+        },
+        "related": {
+          "acc": 0.3,
+          "n": 10
+        },
+        "same": {
+          "acc": 0.8373493975903614,
+          "n": 166
+        }
+      },
+      "rel_confusion": {
+        "broader": {
+          "same": 2,
+          "broader": 2,
+          "related": 1
+        },
+        "narrower": {
+          "narrower": 13,
+          "same": 10,
+          "unrelated": 4,
+          "broader": 1
+        },
+        "related": {
+          "narrower": 4,
+          "unrelated": 3,
+          "same": 2,
+          "broader": 1
+        },
+        "same": {
+          "same": 139,
+          "broader": 12,
+          "narrower": 9,
+          "unrelated": 6
+        }
+      },
+      "fp_same": 0.3719676549865229
+    },
+    "none-narrower": {
+      "n": 100,
+      "acc": 0.39,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.9059234002000001,
+      "ece": 0.34396899999999997,
+      "coverage@5": 0.0,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": 0.819672131147541,
+      "rel_acc_by_truth": {
+        "narrower": {
+          "acc": 0.819672131147541,
+          "n": 61
+        }
+      },
+      "rel_confusion": {
+        "narrower": {
+          "narrower": 50,
+          "unrelated": 7,
+          "same": 4
+        }
+      },
+      "fp_same": 0.15
+    },
+    "retrieval-miss": {
+      "n": 42,
+      "acc": 0.5238095238095238,
+      "lexical_top1_acc": 0.0,
+      "brier": 0.819079774047619,
+      "ece": 0.4042142857142856,
+      "coverage@5": 0.0,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": 0.1984126984126984
+    },
+    "lex-ambiguous": {
+      "n": 232,
+      "acc": 0.6681034482758621,
+      "lexical_top1_acc": 0.35344827586206895,
+      "brier": 0.6043734863362068,
+      "ece": 0.3145021551724138,
+      "coverage@5": 0.09482758620689655,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": null
+    },
+    "lex-clear": {
+      "n": 168,
+      "acc": 0.8988095238095238,
+      "lexical_top1_acc": 1.0,
+      "brier": 0.3341428442857143,
+      "ece": 0.3999803571428571,
+      "coverage@5": 0.8630952380952381,
+      "auto_accept_precision": null,
+      "n_auto_accept": 0,
+      "rel_acc": null,
+      "rel_acc_by_truth": {},
+      "rel_confusion": {},
+      "fp_same": null
+    }
+  },
+  "median_latency_ms": 225.35000000000002
+}
