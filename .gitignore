@@ -16,3 +16,4 @@ __pycache__/
 .ruff_cache/
 # run/serve/guard logs are noise
 results/*.log
+local-only-consensus-disagreements.tsv

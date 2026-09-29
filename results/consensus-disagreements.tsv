@@ -1,0 +1,231 @@
+set	tier	kind	subject_id	mondo_gold_id	mondo_gold_label	consensus_id	consensus_label	n_agree	n_models	mean_p_top
+items-v2	easy	all abstain, gold present	SCTID:18927009	MONDO:0009757	Niemann-Pick disease, type C1	none	none	7	7	0.907
+items-v2	hard	all abstain, gold present	SCTID:3944006	MONDO:0010622	recessive X-linked ichthyosis	none	none	7	7	0.834
+k8lab	easy	all abstain, gold present	SCTID:400075008	MONDO:0010481	angioedema	none	none	7	7	0.827
+items-v2	easy	all abstain, gold present	SCTID:704166007	MONDO:0007791	familial hypocalciuric hypercalcemia 1	none	none	7	7	0.817
+k8lab	hard	all abstain, gold present	SCTID:253283000	MONDO:0015451	univentricular heart	none	none	6	7	0.808
+items-v2	easy	all abstain, gold present	SCTID:45639009	MONDO:0018591	ITM2B amyloidosis	none	none	7	7	0.804
+items	hard	all abstain, gold present	SCTID:237965005	MONDO:0009288	glycogen storage disease Ib	none	none	7	7	0.798
+k8lab	easy	all abstain, gold present	SCTID:277466009	MONDO:0016537	lymphoproliferative syndrome	none	none	6	7	0.794
+items-v2	hard	all abstain, gold present	SCTID:126872008	MONDO:0005941	retroperitoneal cancer	none	none	6	7	0.788
+items	hard	all abstain, gold present	SCTID:34225008	MONDO:0000212	hypercalcemia, infantile	none	none	6	7	0.787
+items	hard	all abstain, gold present	SCTID:444921008	MONDO:0007880	congenital laryngeal web	none	none	6	7	0.786
+items-v2	easy	all abstain, gold present	SCTID:1003375005	MONDO:0009590	metachromatic leukodystrophy due to saposin B deficiency	none	none	7	7	0.771
+items-v2	easy	all abstain, gold present	SCTID:237965005	MONDO:0009288	glycogen storage disease Ib	none	none	7	7	0.769
+items-v2	hard	all abstain, gold present	SCTID:254916002	MONDO:0003010	multilocular clear cell renal cell carcinoma	none	none	7	7	0.76
+k8lab	hard	all abstain, gold present	SCTID:193428001	MONDO:0003579	retinal nerve fiber layer disorder	none	none	6	7	0.755
+k8lab	easy	all abstain, gold present	SCTID:254847007	MONDO:0002056	breast fibroadenoma	none	none	7	7	0.747
+items-v2	hard	all abstain, gold present	SCTID:68528007	MONDO:0016543	hyperphenylalaninemia due to tetrahydrobiopterin deficiency	none	none	7	7	0.735
+k8lab	hard	all abstain, gold present	SCTID:238776001	MONDO:0008436	Sneddon syndrome	none	none	6	7	0.732
+k8lab	easy	all abstain, gold present	SCTID:406446000	MONDO:0004885	choroidal sclerosis	none	none	6	7	0.724
+k8lab	hard	all abstain, gold present	SCTID:232003005	MONDO:0001539	retinal perforation	none	none	7	7	0.721
+items	easy	all abstain, gold present	SCTID:231527003	MONDO:0001521	intermittent explosive disorder	none	none	6	7	0.72
+k8lab	hard	all abstain, gold present	SCTID:702393003	MONDO:0010936	frontotemporal dementia and/or amyotrophic lateral sclerosis 7	none	none	7	7	0.716
+k8lab	hard	all abstain, gold present	SCTID:150541000119104	MONDO:0001318	functional gastric disease	none	none	6	7	0.716
+items-v2	hard	all abstain, gold present	SCTID:205647005	MONDO:0043277	mosaic trisomy 6	none	none	7	7	0.712
+k8lab	easy	all abstain, gold present	SCTID:45639009	MONDO:0018591	ITM2B amyloidosis	none	none	7	7	0.709
+items-v2	hard	all abstain, gold present	SCTID:111293003	MONDO:0008559	thrombophilia due to thrombin defect	none	none	6	7	0.702
+items-v2	easy	all abstain, gold present	SCTID:235073000	MONDO:0013140	candidiasis, familial, 4	none	none	7	7	0.7
+items	hard	all abstain, gold present	SCTID:24867002	MONDO:0019801	acute adrenal insufficiency	none	none	6	7	0.7
+k8lab	easy	all abstain, gold present	SCTID:20343006	MONDO:0008248	pigmented purpuric eruption	none	none	6	7	0.692
+k8lab	easy	all abstain, gold present	SCTID:3944006	MONDO:0010622	recessive X-linked ichthyosis	none	none	6	7	0.69
+items	easy	all abstain, gold present	SCTID:716662004	MONDO:0008199	late-onset Parkinson disease	none	none	7	7	0.684
+items	easy	all abstain, gold present	SCTID:11442006	MONDO:0015364	hereditary sensory and autonomic neuropathy	none	none	6	7	0.674
+k8lab	easy	all abstain, gold present	SCTID:88687001	MONDO:0017638	manganese poisoning	none	none	6	7	0.671
+items-v2	easy	all abstain, gold present	SCTID:205346006	MONDO:0017452	non-syndromic brachydactyly of toes	none	none	6	7	0.642
+k8lab	hard	all abstain, gold present	SCTID:198297004	MONDO:0005183	ovarian cystadenoma	none	none	6	7	0.632
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:56090007			MONDO:0011301	pseudohypoparathyroidism type 1B	7	7	0.978
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:773774000			MONDO:0016269	high-grade neuroendocrine carcinoma of the corpus uteri	7	7	0.976
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:773774000			MONDO:0016269	high-grade neuroendocrine carcinoma of the corpus uteri	7	7	0.971
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1269177007			MONDO:0018547	acute tricyclic antidepressant poisoning	7	7	0.97
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1332388003			MONDO:0018210	Alexander disease type II	7	7	0.97
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:772225005			MONDO:0700247	RAB18 deficiency	7	7	0.969
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:771177009			MONDO:0009156	ectrodactyly-polydactyly syndrome	7	7	0.968
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1306747001			MONDO:0012648	isobutyryl-CoA dehydrogenase deficiency	7	7	0.967
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1187464007			MONDO:0005006	clear cell sarcoma of kidney	7	7	0.967
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:770679002			MONDO:0017379	polyneuropathy-intellectual disability-acromicria-premature menopause syndrome	7	7	0.967
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1259031004			MONDO:0022011	bobble-head doll syndrome	7	7	0.967
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1237368006			MONDO:0035112	acute myeloid leukemia with BCR-ABL1	7	7	0.965
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1177179002			MONDO:0054770	orofaciodigital syndrome 18	7	7	0.964
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:448372003			MONDO:0020644	lung non-Hodgkin lymphoma	7	7	0.963
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1172901009			MONDO:0018794	cytosolic phospholipase-A2 alpha deficiency associated bleeding disorder	7	7	0.962
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:770728003			MONDO:0011106	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	7	7	0.96
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1231182008			MONDO:0015634	isolated osteopoikilosis	7	7	0.96
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:771515001			MONDO:0014058	facial dysmorphism-immunodeficiency-livedo-short stature syndrome	7	7	0.96
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:723610009			MONDO:0010069	spondylocostal dysostosis-anal and genitourinary malformations syndrome	7	7	0.959
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:716194005			MONDO:0009871	pili torti-developmental delay-neurological abnormalities syndrome	7	7	0.959
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:186289000			MONDO:0004677	tinea nigra	7	7	0.959
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:773610007			MONDO:0011411	Chudley-McCullough syndrome	7	7	0.959
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:773700005			MONDO:0016213	leukonychia totalis-acanthosis-nigricans-like lesions-abnormal hair syndrome	7	7	0.958
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1299151005			MONDO:0020559	O'Sullivan-McLeod syndrome	7	7	0.958
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:25668000			MONDO:0000330	endemic typhus	7	7	0.957
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1167373005			MONDO:0044701	childhood-onset motor and cognitive regression syndrome with extrapyramidal movement disorder	7	7	0.955
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1293071007			MONDO:0003305	cellular neurofibroma	7	7	0.953
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:720979002			MONDO:0008754	alopecia - contractures - dwarfism - intellectual disability syndrome	7	7	0.953
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:771013004			MONDO:0017331	Pilotto syndrome	7	7	0.953
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:890286007			MONDO:0011738	bilateral frontoparietal polymicrogyria	7	7	0.952
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:782754006			MONDO:0012216	foveal hypoplasia - optic nerve decussation defect - anterior segment dysgenesis syndrome	7	7	0.951
+items-v2	gold-removed	picked candidate; Mondo has no mapping	SCTID:763713000			MONDO:0005807	idiopathic CD4-positive T-lymphocytopenia	6	7	0.95
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:720952001			MONDO:0007225	fibular aplasia-ectrodactyly syndrome	7	7	0.95
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:276873004			MONDO:0006274	low grade vulvar intraepithelial neoplasia	7	7	0.944
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1237225007			MONDO:0009161	Ehlers-Danlos syndrome, dermatosparaxis type	7	7	0.943
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1179296003			MONDO:0011239	colobomatous macrophthalmia-microcornea syndrome	7	7	0.942
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:723829000			MONDO:0016214	pulmonary fibrosis-hepatic hyperplasia-bone marrow hypoplasia syndrome	7	7	0.938
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:38731000087104			MONDO:0018301	interstitial cystitis	7	7	0.934
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:763714006			MONDO:0008094	familial multiple nevi flammei	7	7	0.934
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:190979003			MONDO:0001341	selective IgA deficiency disease	7	7	0.933
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1351328007			MONDO:0958115	autosomal recessive combined immunodeficiency due to complete IL6ST deficiency	7	7	0.931
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:783705006			MONDO:0017659	sporadic hyperekplexia	7	7	0.93
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:783558004			MONDO:0013969	combined oxidative phosphorylation defect type 11	7	7	0.93
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:1179296003			MONDO:0011239	colobomatous macrophthalmia-microcornea syndrome	7	7	0.93
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1260130005			MONDO:0014559	progressive essential tremor-speech impairment-facial dysmorphism-intellectual disability-abnormal behavior syndrome	7	7	0.928
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1187048006			MONDO:0012472	Aicardi-Goutieres syndrome 4	7	7	0.925
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:278043000			MONDO:0003826	mediastinum seminoma	6	7	0.922
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1255207005			MONDO:0018676	eosinophilic angiocentric fibrosis	7	7	0.921
+items-v2	gold-removed	picked candidate; Mondo has no mapping	SCTID:95333004			MONDO:0850048	classic eosinophilic pustular folliculitis	7	7	0.919
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1157157006			MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	7	7	0.916
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1197357008			MONDO:0008927	colobomatous optic disc-macular atrophy-chorioretinopathy syndrome	7	7	0.916
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1237346001			MONDO:0018808	Caroli syndrome	7	7	0.915
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:403964007			MONDO:0975758	microvenular haemangioma	7	7	0.909
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:767448007			MONDO:0016722	pineoblastoma	7	7	0.905
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:783182004			MONDO:0016323	chronic respiratory distress with surfactant metabolism deficiency	6	7	0.903
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1264565005			MONDO:0009515	Norum disease	7	7	0.898
+items-v2	gold-removed	picked candidate; Mondo has no mapping	SCTID:716588005			MONDO:0004322	non-gestational ovarian choriocarcinoma	6	7	0.895
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:719042007			MONDO:0007355	uveal coloboma-cleft lip and palate-intellectual disability	7	7	0.895
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:253147000			MONDO:0015146	classic lissencephaly	7	7	0.892
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1259038005			MONDO:0015087	autosomal dominant complex spastic paraplegia	7	7	0.888
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:723363009			MONDO:0019073	hypotrichosis-lymphedema-telangiectasia-renal defect syndrome	6	7	0.885
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:1157157006			MONDO:0020317	acute myeloid leukemia with 11q23 abnormalities	7	7	0.883
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:359711001			MONDO:0015628	von Willebrand disease type 2A	7	7	0.879
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:87181002			MONDO:0018582	GCGR-related hyperglucagonemia	6	7	0.878
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:763312008			MONDO:0018189	autosomal recessive cerebellar ataxia - pyramidal signs - nystagmus - oculomotor apraxia syndrome	7	7	0.87
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1340174002			MONDO:0850071	developmental delay-immunodeficiency-leukoencephalopathy-hypohomocysteinemia syndrome	7	7	0.869
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:818967003			MONDO:0003144	medulloepithelioma	7	7	0.869
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:733598001			MONDO:0018433	acute myeloid leukemia with t(6;9)(p23;q34)	7	7	0.862
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:50279003			MONDO:0800486	metabolic bone disorder	7	7	0.856
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:66893008			MONDO:0006981	subacute bacterial endocarditis	6	7	0.854
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:389237009			MONDO:0008970	chondrodysplasia Blomstrand type	7	7	0.852
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:410063006			MONDO:0005508	hereditary multiple osteochondromas	6	7	0.838
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:254196004			MONDO:0019307	generalized junctional epidermolysis bullosa non-Herlitz type	7	7	0.838
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:370484007			MONDO:0020812	exposure, dental pulp	6	7	0.838
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:43658003			MONDO:0001258	vertebral artery occlusion	7	7	0.834
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:1340174002			MONDO:0850071	developmental delay-immunodeficiency-leukoencephalopathy-hypohomocysteinemia syndrome	7	7	0.829
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:371045000			MONDO:0700128	translocation Down syndrome	7	7	0.82
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:399959003			MONDO:0019303	premature aging syndrome	6	7	0.819
+k8lab	gold-removed	picked candidate; Mondo has no mapping	SCTID:1186907003			MONDO:1060218	xanthogranulomatous hypophysitis	7	7	0.81
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:370484007			MONDO:0020812	exposure, dental pulp	6	7	0.795
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:1156772007			MONDO:0015030	sclerosing perineurioma	6	7	0.789
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:783155007			MONDO:0004669	salivary gland cancer	6	7	0.789
+items-v2	gold-removed	picked candidate; Mondo has no mapping	SCTID:77489003			MONDO:0001055	conjunctival pterygium	6	7	0.782
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:783558004			MONDO:0013969	combined oxidative phosphorylation defect type 11	7	7	0.775
+items-v2	gold-removed	picked candidate; Mondo has no mapping	SCTID:60380001			MONDO:0016158	narcolepsy-cataplexy syndrome	6	7	0.773
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:448372003			MONDO:0020644	lung non-Hodgkin lymphoma	6	7	0.772
+k8lab	gold-removed	picked candidate; Mondo has no mapping	SCTID:235908005			MONDO:0020693	glycogen storage disease due to liver phosphorylase kinase deficiency	6	7	0.765
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:770728003			MONDO:0011106	facial dysmorphism-lens dislocation-anterior segment abnormalities-spontaneous filtering blebs syndrome	7	7	0.761
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:1237571004			MONDO:0017615	benign familial infantile epilepsy	7	7	0.756
+items	none-narrower	picked candidate; Mondo has no mapping	SCTID:197853008			MONDO:0006030	chronic cystitis	6	7	0.751
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:1222677008			MONDO:0018603	SFTPC-related interstitial lung disease	6	7	0.73
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:285251000119101			MONDO:0019443	dextro-looped transposition of the great arteries	6	7	0.721
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:56871000			MONDO:0017817	primary localized amyloidosis	6	7	0.706
+items-v2	none-narrower	picked candidate; Mondo has no mapping	SCTID:22935002			MONDO:0009902	cutaneous porphyria	6	7	0.688
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:733598001			MONDO:0018433	acute myeloid leukemia with t(6;9)(p23;q34)	6	7	0.671
+k8lab	none-narrower	picked candidate; Mondo has no mapping	SCTID:1237225007			MONDO:0009161	Ehlers-Danlos syndrome, dermatosparaxis type	6	7	0.59
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:361115000	MONDO:0001809	adhesions of uterus	MONDO:0015299	Asherman syndrome	7	7	0.972
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:716996008	MONDO:0010559	MASA syndrome	MONDO:0017140	L1 syndrome	7	7	0.968
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:361115000	MONDO:0001809	adhesions of uterus	MONDO:0015299	Asherman syndrome	7	7	0.967
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:192877007	MONDO:0018215	paraneoplastic neurologic syndrome	MONDO:0044877	paraneoplastic cerebellar degeneration	7	7	0.966
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:82639001	MONDO:0008268	polydactyly-myopia syndrome	MONDO:0004169	premenstrual tension	7	7	0.96
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:239873007	MONDO:0012894	osteoarthritis susceptibility 6	MONDO:0005416	osteoarthritis, knee	7	7	0.958
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:34000006	MONDO:0009960	inflammatory bowel disease 1	MONDO:0005011	Crohn disease	7	7	0.956
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:307406004	MONDO:0005568	cholesterol embolism	MONDO:0001883	blue toe syndrome	7	7	0.955
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:10170007	MONDO:0009196	ermine phenotype	MONDO:0800300	black locks with albinism and deafness syndrome	7	7	0.952
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:238694002	MONDO:0007447	autosomal dominant vibratory urticaria	MONDO:0034556	vibratory angioedema	7	7	0.952
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:87872006	MONDO:0005339	androgenetic alopecia	MONDO:0800201	baldness, male pattern	6	7	0.947
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:82639001	MONDO:0008268	polydactyly-myopia syndrome	MONDO:0004169	premenstrual tension	7	7	0.941
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:277921008	MONDO:0008811	XK aprosencephaly	MONDO:0035449	atelencephaly	7	7	0.94
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:36803009	MONDO:0010918	epilepsy, idiopathic generalized, susceptibility to, 1	MONDO:0005579	idiopathic generalized epilepsy	7	7	0.939
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:725034002	MONDO:0011071	hereditary thrombocytopenia and hematologic cancer predisposition syndrome	MONDO:0100083	hereditary thrombocytopenia and hematological cancer predisposition syndrome associated with RUNX1	7	7	0.938
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:715771008	MONDO:0009630	microphthalmia, isolated, with coloboma 4	MONDO:0000170	microphthalmia, isolated, with coloboma	7	7	0.937
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:118601006	MONDO:0011508	lymphoma, non-Hodgkin, familial	MONDO:0018908	non-Hodgkin lymphoma	7	7	0.935
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:16140007	MONDO:0005630	actinobacillosis	MONDO:0006636	Actinobacillus infectious disease	6	7	0.93
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:82800008	MONDO:0022993	dipsogenic diabetes insipidus	MONDO:0040870	primary polydipsia	7	7	0.926
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:93132001	MONDO:0009140	Silverman-Handmaker type dyssegmental dysplasia	MONDO:0009498	lethal Kniest-like dysplasia	7	7	0.923
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:193687000	MONDO:0016293	congenital stationary night blindness	MONDO:0019152	Oguchi disease	7	7	0.92
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:205550003	MONDO:0019306	congenital non-bullous ichthyosiform erythroderma	MONDO:0017778	lamellar ichthyosis	7	7	0.918
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:414667000	MONDO:0019773	myelomeningocele	MONDO:0017069	spina bifida cystica	7	7	0.914
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:59252009	MONDO:0009053	ALDH18A1-related de Barsy syndrome	MONDO:0017569	de Barsy syndrome	7	7	0.904
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:397758007	MONDO:0018373	avascular necrosis	MONDO:0005380	osteonecrosis	7	7	0.903
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:59252009	MONDO:0009053	ALDH18A1-related de Barsy syndrome	MONDO:0017569	de Barsy syndrome	7	7	0.897
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:720830009	MONDO:0009744	neuronal ceroid lipofuscinosis 1	MONDO:0979371	congenital neuronal ceroid lipofuscinosis 10	7	7	0.89
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:205550003	MONDO:0019306	congenital non-bullous ichthyosiform erythroderma	MONDO:0017778	lamellar ichthyosis	7	7	0.89
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:218728005	MONDO:0016581	conotruncal heart malformations	MONDO:0009010	aortic arch interruption	7	7	0.889
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:403901001	MONDO:0003487	pseudoglandular squamous cell carcinoma	MONDO:0004316	acantholytic squamous cell skin carcinoma	6	7	0.882
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:277921008	MONDO:0008811	XK aprosencephaly	MONDO:0035449	atelencephaly	7	7	0.869
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:230410004	MONDO:0017615	benign familial infantile epilepsy	MONDO:0100023	self-limited familial neonatal epilepsy	6	7	0.862
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:55711009	MONDO:0009161	Ehlers-Danlos syndrome, dermatosparaxis type	MONDO:0007525	Ehlers-Danlos syndrome, arthrochalasia type	7	7	0.858
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:62628008	MONDO:0008518	calcaneonavicular coalition	MONDO:0017923	multiple synostoses syndrome	7	7	0.856
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:192877007	MONDO:0018215	paraneoplastic neurologic syndrome	MONDO:0044877	paraneoplastic cerebellar degeneration	7	7	0.855
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:129154003	MONDO:0002334	hematopoietic and lymphoid system neoplasm	MONDO:0044881	hematopoietic and lymphoid cell neoplasm	7	7	0.854
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:73856006	MONDO:0009054	autosomal recessive cutis laxa type 2, classic type	MONDO:0018163	autosomal recessive cutis laxa type 2A	7	7	0.852
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:230410004	MONDO:0017615	benign familial infantile epilepsy	MONDO:0100023	self-limited familial neonatal epilepsy	7	7	0.849
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:398768004	MONDO:0002653	Paget disease of the penis	MONDO:0004671	penis carcinoma in situ	7	7	0.846
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:230410004	MONDO:0017615	benign familial infantile epilepsy	MONDO:0100023	self-limited familial neonatal epilepsy	6	7	0.833
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:403901001	MONDO:0003487	pseudoglandular squamous cell carcinoma	MONDO:0004316	acantholytic squamous cell skin carcinoma	7	7	0.823
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:720830009	MONDO:0009744	neuronal ceroid lipofuscinosis 1	MONDO:0979371	congenital neuronal ceroid lipofuscinosis 10	7	7	0.82
+items-v2	retrieval-miss	picked candidate; gold not retrieved	SCTID:422886007	MONDO:0016029	esthesioneuroblastoma	MONDO:0006329	olfactory neuroblastoma	6	7	0.803
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:59252009	MONDO:0009053	ALDH18A1-related de Barsy syndrome	MONDO:0017569	de Barsy syndrome	7	7	0.801
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:711151004	MONDO:0017625	familial primary hypomagnesemia with hypocalcuria	MONDO:0011176	intestinal hypomagnesemia 1	6	7	0.797
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:80321008	MONDO:0002461	membranoproliferative glomerulonephritis	MONDO:0018904	primary membranoproliferative glomerulonephritis	7	7	0.794
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:267369002	MONDO:0007681	goiter, multinodular 1, with or without Sertoli-Leydig cell tumors	MONDO:0001658	nontoxic goiter	7	7	0.775
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:8847002	MONDO:0006630	osteoarthritis, spine	MONDO:0002253	spondylosis	6	7	0.738
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:124593001	MONDO:0010717	pyruvate dehydrogenase E1-alpha deficiency	MONDO:0019169	pyruvate dehydrogenase deficiency	6	7	0.696
+k8lab	retrieval-miss	picked candidate; gold not retrieved	SCTID:235888006	MONDO:0019072	intrahepatic cholestasis	MONDO:0100429	intrahepatic cholestasis of pregnancy	6	7	0.677
+items	retrieval-miss	picked candidate; gold not retrieved	SCTID:129565002	MONDO:0005336	myopathy	MONDO:0003939	muscle tissue disorder	6	7	0.651
+items-v2	easy	picked different Mondo term (gold present)	SCTID:716723000	MONDO:0007691	Guillain-Barre syndrome, familial	MONDO:0020347	acute inflammatory demyelinating polyradiculoneuropathy	7	7	0.971
+items-v2	hard	picked different Mondo term (gold present)	SCTID:7573000	MONDO:0009861	phenylketonuria	MONDO:0019259	classic phenylketonuria	7	7	0.966
+items-v2	hard	picked different Mondo term (gold present)	SCTID:302820008	MONDO:0016642	meningioma	MONDO:0850302	intracranial meningioma	7	7	0.965
+items-v2	easy	picked different Mondo term (gold present)	SCTID:715952000	MONDO:0018094	Waardenburg syndrome	MONDO:0019518	Waardenburg-Shah syndrome	7	7	0.956
+items-v2	easy	picked different Mondo term (gold present)	SCTID:127232002	MONDO:0001082	lymph node cancer	MONDO:0024339	lymph node neoplasm	6	7	0.954
+items-v2	easy	picked different Mondo term (gold present)	SCTID:76520005	MONDO:0008389	autosomal dominant Robinow syndrome	MONDO:0019978	Robinow syndrome	7	7	0.954
+items-v2	hard	picked different Mondo term (gold present)	SCTID:191169008	MONDO:0008165	southeast Asian ovalocytosis	MONDO:0017319	hereditary elliptocytosis	7	7	0.952
+items	hard	picked different Mondo term (gold present)	SCTID:26609002	MONDO:0008076	amyotrophic neuralgia	MONDO:0017362	neuralgic amyotrophy	7	7	0.946
+items	hard	picked different Mondo term (gold present)	SCTID:398680004	MONDO:0008988	citrullinemia type I	MONDO:0015991	citrullinemia	7	7	0.942
+items-v2	easy	picked different Mondo term (gold present)	SCTID:233915000	MONDO:0011376	ventricular fibrillation, paroxysmal familial, type 1	MONDO:0100234	paroxysmal familial ventricular fibrillation	7	7	0.935
+items-v2	easy	picked different Mondo term (gold present)	SCTID:127004000	MONDO:0002464	lacrimal gland cancer	MONDO:0021222	lacrimal gland neoplasm	6	7	0.932
+items-v2	easy	picked different Mondo term (gold present)	SCTID:127230005	MONDO:0005966	spleen cancer	MONDO:0036696	spleen neoplasm	6	7	0.93
+items-v2	hard	picked different Mondo term (gold present)	SCTID:254709009	MONDO:0003531	papillary eccrine carcinoma	MONDO:0044789	digital papillary eccrine carcinoma	7	7	0.928
+items-v2	easy	picked different Mondo term (gold present)	SCTID:406506008	MONDO:0005302	attention deficit hyperactivity disorder, inattentive type	MONDO:0007743	attention deficit-hyperactivity disorder	7	7	0.916
+items	hard	picked different Mondo term (gold present)	SCTID:254146000	MONDO:0009227	myofibromatosis, infantile, 1	MONDO:0016824	infantile myofibromatosis	6	7	0.911
+items-v2	hard	picked different Mondo term (gold present)	SCTID:398680004	MONDO:0008988	citrullinemia type I	MONDO:0015991	citrullinemia	7	7	0.907
+items-v2	hard	picked different Mondo term (gold present)	SCTID:254146000	MONDO:0009227	myofibromatosis, infantile, 1	MONDO:0016824	infantile myofibromatosis	7	7	0.9
+items-v2	hard	picked different Mondo term (gold present)	SCTID:238091006	MONDO:0009515	Norum disease	MONDO:0018999	LCAT deficiency	7	7	0.899
+k8lab	hard	picked different Mondo term (gold present)	SCTID:7881005	MONDO:0006515	acute pancreatitis	MONDO:0850420	acute necrotizing pancreatitis	7	7	0.897
+items-v2	easy	picked different Mondo term (gold present)	SCTID:398036000	MONDO:0007750	hypercholesterolemia, familial, 1	MONDO:0005439	familial hypercholesterolemia	6	7	0.896
+k8lab	hard	picked different Mondo term (gold present)	SCTID:715952000	MONDO:0018094	Waardenburg syndrome	MONDO:0019518	Waardenburg-Shah syndrome	7	7	0.892
+items	easy	picked different Mondo term (gold present)	SCTID:406506008	MONDO:0005302	attention deficit hyperactivity disorder, inattentive type	MONDO:0007743	attention deficit-hyperactivity disorder	7	7	0.889
+items-v2	hard	picked different Mondo term (gold present)	SCTID:725167001	MONDO:0015066	neuroendocrine tumor of the appendix, well differentiated, low or intermediate grade	MONDO:0024501	appendix neuroendocrine neoplasm	7	7	0.887
+items	easy	picked different Mondo term (gold present)	SCTID:127232002	MONDO:0001082	lymph node cancer	MONDO:0024339	lymph node neoplasm	7	7	0.876
+items-v2	hard	picked different Mondo term (gold present)	SCTID:254157005	MONDO:0007810	autosomal dominant ichthyosis vulgaris	MONDO:0024304	ichthyosis vulgaris	7	7	0.87
+items	hard	picked different Mondo term (gold present)	SCTID:126907002	MONDO:0001416	female reproductive organ cancer	MONDO:0021148	female reproductive system neoplasm	6	7	0.861
+items-v2	hard	picked different Mondo term (gold present)	SCTID:126703006	MONDO:0002318	trachea leiomyoma	MONDO:0021210	trachea neoplasm	7	7	0.859
+items-v2	hard	picked different Mondo term (gold present)	SCTID:29504002	MONDO:0007378	posterior polymorphous corneal dystrophy 1	MONDO:0020364	posterior polymorphous corneal dystrophy	7	7	0.853
+items	hard	picked different Mondo term (gold present)	SCTID:403900000	MONDO:0021663	sarcomatoid squamous cell carcinoma	MONDO:0003499	sarcomatoid squamous cell skin carcinoma	7	7	0.852
+items-v2	hard	picked different Mondo term (gold present)	SCTID:609221008	MONDO:0100352	episodic kinesigenic dyskinesia 1	MONDO:0044202	episodic kinesigenic dyskinesia	7	7	0.837
+k8lab	hard	picked different Mondo term (gold present)	SCTID:254709009	MONDO:0003531	papillary eccrine carcinoma	MONDO:0044789	digital papillary eccrine carcinoma	7	7	0.83
+items-v2	hard	picked different Mondo term (gold present)	SCTID:190502001	MONDO:0020528	ACTH-dependent Cushing syndrome	MONDO:0009050	Cushing disease due to pituitary adenoma	7	7	0.829
+items-v2	hard	picked different Mondo term (gold present)	SCTID:253020008	MONDO:0002189	nodular hidradenoma	MONDO:0002805	hidradenoma	6	7	0.816
+items-v2	easy	picked different Mondo term (gold present)	SCTID:95435007	MONDO:0008586	esophageal atresia/tracheoesophageal fistula	MONDO:0018694	isolated tracheo-esophageal fistula	6	7	0.81
+items-v2	hard	picked different Mondo term (gold present)	SCTID:725392005	MONDO:0012205	autosomal dominant striatal neurodegeneration type 1	MONDO:0000211	striatal degeneration, autosomal dominant	7	7	0.81
+items-v2	easy	picked different Mondo term (gold present)	SCTID:371486001	MONDO:0002236	ocular cancer	MONDO:0021220	eye neoplasm	6	7	0.799
+k8lab	hard	picked different Mondo term (gold present)	SCTID:725167001	MONDO:0015066	neuroendocrine tumor of the appendix, well differentiated, low or intermediate grade	MONDO:0024501	appendix neuroendocrine neoplasm	7	7	0.799
+k8lab	easy	picked different Mondo term (gold present)	SCTID:76520005	MONDO:0008389	autosomal dominant Robinow syndrome	MONDO:0019978	Robinow syndrome	7	7	0.79
+k8lab	easy	picked different Mondo term (gold present)	SCTID:240104008	MONDO:0016107	myotonic dystrophy	MONDO:0023595	congenital myotonic dystrophy	6	7	0.734
+items-v2	easy	picked different Mondo term (gold present)	SCTID:274142002	MONDO:0007476	familial Dupuytren contracture	MONDO:0006345	palmar fibromatosis	6	7	0.73
+items-v2	hard	picked different Mondo term (gold present)	SCTID:699256006	MONDO:0021171	Timothy syndrome, classic type	MONDO:0035678	Timothy syndrome type 1	7	7	0.707
+items-v2	easy	picked different Mondo term (gold present)	SCTID:240104008	MONDO:0016107	myotonic dystrophy	MONDO:0035646	congenital-onset Steinert myotonic dystrophy	7	7	0.681
+k8lab	hard	picked different Mondo term (gold present)	SCTID:253781004	MONDO:0100354	megacystis-microcolon-intestinal hypoperistalsis syndrome 1	MONDO:0025986	megacystis-microcolon-intestinal hypoperistalsis syndrome	6	7	0.667
+items-v2	easy	picked different Mondo term (gold present)	SCTID:89655007	MONDO:0018542	severe congenital neutropenia	MONDO:0015134	constitutional neutropenia	6	7	0.665
+k8lab	easy	picked different Mondo term (gold present)	SCTID:702431004	MONDO:0008115	Feingold syndrome type 1	MONDO:0015267	Feingold syndrome	6	7	0.639
+k8lab	easy	picked different Mondo term (gold present)	SCTID:254067002	MONDO:0015708	immuno-osseous dysplasia	MONDO:0009458	Schimke immuno-osseous dysplasia	6	7	0.548
+items	none-narrower	picked mapped parent	SCTID:403373008			MONDO:0006553	Fox-Fordyce disease	6	7	0.893
+items	none-narrower	picked mapped parent	SCTID:472783006			MONDO:0006987	subvalvular aortic stenosis	6	7	0.705

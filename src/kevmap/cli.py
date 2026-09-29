@@ -28,6 +28,8 @@ def main(argv=None):
     r.add_argument("--workers", type=int, default=1)
     r.add_argument("--tier", action="append")
     r.add_argument("--items", default="items")
+    r.add_argument("--base-url", help="hosted endpoint, e.g. https://api.typesafe.ai (bearer key from KEVMAP_API_KEY)")
+    r.add_argument("--request-model", default="kev-latest", help='"model" field sent in each request (Jev: jev-latest)')
     e = sub.add_parser("eval", help="score runs and write the comparison table")
     e.add_argument("--model", action="append", help="default: every results/<model>/<items> with responses")
     e.add_argument("--items", default="items")
@@ -71,7 +73,7 @@ def main(argv=None):
     elif a.cmd == "run":
         from .run import run
 
-        run(a.model, a.port, a.limit, a.workers, a.tier, a.items)
+        run(a.model, a.port, a.limit, a.workers, a.tier, a.items, a.base_url, a.request_model)
     elif a.cmd == "eval":
         models = a.model or sorted(p.parent.parent.name for p in RESULTS.glob(f"*/{a.items}/responses.jsonl"))
         for m in models:

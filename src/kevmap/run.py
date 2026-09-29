@@ -20,19 +20,30 @@ def result_dir(model: str, items: str = "items"):
 MAX_SERVER_GB = float(os.environ.get("KEVMAP_MAX_SERVER_GB", "18"))
 REL_TOPN = int(os.environ.get("KEVMAP_REL_TOPN", "3"))  # match-only items: relation asked for the top-N by p(match)
 SPLIT = os.environ.get("KEVMAP_SPLIT_QUESTIONS", "0") == "1"  # one question per request (Hopper's server requires it)
+API_KEY = os.environ.get("KEVMAP_API_KEY")  # bearer token for a hosted endpoint (Jev); read from the environment only
+MAX_INPUT_TOKENS = int(float(os.environ.get("KEVMAP_MAX_INPUT_TOKENS", "0")))  # hard stop for a paid endpoint; 0 = off
+USD_PER_M_INPUT = float(os.environ.get("KEVMAP_USD_PER_M_INPUT", "0.042"))  # Jev list price, output is free
+
+
+def _post_once(client: httpx.Client, req: dict) -> dict:
+    """One POST with retries on rate limits and transient server errors (a hosted endpoint throttles)."""
+    for attempt in range(6):
+        r = client.post("/v1/systemone", json=req)
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < 5:
+            time.sleep(min(2**attempt, 30))
+            continue
+        r.raise_for_status()
+        return r.json()
+    raise RuntimeError("unreachable")
 
 
 def post(client: httpx.Client, req: dict) -> dict:
     """POST a request; with KEVMAP_SPLIT_QUESTIONS=1 each question goes in its own request, answers merged."""
     if not SPLIT or len(req["questions"]) == 1:
-        r = client.post("/v1/systemone", json=req)
-        r.raise_for_status()
-        return r.json()
+        return _post_once(client, req)
     answers, latency, usage = {}, 0.0, {"input_tokens": 0, "output_tokens": 0}
     for qid, q in req["questions"].items():
-        r = client.post("/v1/systemone", json={**req, "questions": {qid: q}})
-        r.raise_for_status()
-        body = r.json()
+        body = _post_once(client, {**req, "questions": {qid: q}})
         answers.update(body["answers"])
         latency += body.get("latency_ms") or 0.0
         for k in usage:
@@ -58,7 +69,7 @@ def server_rss_gb() -> float:
 
 
 def run(model: str, port: int, limit: int | None = None, workers: int = 1, tiers: list[str] | None = None,
-        items_name: str = "items") -> None:
+        items_name: str = "items", base_url: str | None = None, request_model: str = "kev-latest") -> None:
     out_dir = result_dir(model, items_name)
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / "responses.jsonl"
@@ -66,8 +77,10 @@ def run(model: str, port: int, limit: int | None = None, workers: int = 1, tiers
     items = [it for it in load_items(items_name) if it["item_id"] not in done and (not tiers or it["tier"] in tiers)]
     if limit:
         items = items[:limit]
-    base = f"http://127.0.0.1:{port}"
-    with httpx.Client(base_url=base, timeout=600) as client:
+    base = base_url or f"http://127.0.0.1:{port}"
+    headers = {"Authorization": f"Bearer {API_KEY}"} if API_KEY else {}
+    spent = {"input_tokens": 0}
+    with httpx.Client(base_url=base, timeout=600, headers=headers) as client:
         try:  # Hopper's server has no GET /v1/models (HTML 501); the run must not depend on it
             r = client.get("/v1/models")
             is_json = r.headers.get("content-type", "").startswith("application/json")
@@ -79,14 +92,14 @@ def run(model: str, port: int, limit: int | None = None, workers: int = 1, tiers
 
         def one(item: dict) -> dict:
             t0 = time.perf_counter()
-            body = post(client, build_request(item))
+            body = post(client, build_request(item, model=request_model))
             answers = body["answers"]
             if item.get("match_only") and REL_TOPN:
                 # second stage: the predicate for the candidates the model rated highest (Kev is single-pass,
                 # so it cannot condition on its own match answer inside one request)
                 probs = answers["match"]["probabilities"]
                 top = sorted((c for c in item["candidates"]), key=lambda c: -probs.get(c["option"], 0))[:REL_TOPN]
-                body2 = post(client, build_request(item, relation_for=top))
+                body2 = post(client, build_request(item, model=request_model, relation_for=top))
                 answers = {**answers, **{k: v for k, v in body2["answers"].items() if k.startswith("rel_")}}
             return {
                 "item_id": item["item_id"],
@@ -102,10 +115,17 @@ def run(model: str, port: int, limit: int | None = None, workers: int = 1, tiers
             for n, rec in enumerate(pool.map(one, items), 1):
                 f.write(json.dumps(rec) + "\n")
                 f.flush()
+                spent["input_tokens"] += (rec.get("usage") or {}).get("input_tokens", 0) or 0
                 if n % 25 == 0 or n == len(items):
                     rate = n / (time.perf_counter() - t_start)
                     gb = server_rss_gb()
-                    print(f"  {n}/{len(items)}  {rate:.2f} items/s  server {gb:.1f} GB", file=sys.stderr)
+                    usd = spent["input_tokens"] / 1e6 * USD_PER_M_INPUT
+                    print(f"  {n}/{len(items)}  {rate:.2f} items/s  server {gb:.1f} GB  "
+                          f"input tokens {spent['input_tokens']:,} (~${usd:.3f})", file=sys.stderr)
+                if MAX_INPUT_TOKENS and spent["input_tokens"] > MAX_INPUT_TOKENS:
+                    print(f"input-token budget {MAX_INPUT_TOKENS:,} exceeded; stopping (resumable)", file=sys.stderr)
+                    pool.shutdown(wait=False, cancel_futures=True)
+                    sys.exit(4)
                     if gb > MAX_SERVER_GB:
                         print(f"server over {MAX_SERVER_GB} GB; aborting (KEVMAP_MAX_SERVER_GB)", file=sys.stderr)
                         pool.shutdown(wait=False, cancel_futures=True)
