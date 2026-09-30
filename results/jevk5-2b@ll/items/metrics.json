@@ -11,6 +11,11 @@
     "coverage@10": 0.35333333333333333,
     "auto_accept_precision": 0.9285714285714286,
     "n_auto_accept": 14,
+    "none_rate": 0.32466666666666666,
+    "none_precision": 0.47638603696098564,
+    "none_recall": 0.6025974025974026,
+    "acc_gold_present": 0.6878923766816144,
+    "acc_gold_absent": 0.6025974025974026,
     "rel_acc": 0.4106007067137809,
     "rel_acc_by_truth": {
       "narrower": {
@@ -49,6 +54,11 @@
       "coverage@10": 0.5599284436493739,
       "auto_accept_precision": 1.0,
       "n_auto_accept": 7,
+      "none_rate": 0.23255813953488372,
+      "none_precision": 0.0,
+      "none_recall": null,
+      "acc_gold_present": 0.6869409660107334,
+      "acc_gold_absent": null,
       "rel_acc": 0.3005366726296959,
       "rel_acc_by_truth": {
         "same": {
@@ -76,6 +86,11 @@
       "coverage@10": 0.6348920863309353,
       "auto_accept_precision": 1.0,
       "n_auto_accept": 6,
+      "none_rate": 0.22482014388489208,
+      "none_precision": 0.0,
+      "none_recall": null,
+      "acc_gold_present": 0.6888489208633094,
+      "acc_gold_absent": null,
       "rel_acc": 0.2949640287769784,
       "rel_acc_by_truth": {
         "same": {
@@ -103,6 +118,11 @@
       "coverage@10": 0.0,
       "auto_accept_precision": 0.0,
       "n_auto_accept": 1,
+      "none_rate": 0.5866666666666667,
+      "none_precision": 1.0,
+      "none_recall": 0.5866666666666667,
+      "acc_gold_present": null,
+      "acc_gold_absent": 0.5866666666666667,
       "rel_acc": 0.83,
       "rel_acc_by_truth": {
         "narrower": {
@@ -130,6 +150,11 @@
       "coverage@10": 0.011764705882352941,
       "auto_accept_precision": null,
       "n_auto_accept": 0,
+      "none_rate": 0.6588235294117647,
+      "none_precision": 1.0,
+      "none_recall": 0.6588235294117647,
+      "acc_gold_present": null,
+      "acc_gold_absent": 0.6588235294117647,
       "rel_acc": null,
       "rel_acc_by_truth": {},
       "rel_confusion": {},

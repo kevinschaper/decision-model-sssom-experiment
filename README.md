@@ -1,378 +1,231 @@
 # decision-model-sssom-experiment
 
-SSSOM mappings from System-One-style decision models (Kev, JevK5, Hopper), evaluated against curated
-SNOMED CT -> Mondo mappings. (The CLI and local directory keep the historical name `kevmap` /
-`kev-mapping-experiment`.)
+Decision models answer a typed question about a document in one forward pass and return a
+probability for every option; they generate no text. This experiment asks whether such models can
+reproduce curated **SNOMED CT → Mondo** mappings as SSSOM, with confidence scores a curator could act
+on. Seven models answer identical requests: **Jev** (TypeSafe's hosted reference), **Kev** 0.8B / 4B /
+9B (open, stock and fine-tuned on eval-disjoint SNOMED→Mondo decisions), **JevK5** 4B / 2B, and
+**Hopper** 4B. The gold standard is Mondo's own ~9k `skos:exactMatch` rows to SNOMED.
 
-Can a **System-One decision model** (Kev, an open Jev-like model) re-create curated
-clinical-terminology → OBO mappings, with confidence scores you could act on? And does that ability
-scale with model size in a way the experiment can actually see?
+## Summary
 
-First target: **SNOMED CT disorders → Mondo**, because Mondo already curates ~9k `skos:exactMatch`
-rows to SNOMED, which is the gold standard here. Output is a real SSSOM file per model.
+| model | training | acc | gold present | gold absent | none P / R | ECE | cov@10 | rel_acc |
+|---|---|---|---|---|---|---|---|---|
+| Jev (TypeSafe, hosted) | zero-shot | 0.881 | 0.930 | 0.814 | 0.95 / 0.81 | 0.066 | 0.939 | 0.901 |
+| Kev-4B fine-tuned | SNOMED-tuned | 0.894 | 0.891 | 0.897 | 0.91 / 0.90 | 0.073 | 0.972 | 0.925 |
+| Kev-0.8B fine-tuned | SNOMED-tuned | 0.872 | 0.866 | 0.879 | 0.88 / 0.88 | 0.087 | 0.896 | 0.912 |
+| Kev-9B | zero-shot | 0.825 | 0.935 | 0.678 | 0.96 / 0.68 | 0.115 | 0.429 | 0.888 |
+| Kev-4B | zero-shot | 0.804 | 0.927 | 0.640 | 0.96 / 0.64 | 0.077 | 0.472 | 0.871 |
+| JevK5 (4B) | zero-shot | 0.779 | 0.846 | 0.689 | 0.83 / 0.69 | 0.069 | 0.477 | 0.801 |
+| Hopper (4B) | zero-shot | 0.754 | 0.920 | 0.532 | 0.96 / 0.53 | 0.073 | 0.135 | 0.840 |
+| JevK5-2B | zero-shot | 0.673 | 0.717 | 0.613 | 0.70 / 0.61 | 0.152 | 0.112 | 0.342 |
+| Kev-0.8B | zero-shot | 0.644 | 0.793 | 0.444 | 0.84 / 0.44 | 0.179 | 0.065 | 0.527 |
+| lexical top-1 (retriever alone) | none | 0.423 | 0.714 | 0.000 | never abstains | | | |
 
-## What Kev is, and why the pipeline looks like this
+*Hard evaluation set (`items-v2`): candidate order shuffled, half the sources lexically ambiguous,
+n = 1,700. `gold present`: picks the curated match when it is offered. `gold absent`: answers `none`
+when it should. `cov@10`: the share of decisions a curator could auto-accept, taken in confidence
+order, before the error rate passes 10%. `rel_acc`: predicate accuracy (exact / broad / narrow /
+no-map).*
 
-Kev (Jared Palmer, Apache-2.0; 0.8B / 4B / 9B / 27B, Qwen3.5-Base + LoRA + pointer head) serves
-TypeSafe's `/v1/systemone` contract: one *state* document plus any number of typed questions
-(`choice` over named options, `noul` yes/no, `score` ordinal), answered in **one prefill pass, no
-generation**, with calibrated probabilities. It cannot propose a Mondo ID; it can only decide among
-options it is shown. So the pipeline is **retrieve, then decide**:
+1. **Four thousand in-domain decisions beat model size.** Kev‑0.8B, fine-tuned on eval-disjoint
+   SNOMED→Mondo records, outscores stock Kev‑9B on every set; Kev‑4B, fine-tuned the same way, becomes
+   the best model in-distribution.
+2. **Jev is the strongest zero-shot model and the most robust.** It picks as well as stock Kev and
+   also abstains (none recall 0.81 at 0.95 precision); it trails the fine-tuned 4B by one point
+   in-distribution (+0.013 [+0.001, +0.025]) and leads it by six points on labels-only inputs.
+3. **Abstention separates the models.** Zero-shot models pick when they should abstain; the
+   SNOMED-tuned models abstain when they should pick. Coverage at a 10% error budget ranges from
+   0.07 (stock 0.8B) to 0.97 (fine-tuned 4B).
+4. **The retriever alone solves the easy cases.** With candidates in retrieval order, lexical top‑1
+   scores 0.93 on mapped items, so the shuffled, ambiguous set is the evaluation that matters.
+5. **Most shared misses are gold errors.** Where ≥ 6 of 7 models agree against Mondo (230 items, 98 at
+   p ≥ 0.9), Mondo usually maps a general SNOMED concept to a numbered genetic subtype or a sibling.
+   `results/consensus-disagreements.tsv` lists them as a curation queue.
 
-1. **Retrieve** k=8 Mondo candidates for each SNOMED label (BM25 over Mondo labels + exact
-   synonyms, rapidfuzz rerank). Retrieval recall@k is reported on its own so a retrieval miss is
-   never charged to the model.
-2. **Decide** with one Kev request per source concept. The state holds the SNOMED concept
-   (preferred term, synonyms, text definition, parent concepts) and every candidate (label,
-   synonyms, definition). Questions:
-   - `match`: *Which candidate denotes the same disease as the source? (or `none`)* → `object_id`,
-     and its probability is the SSSOM `confidence`.
-   - `rel_<X>` for each candidate: *same / narrower / broader / related / unrelated* → the
-     `predicate_id` (`same`→exactMatch, source-`narrower`→broadMatch, `broader`→narrowMatch,
-     `related`→relatedMatch), plus an independent per-candidate p(same).
+Cost: Jev scored every set for $0.53; the open models ran on one L40S GPU (Kev at 25–190 ms per
+item). Details follow; reproduction and licensing are at the end. **SNOMED CT text never appears in
+this repository.**
 
-## How the evaluation distinguishes model quality
+## Method
 
-Accuracy on easy cases saturates fast and would hide the size effect, so items are built in tiers
-with known correct answers and scored separately:
+### Retrieve, then decide
 
-| tier | construction | what it measures |
+A decision model cannot propose a Mondo term; it can only choose among terms it is shown. Each SNOMED
+disorder therefore gets **eight Mondo candidates** from a lexical retriever (BM25 over labels and
+exact synonyms, rapidfuzz rerank) and then **one request** whose state holds the SNOMED concept
+(preferred term, synonyms, definition, parents) and every candidate (label, synonyms, definition).
+The request asks:
+
+- `match`: which candidate denotes the same disease, or `none`. The chosen option becomes the SSSOM
+  `object_id`; its probability becomes `confidence`.
+- `rel_<X>`, one per candidate: same / narrower / broader / related / unrelated. The relation of the
+  chosen candidate becomes the predicate (`exactMatch`, `broadMatch`, `narrowMatch`, `relatedMatch`).
+
+Retrieval recall@8 (0.93) is reported on its own, so a retrieval miss is never charged to the model.
+All models are called through the same `/v1/systemone` contract; Hopper and JevK5 accept one question
+per request, so the runner splits the request for them.
+
+### Evaluation design
+
+Accuracy on easy items saturates and hides the differences between models, so the items are built
+in tiers with known answers and scored separately:
+
+| tier | construction | what it tests |
 |---|---|---|
-| **easy** | gold is in the lexical top-k; candidates are whatever retrieval returned | can it pick the obvious answer |
-| **hard** | gold is in the top-k, but the weakest lexical candidates are replaced by the gold's **Mondo parent, children and siblings** | can it tell a disease from its near relatives (where small models should fail) |
-| **none-narrower** | SNOMED disorder with **no** Mondo mapping whose is_a **parent is mapped**; the parent's Mondo term is forced into the candidates | does it abstain instead of over-mapping to the broader term, and does it call the relation `narrower` |
-| **gold-removed** | an ordinary mapped item with the gold deleted from the candidate list | the cleanest abstention test: `none` is the only right answer |
-| **retrieval-miss** | gold exists but the retriever did not surface it | does it say `none` when the truth is absent |
+| easy | gold among ordinary lexical candidates | picking the obvious answer |
+| hard | the gold's Mondo parent, children and siblings replace the weakest lexical candidates | telling a disease from its relatives |
+| gold-removed | a mapped item with the gold deleted | abstaining when the answer is absent |
+| none-narrower | an unmapped SNOMED child whose parent is mapped; the parent's Mondo term is offered | abstaining from the broader term, and calling the relation `narrower` |
+| retrieval-miss | the retriever did not surface the gold | abstaining when the truth is absent |
 
-Metrics per tier and overall (`results/<model>/metrics.json`, `results/comparison.md`):
+Three controls guard against measuring the wrong thing. **Candidate order is shuffled** (`items-v2`,
+`k8lab`, `wide*`); in retrieval order the gold sat at option A 93% of the time. **Half the sources
+are lexically ambiguous** (the retriever's top‑1 is wrong, or its top two nearly tie). **Labels-only
+and wide-list variants** (`k8lab` at k = 8; `wide64`, `wide250`) separate "more options" from "less
+context".
 
-- **acc** on `match` (argmax vs the gold option, or `none` where that's correct)
-- **brier** and **ece** of the reported probabilities — is the confidence honest
-- **coverage@5**: the share of decisions you could auto-accept, taking them in order of confidence,
-  before the error rate exceeds 5%. This is the number that matters for a production mapping
-  pipeline and the one System-One models are built to optimise
-- **rel_acc**: predicate correct where the truth is known: gold → `same`; injected Mondo parent or the
-  mapped parent → `narrower`; injected child → `broader`; injected sibling → no-map (`related` or
-  `unrelated`: neither yields a mapping row). Reported per truth class (`rel_acc_by_truth`) with the raw
-  5-way confusion (`rel_confusion`), so exact/broad/narrow/no-map are each visible
-- **fp_same**: share of non-gold candidates the model nonetheless calls `same` (over-mapping)
+Metrics: accuracy overall and per tier; accuracy with the gold present and with it absent; precision
+and recall of `none`; Brier score and expected calibration error; coverage at 5% and 10% error
+budgets; precision of the ≥ 0.9-confidence slice; predicate accuracy, per truth class, with the raw
+confusion. The lexical top‑1 baseline (which never abstains) appears in every table. Model pairs are
+compared with a paired bootstrap over items (`kevmap compare`).
 
-Two runs are compared with Kev's own `kev.compare` (paired bootstrap CIs) when we want error bars.
+The gold is Mondo's own curation, restricted to current terms and to SNOMED ids with exactly one
+exact match. The model sees no identifier and no mark on the gold. The fine-tunes train on sources
+absent from every evaluation set; the builder asserts the disjointness.
 
-## Why the result can be trusted
+## Results
 
-- **Gold is external and curated.** Mondo's SCTID mappings are maintained by Mondo curators, not
-  derived from anything in this pipeline. Only Mondo terms that are current (non-obsolete in the
-  2026-05-05 release) and SNOMED ids with exactly one Mondo exact match are used.
-- **The model never sees the answer.** Candidate option names are letters; the gold sits among
-  lexically retrieved or ontology-neighbour distractors and is not marked in any way.
-  Candidate order is retrieval rank for lexical hits; Mondo-neighbour injections take the slots
-  of the weakest lexical hits (known confound: position bias; Kev's `/v1/systemone/permute`
-  endpoint exists to test it).
-- **Retrieval and decision are scored separately.** recall@k is printed at build time; the
-  `retrieval-miss` tier isolates the cases where the truth was absent.
-- **Negatives are real, not synthetic.** `none-narrower` items are actual SNOMED disorders Mondo
-  hasn't mapped, with the tempting broader term present. The caveat is that "Mondo hasn't mapped it"
-  is not proof that no exact Mondo term exists; a model that "wrongly" picks a candidate there may
-  be surfacing a missing curation, so those disagreements are worth reading, not just counting.
-- **Same items, same seed, every model.** `data/items.jsonl` is built once (`--seed 7`) and
-  reused across sizes; only the served checkpoint changes. Raw responses are kept so metrics can be
-  recomputed without re-running the model.
-- **Confidence is evaluated, not assumed.** Brier, ECE and coverage@5 test whether the probabilities
-  mean what they claim, which is the whole point of preferring a System-One model over sampling
-  a chat model.
+### Size, stock Kev
 
-## Other System-One models
+On the hard set, accuracy rises from 0.644 (0.8B) to 0.804 (4B) and 0.825 (9B); calibration improves
+with the first step only (ECE 0.18 → 0.08 → 0.12). The 9B's advantage over 4B is small and confined
+to abstention (+0.021 [+0.009, +0.034]; gold-removed +0.06), for 1.7× the latency. Neither abstains
+well: with the gold absent they answer `none` 64–68% of the time.
 
-The runner only needs a `/v1/systemone` endpoint, so any Jev-compatible model slots in as another
-`--model` name. From the [JevBench leaderboard](https://benchmarkheaven.com/jev-models) (v1.4.1):
+### Width of the candidate list
 
-| model | base | license | runs here? | JevBench calibration | note |
-|---|---|---|---|---|---|
-| Kev 0.8B/4B/9B | Qwen3.5-Base + LoRA + pointer head | Apache-2.0 | yes (MLX) | 39.6 (4B) | shared-prefix: all questions in one pass |
-| [JevK5](https://github.com/allebee/jevk5) 4B / 2B | Qwen3.5-4B + LoRA, letter readout | Apache-2.0 | yes (MPS/CPU/GGUF) | 74.5 | #2 overall, #1 open; <=16 options per pass, one pass per question |
-| [Hopper](https://github.com/hopit-ai/hopper) | Qwen3.5-4B + LoRA, letter readout | code Apache-2.0, weights research/demo only | CUDA only -> LongLeaf | 79.1 | eval only; not for published mappings |
-| Jev (jev-latest) | closed | TypeSafe API, $0.042/M input tokens | hosted (`scripts/run_jev.sh`) | 76.3 | the reference; all five sets cost $0.53 |
+Widening the list costs accuracy, calibration and abstention. Kev‑4B falls from 0.804 (k = 8) to
+0.685 (k = 64) and 0.632 (k = 250); its ECE rises from 0.08 to 0.30; its gold-removed abstention
+falls from 0.76 to 0.34. The labels-only k = 8 control scores 0.790, so the loss comes from the
+option count, not the missing definitions. Jev holds 0.80 at k = 64 and 0.79 at k = 250 (ECE 0.06,
+0.07), leading stock 9B by +0.120 [+0.083, +0.157] at k = 250.
 
-## Results so far (2026-09-24, Kev sizes on LongLeaf L40S; Hopper/JevK5 pending)
+### Same base, four recipes
 
-Original set (`items`, retrieval-rank order, n=1,500) and the shuffled / 50%-lexically-ambiguous set
-(`items-v2`, n=1,700, adds the gold-removed tier). `lexical` = take the retriever's top-1 (never abstains).
+Kev‑4B, JevK5 and Hopper share the Qwen3.5‑4B base and differ in training. They land on a
+picking-versus-abstaining trade-off: Hopper picks best (0.92 with the gold present) and abstains
+least (0.53); JevK5 abstains more (0.69) and picks worse (0.85); stock Kev‑4B sits between. Jev does
+both (0.93 / 0.81) and is the best calibrated (ECE 0.066). JevK5 and Hopper run one question per
+pass and cost 6× Kev's latency; Hopper's weights are research-only.
 
-| set | model | acc | lexical | ECE | cov@5 | cov@10 | prec@conf>=.9 (n) | gold-removed | none-narrower | retr-miss | rel_acc |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| items | kev-0.8b | 0.736 | 0.692 | 0.213 | 0.061 | 0.382 | - (0) | - | 0.260 | 0.447 | 0.715 |
-| items | kev-4b | 0.877 | 0.692 | 0.046 | 0.551 | 0.909 | 0.950 (814) | - | 0.573 | 0.682 | 0.954 |
-| items | kev-9b | 0.876 | 0.692 | 0.057 | 0.628 | 0.922 | 0.943 (1003) | - | 0.577 | 0.682 | 0.956 |
-| items-v2 | kev-0.8b | 0.644 | 0.423 | 0.179 | 0.029 | 0.065 | - (0) | 0.550 | 0.357 | 0.467 | 0.527 |
-| items-v2 | kev-4b | 0.804 | 0.423 | 0.077 | 0.126 | 0.472 | 0.900 (781) | 0.760 | 0.523 | 0.687 | 0.871 |
-| items-v2 | kev-9b | 0.825 | 0.423 | 0.115 | 0.009 | 0.429 | 0.895 (839) | 0.820 | 0.543 | 0.731 | 0.888 |
+### Fine-tuning
 
-Findings:
+Kev's trainer takes the evaluation request plus a `label` per question and starts from the released
+adapter (`--init_from`). Training records mirror `items-v2` (4,000 records; gold option or `none`
+for `match`, the known relation for each candidate) from sources absent from every evaluation set.
 
-- **The 0.8B -> 4B step is the one that matters.** 9B - 4B: -0.001 [-0.013, +0.012] on `items`;
-  +0.021 [+0.009, +0.034] on `items-v2`, entirely from abstention (gold-removed +0.06, retrieval-miss
-  +0.04), at 1.7x the latency.
-- **The first `items` set mostly measured the retriever**: the gold sat at option A 93% of the time and
-  lexical top-1 alone scored 0.93 on the mapped tiers. Shuffling and oversampling lexically ambiguous
-  sources (`items-v2`) fixed that: lexical drops to 0.42, Kev-4B holds 0.80 (0.81 on the ambiguous
-  half vs 0.29 for string matching).
-- **Abstention is where models separate**: with the gold deleted, 0.8B says `none` 55%, 4B 76%, 9B 82%.
-  Offered the broader Mondo term for an unmapped SNOMED child, 4B/9B abstain ~52-58% but call the
-  relation `narrower` 85-91% of the time, i.e. they produce the `skos:broadMatch` row Mondo lacks.
-- **Predicates (4B, items-v2)**: same 0.94, narrower 0.85, no-map 0.87 (siblings are called `unrelated`,
-  not `related`; fine for mapping), broader 0.45 (children are the weak class). 0.8B's predicate answers
-  are mostly a default (`broader` for 64% of `narrower` truths).
-- **Wider candidate lists cost accuracy and calibration** (4B: 0.80 at k=8, 0.69 at k=64, 0.63 at
-  k=250; ECE 0.08 -> 0.30; gold-removed abstention 0.76 -> 0.34), while staying above lexical (0.42).
-  The wide sets are labels-only, so the k=8 labels-only control (`k8lab`) separates "more options" from
-  "less context".
-- **MLX (Mac) and CUDA (L40S) agree**: 0.8B 99.1% same top choice (mean |dp| 0.006), 4B 99.8%
-  (mean |dp| 0.003, max 0.055).
+| model | acc | gold present | gold absent | none P / R | ECE | cov@10 | rel_acc |
+|---|---|---|---|---|---|---|---|
+| Kev‑4B fine-tuned | **0.894** | 0.891 | **0.897** | 0.91 / 0.90 | 0.073 | **0.972** | **0.925** |
+| Kev‑0.8B fine-tuned | 0.872 | 0.866 | 0.879 | 0.88 / 0.88 | 0.087 | 0.896 | 0.912 |
+| Kev‑4B stock | 0.804 | **0.927** | 0.640 | 0.96 / 0.64 | 0.077 | 0.472 | 0.871 |
+| Kev‑0.8B stock | 0.644 | 0.793 | 0.444 | 0.84 / 0.44 | 0.179 | 0.065 | 0.527 |
 
-## Layout
+Fine-tuning taught abstention and predicates more than discrimination: the fine-tuned 4B abstains
+correctly 0.90 of the time (stock 0.64) but picks the present gold 0.891 (stock 0.927). Fine-tuned 4B
+beats fine-tuned 0.8B by +0.022 [+0.012, +0.032] at five times the latency. Both fine-tunes collapse
+on labels-only inputs (`k8lab`: 4B picking 0.822 → 0.629) because every training state carried
+definitions; the next training set should mix labels-only states, and Kev's `--replay` option can
+retain general skill. On the hard set the fine-tuned 4B gets the predicate right for same 0.95, narrower 0.92 and no-map
+0.95 of candidates, but broader only 0.34. `broader` (the source is a parent of the candidate) is the
+weakest class for every model; Jev scores highest on it, at 0.60.
+
+### Jev
+
+Jev answers the unchanged requests at ~2.8k input tokens per item, so all five sets cost $0.53. It is
+the best model on every set the fine-tunes were not trained for:
+
+| set | Jev | best open model | |
+|---|---|---|---|
+| `items-v2` | 0.881 | 0.894 | Kev‑4B fine-tuned |
+| `items` | 0.921 | 0.933 | Kev‑4B fine-tuned |
+| `k8lab` (labels only) | **0.840** | 0.805 | Kev‑0.8B fine-tuned |
+| `wide64` | **0.802** | 0.692 | Kev‑9B |
+| `wide250` | **0.790** | 0.670 | Kev‑9B |
+
+Fine-tuned 4B minus Jev: +0.013 [+0.001, +0.025] on `items-v2`, −0.060 [−0.097, −0.027] on `k8lab`.
+
+### Where the models miss
+
+On the hard set 108 items defeat all seven models and 1,073 defeat none; miss sets overlap by recipe
+(the two fine-tunes agree with each other, the stock Kevs with Hopper, Jev between). Reading the
+shared misses shows that Mondo, not the models, is usually wrong: SCTID:34000006 is mapped to
+*inflammatory bowel disease 1* while every model chooses *Crohn disease*; SCTID:118601006 to
+*lymphoma, non‑Hodgkin, familial* (*non‑Hodgkin lymphoma*); SCTID:127004000 to *lacrimal gland
+cancer* (*lacrimal gland neoplasm*); SCTID:406506008 to *ADHD, inattentive type* (*ADHD*). On the
+none-narrower tier, `none` means only that Mondo has no mapping; in 96 of those items ≥ 6 of 7 models
+agree on the same candidate, which is probably the missing mapping. The genuine shared failures are
+35 items where every model abstains, typically because the SNOMED term names a protein by an older
+alias.
+
+Two consequences follow. Gold errors understate every accuracy above, though the comparisons hold
+because all models face the same gold. And unanimous disagreement among independently trained
+decision models makes a cheap curation queue: `results/consensus-disagreements.tsv` holds the 230
+cases.
+
+### Next
+
+- ICD‑10‑CM → Mondo with no ICD training data: the transfer test, with Jev as the zero-shot
+  reference and an adapter that carries no SNOMED licensing question.
+- Retrain with labels-only states in the mix and `--replay`, to close the format-shift gap.
+- Option-order robustness through `/v1/systemone/permute`.
+
+## Reproducing
 
 ```
-justfile              install / kev-install / serve SIZE / build / run MODEL / eval / sssom MODEL
-src/kevmap/
-  mondo.py            Mondo term table from the cached semsql sqlite (~/.data/oaklib/mondo.db)
-  snomed.py           SNOMED disorder table straight from RF2 (~/Monarch/bdc/snomed/…)
-  gold.py             Mondo's SCTID rows from mondo.sssom.tsv (medic-ingest/data)
-  retrieve.py         BM25 + rapidfuzz candidate retrieval
-  items.py            tiered eval items -> data/items.jsonl
-  questions.py        item -> /v1/systemone request; relation -> SSSOM predicate
-  run.py              resumable runner -> results/<model>/responses.jsonl
-  evaluate.py         metrics.json, per_item.tsv, results/comparison.md
-  sssom_out.py        results/<model>/mappings.sssom.tsv
-kev/                  gitignored clone of github.com/jaredpalmer/kev with its own uv env
+just install && just kev-install        # runner env; Kev checkout with its MLX serving env
+just build                              # term tables, gold, retrieval, tiered items -> data/
+just serve 4b                           # separate terminal (scripts/serve_kev.py caps MLX's cache)
+just run kev-4b && just eval            # results/<model>/items/, results/comparison-items.md
+just sssom kev-4b                       # results/kev-4b/items/mappings.sssom.tsv
 ```
 
-## Running it
+`kevmap build --name <set> --shuffle --ambiguous-share 0.5 [--labels-only --match-only --k N]` builds
+the variants; `kevmap run --items <set>` scores them; `kevmap train-data` writes the fine-tuning
+records; `kevmap compare A B` gives the paired bootstrap. `scripts/run_jev.sh` scores Jev
+(`JEV_API_KEY` from the shell, read at run time). `cluster/` holds the SLURM scripts that built the
+CUDA environments, ran every open model and fine-tuned Kev on an L40S; `cluster/sync.sh --pull`
+brings results back as `results/<model>@ll/`.
 
-```
-just install && just kev-install
-just build                     # ~1 min; prints tier counts and retrieval recall@k
-just serve 0.8b                # separate terminal; first run downloads Qwen3.5-0.8B-Base
-just run kev-0.8b              # resumable; Ctrl-C and re-run to continue
-just serve 4b  && just run kev-4b
-just serve 9b  && just run kev-9b    # ~22 GB resident: make sure omlx has nothing loaded
-just eval                      # results/comparison.md
-just sssom kev-4b              # results/kev-4b/mappings.sssom.tsv
-```
+Serving Kev on Apple Silicon needs `scripts/serve_kev.py`: plain `kev.serve` on MLX never releases
+Metal buffers and grows without bound. Kev's trainer needs `--max_state 1536`; its 384-token default
+silently drops these records.
 
-Sizes and this machine (M1 Max, 32 GB): 0.8B and 4B (~9 GB bf16) are comfortable; 9B (~19 GB
-weights, ~22 GB with batching buffers) works only with nothing else large resident; 27B has no Mac
-path and would run on LongLeaf (`a100-gpu`).
+Layout: `src/kevmap/` (`mondo.py`, `snomed.py`, `gold.py`, `retrieve.py`, `items.py`, `questions.py`,
+`run.py`, `evaluate.py`, `sssom_out.py`, `train_data.py`, `cli.py`), `tests/`, `scripts/`, `cluster/`,
+`results/<model>/<set>/` (`metrics.json`, `per_item.tsv`, `server.json`, `mappings.sssom.tsv`).
 
-**Memory finding (2026-09-24).** Plain `kev.serve` on the MLX backend grows without bound: the
-0.8B server reached 25 GB after a dozen requests and pushed the machine into swap, with per-item
-latency going from 0.7 s to 20 s. MLX caches Metal buffers by shape and nothing in Kev releases
-them; every request has a new sequence length. `scripts/serve_kev.py` (what `just serve` runs)
-caps MLX's buffer cache (`KEVMAP_MLX_CACHE_GB`, default 0.5) and clears it after every batch; the
-0.8B server then sits flat at 2.1 GB. `kevmap run` also polls the server's RSS and aborts above
-`KEVMAP_MAX_SERVER_GB` (default 18). Runs use one worker: the Metal path serves one request at a
-time anyway.
+## Inputs
 
-## Cluster leg (LongLeaf)
-
-`cluster/sync.sh` pushes code + item sets to `/work/users/k/s/kschaper/kev-mapping-experiment`;
-`cluster/setup.sbatch` (CPU, `general`) builds the runner, Hopper, JevK5 and Kev CUDA envs and
-pre-downloads weights to `/work/.hf`; `cluster/run_models.sbatch` (`l40-gpu`, 1x L40S 48 GB) serves
-each model on the node in turn and runs every item set; `cluster/sync.sh --pull` brings
-`results/<model>/<items>/responses.jsonl` back for `kevmap eval`. All Kev sizes, Hopper and JevK5 run
-there; the Mac MLX run of kev-4b on `items` is kept as the MLX-vs-CUDA parity check.
-
-## Licensing: what this repo does and does not contain
-
-SNOMED CT is licensed content (SNOMED International Affiliate License, via the NLM UMLS license in the
-US). This repo therefore contains **code and scores only**; it never redistributes SNOMED text:
-
-- `data/` (term tables, item sets, training records: labels, synonyms, definitions, hierarchy) and
-  `runs/` (adapters fine-tuned on that text) are gitignored and stay on the machine that holds the
-  RF2 release. Reproducing the experiment needs your own SNOMED CT download (`paths.py`).
-- Emitted SSSOM files carry `SCTID` identifiers with an empty `subject_label`, exactly as Mondo's own
-  SCTID mappings do; Mondo labels are OBO (CC-BY 4.0) and stay.
-- `results/<model>/<set>/per_item.tsv` and `metrics.json` reference items by SCTID only.
-- Whether an adapter fine-tuned on SNOMED labels may be published is unresolved; treat the checkpoints
-  as local until SNOMED International / NLM say otherwise. An ICD-10-CM-trained adapter (CMS, public
-  domain) would carry no such restriction, which is one more reason to run that transfer next.
-- Hopper's weights are research/demo-only (RACE terms); JevK5 and Kev are Apache-2.0.
-
-## Inputs and versions
-
-| input | where | version |
+| input | source | version |
 |---|---|---|
-| Mondo SSSOM (gold) | `../medic-ingest/data/mondo.sssom.tsv` | Mondo release as downloaded by medic-ingest |
-| Mondo terms | `~/.data/oaklib/mondo.db` (semsql) | obo:mondo/releases/2026-05-05 |
-| SNOMED CT | `~/Monarch/bdc/snomed/…US1000124_20260301…/Snapshot` | US Edition 2026-03-01 |
+| gold: Mondo's SCTID mappings | `mondo.sssom.tsv` (Mondo release artefact) | as downloaded by medic-ingest |
+| Mondo terms | semsql `mondo.db` | obo:mondo/releases/2026-05-05 |
+| SNOMED CT | RF2 snapshot, your own licensed copy (`paths.py`) | US Edition 2026-03-01 |
 
-Open item: pin gold SSSOM and ontology to the same Mondo GitHub release (`mondo.sssom.tsv` and
-`mondo.db` are both release artefacts) so no gold row points at a term that moved.
+Open item: pin the gold SSSOM and `mondo.db` to the same Mondo release.
 
-## Phase 2: fine-tuning (started 2026-09-24 22:28, overnight on the Mac)
+## Licensing
 
-`kevmap train-data` builds `data/train.jsonl`: 4,000 labelled records in Kev's training format (an
-`items-v2`-style item plus `label`s: the gold option or `none` for `match`, and the known relation for
-each candidate whose relation is known), from sources **disjoint from every eval set** (3,469 sources
-excluded; the builder asserts no overlap). `scripts/overnight_train.sh` fine-tunes Kev-0.8B from
-`--init_from jaredpalmer/kev-0.8b` (`--max_state 1536`, since the default 384-token state limit drops
-our ~1,100-token states), then serves the checkpoint and scores `items-v2`, `k8lab`, `items` as model
-`kev-0.8b-snomed`. MPS has no DeltaNet kernels, so training runs at ~17 s/record: the overnight run is
-1,500 records x 1 epoch. Question: does a mapping-specific 0.8B beat the stock 4B? 4B fine-tuning
-(peak 24.6 GB) goes to the L40S (`cluster/`), not the Mac.
+Code is MIT. SNOMED CT is licensed content (SNOMED International Affiliate License, via the NLM UMLS
+license in the US), so this repository never redistributes SNOMED text:
 
-### The 4B class: picking vs abstaining (`items-v2`, 2026-09-25)
-
-Same Qwen3.5-4B base, four training recipes, plus the Mac-fine-tuned 0.8B. Every model runs the identical
-items; Hopper and JevK5 take one question per request (their servers' rule) and cannot run the wide sets.
-
-| model | acc | gold present | gold absent | none P / R | ECE | cov@10 | rel_acc | ms/item |
-|---|---|---|---|---|---|---|---|---|
-| kev-4b | 0.804 | 0.927 | 0.640 | 0.96 / 0.64 | 0.077 | 0.472 | 0.871 | 111 |
-| kev-9b | **0.825** | **0.935** | 0.678 | 0.96 / 0.68 | 0.115 | 0.429 | **0.888** | 192 |
-| jevk5 (4B) | 0.779 | 0.846 | 0.689 | 0.83 / 0.69 | **0.069** | 0.477 | 0.801 | 655 |
-| hopper (4B) | 0.754 | 0.920 | 0.532 | 0.96 / 0.53 | 0.073 | 0.135 | 0.840 | (n/a) |
-| kev-0.8b-snomed | **0.825** | 0.775 | **0.891** | 0.78 / 0.89 | 0.103 | **0.724** | 0.865 | 600 (MLX) |
-
-Reading: Kev-4B/9B are the balanced choice. Hopper is the strongest picker (ties Kev on the original set
-at 0.978 with the best calibration there, ECE 0.031) but rarely abstains. JevK5 abstains more but picks
-worse and is ~6x slower. The mapping-fine-tuned 0.8B is an abstainer that has not learned to pick.
-Hopper's weights are research/demo-only, so it is a reference point, not a production option.
-
-### Jev, the reference (2026-09-28, hosted; 12.6 M input tokens, $0.53 for every set)
-
-Same runner, same requests (`--base-url https://api.typesafe.ai --request-model jev-latest`), ~2.8k
-input tokens per item, ~20 items/s with two workers.
-
-| set | model | acc | gold present | gold absent | none P / R | ECE | cov@10 | rel_acc |
-|---|---|---|---|---|---|---|---|---|
-| items-v2 | kev-4b-snomed-full | **0.894** | 0.891 | **0.897** | 0.91 / 0.90 | 0.073 | **0.972** | **0.925** |
-| items-v2 | **jev** | 0.881 | 0.930 | 0.814 | **0.95** / 0.81 | **0.066** | 0.939 | 0.901 |
-| items-v2 | kev-0.8b-snomed-full | 0.872 | 0.866 | 0.879 | 0.88 / 0.88 | 0.087 | 0.896 | 0.912 |
-| items-v2 | kev-9b (stock) | 0.825 | **0.935** | 0.678 | 0.96 / 0.68 | 0.115 | 0.429 | 0.888 |
-| k8lab | **jev** | **0.840** | 0.851 | 0.828 | 0.89 / 0.83 | **0.030** | **0.738** | **0.863** |
-| k8lab | kev-0.8b-snomed-full | 0.805 | 0.711 | 0.909 | 0.76 / 0.91 | 0.122 | 0.655 | 0.853 |
-| k8lab | kev-9b (stock) | 0.788 | **0.879** | 0.688 | 0.95 / 0.69 | 0.148 | 0.317 | 0.842 |
-| k8lab | kev-4b-snomed-full | 0.780 | 0.629 | **0.947** | 0.72 / 0.95 | 0.109 | 0.402 | 0.854 |
-| wide64 | **jev** | **0.802** | 0.807 | **0.794** | | **0.055** | **0.568** | |
-| wide64 | kev-9b (stock) | 0.692 | 0.830 | 0.496 | | 0.195 | 0.333 | |
-| wide250 | **jev** | **0.790** | 0.802 | **0.773** | | **0.073** | **0.668** | |
-| wide250 | kev-9b (stock) | 0.670 | 0.832 | 0.430 | | 0.260 | 0.357 | |
-
-Paired bootstrap (B - A, 95% CI): fine-tuned 4B - Jev = +0.013 [+0.001, +0.025] on `items-v2`,
-+0.013 [+0.002, +0.023] on `items`, **-0.060 [-0.097, -0.027]** on labels-only `k8lab`.
-Jev - stock 9B = +0.055 [+0.042, +0.069] (`items-v2`), +0.052 (`k8lab`), +0.120 [+0.083, +0.157] (`wide250`).
-
-Reading: Jev is the best **zero-shot** model by a clear margin, and the only one that picks like stock
-Kev-4B/9B (0.93 when the gold is present) *and* abstains (recall 0.81 at 0.95 precision), with the
-best calibration everywhere (ECE 0.03-0.07). Its abstention holds up where the open models' collapses:
-labels-only inputs and 64/250-option lists. The SNOMED-fine-tuned Kevs beat it only in-distribution,
-by ~1 point, and lose to it by 6 points as soon as the input format shifts. Predicates: same 0.92,
-narrower 0.88, no-map 0.94, broader 0.60 (the best `broader` of any model), false-`same` 1.4%.
-
-### Phase 2 result: 4B fine-tune (L40S, 2026-09-25, 3.2 h, 1.46 s/record)
-
-| set | model | acc | gold present | gold absent | none P / R | ECE | cov@10 | prec@>=.9 (n) | rel_acc |
-|---|---|---|---|---|---|---|---|---|---|
-| items-v2 | **kev-4b-snomed-full** | **0.894** | 0.891 | **0.897** | 0.91 / 0.90 | **0.073** | **0.972** | 0.914 (**1559**) | **0.925** |
-| items-v2 | kev-0.8b-snomed-full | 0.872 | 0.866 | 0.879 | 0.88 / 0.88 | 0.087 | 0.896 | 0.903 (1487) | 0.912 |
-| items-v2 | kev-4b (stock) | 0.804 | **0.927** | 0.640 | 0.96 / 0.64 | 0.077 | 0.472 | 0.900 (781) | 0.871 |
-| items | **kev-4b-snomed-full** | **0.933** | 0.954 | **0.873** | 0.89 / 0.87 | **0.041** | **1.000** | 0.949 (**1411**) | **0.970** |
-| items | kev-4b (stock) | 0.877 | **0.973** | 0.597 | 0.94 / 0.60 | 0.046 | 0.909 | 0.950 (814) | 0.954 |
-| k8lab | kev-4b-snomed-full | 0.780 | 0.629 | **0.947** | 0.72 / 0.95 | 0.109 | 0.402 | 0.861 (368) | 0.854 |
-| k8lab | kev-4b (stock) | 0.790 | **0.822** | 0.754 | 0.89 / 0.75 | 0.127 | 0.472 | 0.952 (42) | 0.783 |
-
-Fine-tuned 4B - fine-tuned 0.8B: +0.022 [+0.012, +0.032] (`items-v2`), +0.019 [+0.010, +0.028] (`items`),
--0.025 [-0.053, +0.000] (`k8lab`). Fine-tuned 4B - stock 4B: +0.089 [+0.071, +0.107] on `items-v2`.
-
-**Conclusions (2026-09-25).**
-
-1. Fine-tuning on ~4k in-domain decisions is worth more than any size step: fine-tuned 0.8B > stock 9B,
-   fine-tuned 4B > everything, on the definition-bearing sets. On `items-v2` the fine-tuned 4B would
-   auto-accept 92% of decisions at 91% precision (coverage@10 = 0.97).
-2. The 4B-over-0.8B margin after fine-tuning is small (+2 pts) for ~5x the latency; the 0.8B is the
-   practical engine unless the last points matter.
-3. Both fine-tunes trade a little picking for a lot of abstention: gold-present accuracy 0.927 -> 0.891
-   (4B). `--replay` (mix in Kev's own training data) is the trainer's tool for this and is untried.
-4. Both fine-tunes collapse on **labels-only** inputs (`k8lab`: 4B picking 0.822 -> 0.629), because every
-   training state carried synonyms/definitions. Next training set should mix labels-only states.
-5. Everything here is in-distribution (train and eval both from Mondo's SNOMED mappings, disjoint
-   sources). ICD-10-CM -> Mondo, with no ICD training data, is the transfer test to run next.
-6. (2026-09-28) Jev, zero-shot, sits within ~1 point of the fine-tuned 4B in-distribution and ahead
-   of everything once the input format shifts, at $0.0001 per item. The open path (fine-tuned Kev)
-   wins on cost-at-scale, latency and self-hosting; Jev wins on robustness without training data.
-
-### Phase 2 result (full-set 0.8B fine-tune on the L40S, 2026-09-25)
-
-`kev-0.8b-snomed-full`: Kev-0.8B from `--init_from jaredpalmer/kev-0.8b`, all 4,000 training records,
-2 epochs, 70 min on one L40S (0.52 s/record vs 21 s on the Mac). **Best model on every set**:
-
-| set | model | acc | gold present | gold absent | none P / R | ECE | cov@10 | prec@>=.9 (n) | rel_acc |
-|---|---|---|---|---|---|---|---|---|---|
-| items-v2 | kev-0.8b-snomed-full | **0.872** | 0.866 | **0.879** | 0.88 / 0.88 | 0.087 | **0.896** | 0.903 (**1487**) | **0.912** |
-| items-v2 | kev-9b (best stock) | 0.825 | **0.935** | 0.678 | 0.96 / 0.68 | 0.115 | 0.429 | 0.895 (839) | 0.888 |
-| items-v2 | kev-4b | 0.804 | 0.927 | 0.640 | 0.96 / 0.64 | 0.077 | 0.472 | 0.900 (781) | 0.871 |
-| items | kev-0.8b-snomed-full | **0.914** | 0.935 | **0.855** | 0.84 / 0.86 | 0.055 | **1.000** | 0.941 (**1380**) | **0.953** |
-| items | kev-4b | 0.877 | **0.973** | 0.597 | 0.94 / 0.60 | 0.046 | 0.909 | 0.950 (814) | 0.954 |
-| k8lab | kev-0.8b-snomed-full | **0.805** | 0.711 | **0.909** | 0.76 / 0.91 | 0.122 | **0.655** | 0.868 (469) | **0.853** |
-| k8lab | kev-4b | 0.790 | **0.822** | 0.754 | 0.89 / 0.75 | 0.127 | 0.472 | 0.952 (42) | 0.783 |
-
-+0.047 [+0.035, +0.059] over the Mac's 1,491 x 1-epoch fine-tune on `items-v2`, and unlike that run it
-improved picking as well as abstention. Caveats: pure picking still trails stock 4B (0.866 vs 0.927);
-the labels-only set transfers worse (training states carried definitions); train and eval sources
-are disjoint but both come from Mondo's SNOMED mappings, so this is in-distribution: transfer to
-ICD-10-CM / LOINC is the next test. At ~25 ms/item on a GPU (and ~0.7 s on the Mac via MLX) it is the
-practical candidate for a mapping engine. The 4B fine-tune (same recipe) is the pending comparison.
-
-### Phase 2 result (Mac fine-tune, 2026-09-25)
-
-`kev-0.8b-snomed` (1,491 records, 1 epoch, 8.7 h on MPS) on `items-v2`, next to the stock sizes:
-
-| model | acc | acc, gold present | acc, gold absent | none rate (truth 0.43) | none P / R | ECE | cov@10 | rel_acc |
-|---|---|---|---|---|---|---|---|---|
-| kev-0.8b | 0.644 | 0.793 | 0.444 | 0.23 | 0.84 / 0.44 | 0.179 | 0.065 | 0.527 |
-| **kev-0.8b-snomed** | **0.825** | 0.775 | **0.891** | 0.49 | 0.78 / 0.89 | 0.103 | **0.724** | 0.865 |
-| kev-4b | 0.804 | **0.927** | 0.640 | 0.29 | **0.96** / 0.64 | 0.077 | 0.472 | 0.871 |
-| kev-9b | 0.825 | 0.935 | 0.678 | 0.30 | 0.96 / 0.68 | 0.115 | 0.429 | 0.888 |
-| jevk5 | 0.779 | 0.846 | 0.689 | 0.36 | 0.83 / 0.69 | 0.069 | 0.477 | 0.801 |
-
-+0.181 [+0.157, +0.205] over stock 0.8B, matching stock 9B in aggregate, but the gain is **abstention
-and predicates, not discrimination**: given the gold is present it still picks it only 0.775 of the
-time (4B: 0.927); it answers `none` 49% of the time at 0.78 precision, so about a fifth of its
-abstentions drop a mappable term; predicates reach near-4B level (same 0.91, narrower 0.85, no-map
-0.92) except `broader` (0.16, children are rare in training). Part of the aggregate gain is the eval's
-43% none-rate rewarding a model that abstains readily. Follow-ups: the 4B fine-tune on the L40S
-(`cluster/finetune.sbatch`, full 4,000 records x 2 epochs) asks whether abstention can be added to
-a model that already discriminates; `acc_gold_present`, `none_precision`, `none_recall` are now in
-every metrics table so this cannot hide again.
-
-## Where the models miss, and the curation signal in it
-
-On `items-v2`, 108 of 1,700 items are missed by all seven models and 1,073 by none; miss sets overlap
-heavily (Jaccard 0.3-0.7), clustering by recipe (the two fine-tuned Kevs agree with each other, the
-stock Kevs with Hopper, Jev in between). Reading the shared misses shows most are **gold problems**:
-
-- Mondo's exactMatch points at a numbered genetic subtype or a sibling while the general concept exists:
-  SCTID:34000006 -> *inflammatory bowel disease 1* (every model: *Crohn disease*); SCTID:118601006 ->
-  *lymphoma, non-Hodgkin, familial* (*non-Hodgkin lymphoma*); SCTID:715771008 -> *microphthalmia,
-  isolated, with coloboma 4* (*... with coloboma*); SCTID:127004000 -> *lacrimal gland cancer*
-  (*lacrimal gland neoplasm*); SCTID:406506008 -> *ADHD, inattentive type* (*ADHD*).
-- The `none` truths on the none-narrower tier are "Mondo has no mapping", not "no match exists": in 96
-  items >= 6 of 7 models agree on the same candidate, 55 of them at mean p >= 0.9.
-- The genuine shared failures are knowledge gaps where every model abstains (e.g. a SNOMED term naming
-  a protein by an older alias than Mondo's label): 35 items.
-
-`results/consensus-disagreements.tsv` lists the 230 items where >= 6 of 7 models agree on a non-gold
-answer (SCTIDs, Mondo ids/labels, kind, consensus confidence; SNOMED labels withheld): 98 at p >= 0.9.
-Two consequences: every accuracy above is understated by gold errors (relative comparisons hold, since
-all models face the same gold), and unanimous disagreement across independently trained decision models
-is a cheap curation queue for Mondo's SNOMED mappings. Where the models differ from each other it is
-the abstention margin, in opposite directions: Jev's extra misses vs fine-tuned 4B are picks on the
-none tiers (42 of 65), the fine-tuned 4B's extra misses are over-abstentions with the gold present
-(37 of 43).
-
-## Later phases (not built)
-- **ICD-10-CM → Mondo** as the fully redistributable twin of this experiment (2.1k gold rows,
-  CMS tabular list free).
-- **Option-order robustness** via `/v1/systemone/permute`.
-- A plain-LLM baseline over the same items (deliberately out of scope for the first pass).
+- `data/` (term tables, item sets, training records) and `runs/` (adapters fine-tuned on that text)
+  are gitignored; reproducing needs your own SNOMED CT download.
+- SSSOM output carries `SCTID` identifiers with an empty `subject_label`, as Mondo's own SCTID rows do;
+  Mondo labels (CC‑BY 4.0) stay.
+- `per_item.tsv`, `metrics.json` and `consensus-disagreements.tsv` reference items by SCTID only.
+- Whether an adapter fine-tuned on SNOMED labels may be published is unresolved; the checkpoints stay
+  local. Hopper's weights are research/demo-only; Kev and JevK5 are Apache‑2.0.
